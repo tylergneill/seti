@@ -283,7 +283,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
         for name, rows in (("applied", applied), ("notes", notes)):
             paths[name] = REPORTS / f"{stamp}-{tool}-{name}.csv"
             with open(paths[name], "w", encoding="utf-8", newline="") as f:
-                writer = csv.DictWriter(f, fieldnames=REPORT_COLUMNS)
+                writer = csv.DictWriter(f, fieldnames=REPORT_COLUMNS, lineterminator="\n")
                 writer.writeheader()
                 writer.writerows(rows)
     if dry_run:
