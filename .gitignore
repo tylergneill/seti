@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+
+# PyCharm
+.idea/
+
+# Research batches and workflow scripts: regenerable, and applied to the
+# master by research_apply.py.
+tmp/
