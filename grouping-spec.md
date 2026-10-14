@@ -519,14 +519,16 @@ Run `2026-10-13-one`, one reading per item.
 | GRETIL (TEI) | 782 | done, 4 shards | done | `data/grouping/collections/g/` |
 | Jain Quantum | 1,961 | done, 10 shards | done | `data/grouping/collections/j/` |
 | Sanskrit Wikisource | 3,749 | done, 19 shards | done | `data/grouping/collections/w/` |
-| E-bhāratīsampat | 5,529 | done, 28 shards | persons done; titles not started (41 windows cut) | not yet |
-| Sanskrit Documents | 9,754 | not started (49 shards cut, notes written) | not started | not yet |
+| E-bhāratīsampat | 5,529 | done, 28 shards | done | `data/grouping/collections/e/` |
+| Sanskrit Documents | 9,754 | done, 49 shards | done | `data/grouping/collections/d/` |
 
 Pass 3 has not started: `agents/grouping/linker.md`, `scripts/grouping_ids.py`
 and `scripts/grouping_report.py` are not yet written.
 
 Registries so far: GRETIL 720 titles and 294 persons; Jain Quantum 1,331
-and 1,069; Wikisource 2,327 and 648. E-bhāratīsampat has 2,228 persons.
+and 1,069; Wikisource 2,327 and 648; E-bhāratīsampat 3,234 and 2,228
+(1,262 rows for review); Sanskrit Documents 8,656 and 1,297 (1,636 for
+review). Neither needed the adjudicator: every item was settled by majority.
 
 Against SETI, GRETIL's one-reading registry agrees on 97.2% of the 427
 items SETI identifies (415): its SETI work is among the item's titles. It
@@ -541,10 +543,13 @@ Sub-agent tokens, by collection:
 | GRETIL | 0.6M | 1.0M | 1.6M |
 | Jain Quantum | 1.8M | 3.0M | 4.7M |
 | Sanskrit Wikisource | 2.3M | 3.2M | 5.5M |
-| E-bhāratīsampat | 3.6M | 3.9M so far | 7.4M so far |
+| E-bhāratīsampat | 3.6M | 8.0M | 11.6M |
+| Sanskrit Documents | 5.4M | about 9M | about 14M |
 
-Still to come: E-bhāratīsampat's titles (about 4M), Sanskrit Documents
-(about 18–25M), and pass 3.
+Sanskrit Documents' titles ran in two sittings (29 windows, then 70 at
+6.0M), so its consolidation figure is an estimate.
+
+Still to come: pass 3.
 
 ### Decisions made along the way
 
