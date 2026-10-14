@@ -319,20 +319,60 @@ Once every collection has a registry, pass 3 consolidates them, persons
 first, then titles, in the same way as pass 2: dossiers, overlapping
 windows, a consolidator (`agents/grouping/linker.md`), and an apply step.
 
+Every entity of every collection registry goes before a linker, including
+those that share no spelling with any other collection. Finding the same
+work under different names is the point of the pass, and no exact-string
+tie can do it. Mallinātha's commentary on the Raghuvaṃśa is
+`Raghuvaṃśasañjīvinī` in Jain Quantum's registry, `Sañjīvinī` in
+E-bhāratīsampat's and `Raghuvaṃśasañjīvanī` in Wikisource's. The shared
+variant `Sañjīvanī` ties the last two, and wrongly ties in Wikisource's
+`Meghadūtasañjīvanī` as well, while Jain Quantum's entry shares no
+spelling with any of them. A linker reading them side by side joins the
+three and keeps the Meghadūta commentary apart.
+
 - **Dossiers** gather entities from different collections with the
   identical canonical name or a shared variant, or the same `pandit_hint`.
-  Each entity arrives with its collection's context: its items, variants,
-  authors and notes. Collections formed their opinions separately, so their
-  registries are again independent opinions, made in different contexts.
+  An entity tied to nothing is a dossier of its own. Ties only gather
+  candidates, as in pass 2: the linker splits a wrong tie and joins
+  entities no tie connected.
+- **What a linker sees of an entity**: its collection registry row (name,
+  variants, authors, attribution, `part_of`, `comments_on`, context,
+  confidence, note) and, for each of its items, the collection's own
+  catalogue line as `master.csv` keeps it (`Text Name`, `Native Text Name`,
+  `Author Name`, `Editor Name`), with the item's `Part`. The registry row is
+  what the agents concluded; the catalogue line is what the collection
+  said, and the linker needs both. Variants are the collection's
+  as-written titles mixed with forms the agents added, and some entries are
+  inferences alone (Jain Quantum's Sañjīvinī comes from an item titled
+  `Raghuvansh Mahakavya` with Mallinātha in its author field). No e-texts,
+  no web, as before; the Pandit lookup tool as before.
+- **Windows** are sorted by name and overlap, as in pass 2, so that
+  entities spelled alike but tied by nothing (a different ending, a
+  missing prefix) still meet. A large title dossier gets its own window;
+  an entity with many items shows a sample of its catalogue lines, with the
+  count.
 - **The linker** applies the same rules as the consolidator. Each
   collection's entity brings its own context (authors, variants, the items
   around it), and that context is what tells a shared generic title apart,
   if anything does. The rule is unchanged: group on name and context, split
-  on contextual evidence, note what is known.
+  on contextual evidence, note what is known. Within one collection, the
+  registry's own decisions stand: the linker joins entities across
+  collections, and splits a collection's entity only with a note and `low`
+  confidence.
+- **Persons first.** Title authors are resolved to the linked persons
+  before the title windows are cut, so that the same author on two
+  collections' entries is evidence the linker can see.
 - **`part_of` and `comments_on`** are resolved to IDs where the target is in
   the registry, and left as names where it is not.
 
 Then the IDs are minted, and the final files written.
+
+Scale, from the five registries: 16,268 titles and 5,536 persons. By
+shared spelling or Pandit hint, 5,592 titles fall into 1,981
+cross-collection dossiers and 2,214 persons into 691; the remaining 10,676
+titles and 3,322 persons are tied to nothing. Pass 2 cost about 1,000
+tokens per title entity and 700 per person, so pass 3 is about 20M.
+Dispatch the persons first and check their cost before the titles.
 
 ## IDs
 
