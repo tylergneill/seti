@@ -1,0 +1,740 @@
+Pass,Kind,Key,Name,Reason,Detail
+2 majority,item,w:तन्त्रयुक्तिः,तन्त्रयुक्तिः,low confidence,
+2 majority,item,w:चित्रलक्षणम्,चित्रलक्षणम्,low confidence,
+2 majority,item,w:बिस्मिलस्य बलिदान-कथा,बिस्मिलस्य बलिदान-कथा,low confidence,"A short modern Sanskrit prose piece on the martyrdom of Ram Prasad Bismil; taken as a modern essay, not a work of the tradition."
+2 majority,item,w:योगपादः,योगपादः,low confidence,"The title names only a division, the yogapāda of an āgama. Its five subpages match the five adhyāyas of the Pādmasaṃhitā's yogapāda, and the Pādmasaṃhitā page is a stub with four subpages; mapped there on that ground alone."
+2 majority,item,w:किञ्चित्तन्त्रम्,किञ्चित्तन्त्रम्,unidentified,The title means only 'a certain tantra': the page does not name its text.
+2 majority,item,w:कुलानन्दादि,कुलानन्दादि,low confidence,"The title is 'the Kulānanda and others': a group of short texts beginning with the Kulānandatantra, the rest unnamed. Only the Kulānandatantra can be mapped."
+2 majority,item,w:परात्रिंशिका (तत्त्वविवेकाख्यव्याख्योपेता),परात्रिंशिका (तत्त्वविवेकाख्यव्याख्योपेता),low confidence,The commentary 'called Tattvaviveka' is taken as Abhinavagupta's Vivaraṇa (Tattvavivaraṇa); the page names no author.
+2 majority,item,w:परात्रिंशिकाविवृतिः (तत्त्वविवेकाख्यव्याख्योपेता),परात्रिंशिकाविवृतिः (तत्त्वविवेकाख्यव्याख्योपेता),low confidence,"Nearly the same size as परात्रिंशिका (तत्त्वविवेकाख्यव्याख्योपेता) and with the same description; taken as the same commentary, Abhinavagupta's. If Tattvaviveka is a gloss on the Vivṛti, a further title is needed."
+2 majority,item,w:प्रत्यभिज्ञादर्शनम्,प्रत्यभिज्ञादर्शनम्,low confidence,"A page of 107 bytes named for a school, the Pratyabhijñā philosophy; a stub or landing page, not a text."
+2 majority,item,w:भावचूडामणिः (श्रीमहामहेश्वरेण कृतः),भावचूडामणिः (श्रीमहामहेश्वरेण कृतः),low confidence,"'Made by Śrī Mahāmaheśvara' is read as Śiva, the tantra's speaker, not a human author. Grouped with भावचूडामणिः on the title, though this page is nine times as long."
+2 majority,item,w:सिद्धान्तशिरोमणिः तत्त्वप्रदीपिकासहितः,सिद्धान्तशिरोमणिः तत्त्वप्रदीपिकासहितः,low confidence,"The page says Siddhāntaśiromaṇi, which is Bhāskara's astronomy; but it is filed among tantra texts and carries a Tattvapradīpikā, which is Maritoṇṭadārya's commentary on the Vīraśaiva Siddhāntaśikhāmaṇi. Taken as that work, with the title a slip."
+2 majority,item,w:सिद्धिलक्ष्मी आरामिक,सिद्धिलक्ष्मी आरामिक,low confidence,
+2 majority,item,w:सुबोधमञ्जरी,सुबोधमञ्जरी,low confidence,Title alone; work and author not identified.
+2 majority,item,w:स्वातन्त्र्यदीपिका (महामहेश्वराचार्यकृता),स्वातन्त्र्यदीपिका (महामहेश्वराचार्यकृता),low confidence,"The author is given only as Mahāmaheśvarācārya, an epithet and not a name; left unplaced."
+2 majority,item,w:भृगुसंहिता,भृगुसंहिता,low confidence,"Filed under Vaikhānasāgama; kept apart from Kriyādhikāra, Prakīrṇādhikāra and Yajñādhikāra, though it may be one of Bhṛgu's adhikāras under the general name (it has 37 subpages, as the Prakīrṇādhikāra does)."
+2 majority,item,w:अनुत्तरप्रकाशिका,अनुत्तरप्रकाशिका,low confidence,"Anuttaraprakāśikā taken as Ādyanātha's Anuttaraprakāśapañcāśikā, from the title and the size."
+2 majority,item,w:कल्पवृक्षः,कल्पवृक्षः,low confidence,Title alone; work not identified.
+2 majority,item,w:कालोत्तरम्-शिवागमः,कालोत्तरम्-शिवागमः,low confidence,Which recension of the Kālottara is not said; grouped with the Sārdhatriśatikālottara as one work.
+2 majority,item,w:गोरक्षशतकम् (हठयोगगोरक्षशतकम्),गोरक्षशतकम् (हठयोगगोरक्षशतकम्),low confidence,Grouped with the other Gorakṣaśataka page; the parenthesis (Haṭhayogagorakṣaśataka) may mark the other of the two texts of this name.
+2 majority,item,w:शिवसूत्रवार्तिका,शिवसूत्रवार्तिका,low confidence,Two Vārttikas on the Śivasūtra exist (Bhāskara's and Varadarāja's); the page does not say which.
+2 majority,item,w:सार्थत्रिशतिकालोत्तरागमः,सार्थत्रिशतिकालोत्तरागमः,low confidence,The Sārdhatriśati recension of the Kālottara; grouped with the Kālottara as a recension.
+2 majority,item,w:जाबालोपनिषत् (सामवेदः),जाबालोपनिषत् (सामवेदः),low confidence,"Split from the Yajurveda Jābālopaniṣad because the page assigns it to the Sāmaveda (the Jābālyupaniṣad); the two pages are almost the same size, so it may be a duplicate."
+2 majority,item,w:नृसिंहतापनी उपनिषद्-1,नृसिंहतापनी उपनिषद्-1,low confidence,"Grouped with the Nṛsiṃhottaratāpanīya as one Nṛsiṃhatāpanīyopaniṣad, as the Muktikā counts it; they are often counted as two upaniṣads."
+2 majority,item,w:नृसिंहोत्तरतापनीयोपनिषद,नृसिंहोत्तरतापनीयोपनिषद,low confidence,"Grouped with the Nṛsiṃhapūrvatāpanīya as one Nṛsiṃhatāpanīyopaniṣad, as the Muktikā counts it; they are often counted as two upaniṣads."
+2 majority,item,w:भावोपनिषत्,भावोपनिषत्,low confidence,"Bhāvopaniṣad taken as the Bhāvanopaniṣad, from the size and the tantric uploads around it."
+2 majority,item,w:A Dictionary of Sanskrit Grammar,A Dictionary of Sanskrit Grammar,low confidence,"A modern reference dictionary in English, so not a Sanskrit work; its author is named only in the scan's file name. It could instead be counted as a work."
+2 majority,item,w:प्रवीणः,प्रवीणः,low confidence,Not identified beyond its name and its filing among lexica.
+2 majority,item,w:तत्त्वोपप्लवमीमांसा,तत्त्वोपप्लवमीमांसा,low confidence,"तत्त्वोपप्लवमीमांसा is grouped with Jayarāśi's Tattvopaplavasiṃha, on the name and the size alone."
+2 majority,item,w:उत्तरमीमांसादर्शनम्,उत्तरमीमांसादर्शनम्,low confidence,उत्तरमीमांसादर्शनम् is taken as a name of the Brahmasūtra; it could be a landing page for the school.
+2 majority,item,w:न्यायदर्शनम्,न्यायदर्शनम्,low confidence,An empty page. न्यायदर्शनम् is taken as the usual name of the Nyāyasūtra; it could be a landing page for the school.
+2 majority,item,w:पूर्वमीमांसादर्शनम्,पूर्वमीमांसादर्शनम्,low confidence,An empty page. Taken as the usual name of the Mīmāṃsāsūtra; it could be a landing page for the school.
+2 majority,item,w:महावाक्यम्,महावाक्यम्,unidentified,"महावाक्यम्, filed under Uttaramīmāṃsā: the metadata does not say whether this is a work or an account of the mahāvākyas."
+2 majority,item,w:योगदर्शनम्,योगदर्शनम्,low confidence,A 150-byte page. Taken as the usual name of the Yogasūtra; it could be a landing page for the school.
+2 majority,item,w:वैशेषिकदर्शनम्,वैशेषिकदर्शनम्,low confidence,An empty page. Taken as the usual name of the Vaiśeṣikasūtra; it could be a landing page for the school.
+2 majority,item,w:साङ्ख्यदर्शनम्,साङ्ख्यदर्शनम्,low confidence,An empty page. Taken as the usual name of the Sāṃkhyasūtra; it could be a landing page for the school.
+2 majority,item,w:अद्वैतरसमञ्जरी,अद्वैतरसमञ्जरी,low confidence,Two works bear this name; the short page filed with stotras is taken as Sadāśiva Brahmendra's rather than Nallā Dīkṣita's.
+2 majority,item,w:उपनिषद्भाष्यम्,उपनिषद्भाष्यम्,low confidence,"An empty page with a collective name (the Upaniṣad bhāṣyas), not a single work."
+2 majority,item,w:गुरोर्गुणमणिमाला,गुरोर्गुणमणिमाला,low confidence,Not identified beyond its name; the title is normalised from गुरोर्गुणमणिमाला.
+2 majority,item,w:द्वैतद्युमणिपरिशिष्टम्,द्वैतद्युमणिपरिशिष्टम्,low confidence,Taken as the appendix of the Dvaitadyumaṇi; whether that is the work Pandit records is a guess.
+2 majority,item,w:न्यायमुक्तावली,न्यायमुक्तावली,low confidence,Several works are called Nyāyamuktāvalī; the author of this Dvaita one is left open.
+2 majority,item,w:भावदीपः,भावदीपः,low confidence,Rāghavendra wrote several works called Bhāvadīpa; this one is grouped with the Gītātātparyaṭīkābhāvadīpa because the two pages are almost exactly the same size.
+2 majority,item,w:स्मृतिमुक्तावलिः,स्मृतिमुक्तावलिः,low confidence,
+2 majority,item,w:अधिकरणरत्नमाला,अधिकरणरत्नमाला,low confidence,"Kept apart from the Śārīrakādhikaraṇaratnamālā, which is less than half its size; they may be one work, one page with a commentary."
+2 majority,item,w:चाटुश्लोकी,चाटुश्लोकी,low confidence,"चाटुश्लोकी, a page of about four verses, is taken as a slip for Yāmuna's Catuḥślokī."
+2 majority,item,w:नयसङ्गतिमालिका,नयसङ्गतिमालिका,low confidence,
+2 majority,item,w:शारीरककारिकावली,शारीरककारिकावली,low confidence,
+2 majority,item,w:शारीरकाधिकरणरत्नमाला,शारीरकाधिकरणरत्नमाला,low confidence,Kept apart from the Adhikaraṇaratnamālā; they may be one work.
+2 majority,item,w:सूत्रदीपिका,सूत्रदीपिका,low confidence,Which Sūtradīpikā is not settled by the metadata; the category says Viśiṣṭādvaita.
+2 majority,item,w:सूत्रार्थरत्नावली,सूत्रार्थरत्नावली,low confidence,Work not identified beyond its title and Viśiṣṭādvaita category.
+2 majority,item,w:तर्कशास्त्रम्,तर्कशास्त्रम्,low confidence,Generic title; identification with the restored early logic text is a guess.
+2 majority,item,w:पूर्वपक्षीयव्याप्तिः,पूर्वपक्षीयव्याप्तिः,low confidence,May be an extract of the Tattvacintāmaṇi or a modern note; the metadata does not say.
+2 majority,item,w:गोरक्षमुद्गरः,गोरक्षमुद्गरः,low confidence,"Grouped with गोरक्षयोगशास्त्रम्: same size and date, so taken as the same text under a second name."
+2 majority,item,w:ज्ञानदीक्षा,ज्ञानदीक्षा,low confidence,
+2 majority,item,w:दत्तात्रेयबोधः,दत्तात्रेयबोधः,low confidence,
+2 majority,item,w:ब्रह्मसन्धानम्,ब्रह्मसन्धानम्,low confidence,
+2 majority,item,w:शिवयोगदर्पणम्,शिवयोगदर्पणम्,low confidence,
+2 majority,item,w:योगसूत्रसारः,योगसूत्रसारः,low confidence,
+2 majority,item,w:योगदीपिका,योगदीपिका,low confidence,Which Yogadīpikā is not settled by the metadata.
+2 majority,item,w:सांख्यकोशः,सांख्यकोशः,low confidence,May be a modern lexicon and so ancillary; the metadata does not say.
+2 majority,item,w:सांख्यसंग्रहः,सांख्यसंग्रहः,low confidence,"Probably an anthology whose contents overlap the neighbouring Sāṃkhya tracts; the metadata names none, so it is mapped only to the collection."
+2 majority,item,w:कालहस्तीशविलासः,कालहस्तीशविलासः,low confidence,
+2 majority,item,w:गौतमस्मृतिः,गौतमस्मृतिः,low confidence,"Grouped with गौतमधर्मसूत्रम्: the Gautamasmṛti of the smṛti collections is the Dharmasūtra. The sizes differ, so it may be another text under Gautama's name."
+2 majority,item,w:वसिष्ठस्मृतिः,वसिष्ठस्मृतिः,low confidence,Grouped with वासिष्ठधर्मशास्त्रम्: the Vasiṣṭhasmṛti of the smṛti collections is the Dharmasūtra.
+2 majority,item,w:भावार्थदीपिका,भावार्थदीपिका,low confidence,"Split from Śrīdhara's Bhāvārthadīpikā of the same name: this empty page is filed under Bhagavadgītā, which points to Jñāneśvara's Marathi commentary. Not a Sanskrit work if so."
+2 majority,item,w:मराठी-रामायणम्,मराठी-रामायणम्,unidentified,"An empty page for a Marathi Rāmāyaṇa; which one is not said, and it is not a Sanskrit work."
+2 majority,item,w:बालकाण्ड १,बालकाण्ड १,low confidence,"By its category a part of the Rāmacaritamānasa, an Awadhi work and not Sanskrit; kept as a work so that it is counted, but it may belong with the ancillary pages."
+2 majority,item,w:रामचरितमानस-बालकाण्ड,रामचरितमानस-बालकाण्ड,low confidence,"An empty page; the Rāmacaritamānasa is Awadhi, not Sanskrit, so it may belong with the ancillary pages."
+2 majority,item,w:गान्धर्ववेदः,गान्धर्ववेदः,low confidence,"An empty page named for the upaveda, not for a work."
+2 majority,item,w:धनुर्वेदः,धनुर्वेदः,low confidence,"Kept apart from the Vasiṣṭhadhanurvedasaṃhitā: the metadata does not say which Dhanurveda this is, and it may be the same text."
+2 majority,item,w:निर्वाणप्रकरणस्य पूर्वार्धम्,निर्वाणप्रकरणस्य पूर्वार्धम्,low confidence,A 20-byte stub filed under Āyurveda; the title is that of the first half of the Yogavāsiṣṭha's Nirvāṇaprakaraṇa.
+2 majority,item,w:वाग्भटसंहिता,वाग्भटसंहिता,low confidence,Which Vāgbhaṭa compendium is not said.
+2 majority,item,w:ऋग्वेदः ऋषिसूची,ऋग्वेदः ऋषिसूची,low confidence,"A list of Ṛgveda seers; perhaps an Ārṣānukramaṇī, more likely a modern list."
+2 majority,item,w:ऋग्वेदभाष्यम्,ऋग्वेदभाष्यम्,low confidence,Author not given.
+2 majority,item,w:ऋग्वेदभाष्यम् प्रथममण्डले 1-10 सूक्तानि,ऋग्वेदभाष्यम् प्रथममण्डले 1-10 सूक्तानि,low confidence,Author not given.
+2 majority,item,w:ऋग्वेदभाष्यम् प्रथममण्डले 101-110 सूक्तानि,ऋग्वेदभाष्यम् प्रथममण्डले 101-110 सूक्तानि,low confidence,Author not given.
+2 majority,item,w:ऋग्वेदभाष्यम् प्रथममण्डले 11-20 सूक्तानि,ऋग्वेदभाष्यम् प्रथममण्डले 11-20 सूक्तानि,low confidence,Author not given.
+2 majority,item,w:शुक्‍लयजुर्वेदः,शुक्‍लयजुर्वेदः,low confidence,"Duplicate title spelled with ZWNJ; short (2.9 KB) page, perhaps an index or fragment."
+2 majority,item,w:कल्पः,कल्पः,unidentified,"Page titled only ""Kalpa"" with six subpages and 7 MB of text; likely a compilation of kalpa texts, contents unknown."
+2 majority,item,w:सुकविहृदयानन्दिनी,सुकविहृदयानन्दिनी,low confidence,
+2 majority,item,w:करणकौस्तुभः,करणकौस्तुभः,low confidence,
+2 majority,item,w:कर्मप्रदीपः (प्रपाठकः १ खण्डः १),कर्मप्रदीपः (प्रपाठकः १ खण्डः १),low confidence,Filed under jyotiṣa; taken as Kātyāyana's Karmapradīpa. The page is large for one khaṇḍa and may carry more or a commentary.
+2 majority,item,w:जातकपद्धतिः,जातकपद्धतिः,low confidence,
+2 majority,item,w:ज्योतिर्निबन्धः,ज्योतिर्निबन्धः,low confidence,
+2 majority,item,w:रविसिद्धान्तमञ्जरी,रविसिद्धान्तमञ्जरी,low confidence,
+2 majority,item,w:विश्वहितम्,विश्वहितम्,low confidence,
+2 majority,item,w:स्कान्दशारीरकः,स्कान्दशारीरकः,low confidence,
+2 majority,item,w:आशुबोधव्याकरणम्,आशुबोधव्याकरणम्,low confidence,
+2 majority,item,w:उणादिकोशः,उणादिकोशः,low confidence,Uṇādikoṣa taken as Dayānanda's commentary on the Uṇādisūtras.
+2 majority,item,w:परिष्कारदर्पणः,परिष्कारदर्पणः,low confidence,
+2 majority,item,w:लिङ्गानुशासनम्,लिङ्गानुशासनम्,low confidence,
+2 majority,item,w:श्रीसिद्धान्तसुधानिधिः,श्रीसिद्धान्तसुधानिधिः,low confidence,
+2 majority,item,w:षट्कारकम्,षट्कारकम्,low confidence,
+2 majority,item,w:आत्रेयशिक्षाकारिका,आत्रेयशिक्षाकारिका,low confidence,Kept apart from the Ātreyaśikṣā (item आत्रेयशिक्षा); may be the same tradition's kārikā version.
+2 majority,item,w:केशवीपद्यात्मिकाशिक्षा,केशवीपद्यात्मिकाशिक्षा,low confidence,Grouped with केशवीयशिक्षा as the verse part of the Keśavī Śikṣā.
+2 majority,item,w:केशवीयशिक्षा,केशवीयशिक्षा,low confidence,Grouped with केशवीपद्यात्मिकाशिक्षा as one Keśavī Śikṣā.
+2 majority,item,w:नारदबैट्परिभाषा,नारदबैट्परिभाषा,low confidence,
+2 majority,item,w:नारदबैठ्,नारदबैठ्,low confidence,
+2 majority,item,w:योहिभाष्यम्,योहिभाष्यम्,low confidence,Read as a bhāṣya on the Yohiprāptiśikṣā; that it carries the base text is assumed.
+2 majority,item,w:रावणबैट्परिभाषा,रावणबैट्परिभाषा,low confidence,
+2 majority,item,w:रावणबैठ्,रावणबैठ्,low confidence,
+2 majority,item,w:वैद्यनाथबैठ्,वैद्यनाथबैठ्,low confidence,
+2 majority,item,w:व्यालिशिक्षा,व्यालिशिक्षा,low confidence,Grouped with व्याळशिक्षा: Vyāli/Vyāḷa read as one name.
+2 majority,item,w:व्याळशिक्षा,व्याळशिक्षा,low confidence,Grouped with व्यालिशिक्षा: Vyāḷa/Vyāli read as one name.
+2 majority,item,w:स्वराष्टकम्,स्वराष्टकम्,low confidence,Grouped with स्वराष्टकशिक्षा.
+2 majority,item,w:स्वराष्टकशिक्षा,स्वराष्टकशिक्षा,low confidence,Grouped with स्वराष्टकम्.
+2 majority,item,w:अथर्ववेदप्रातिशाख्यम्,अथर्ववेदप्रातिशाख्यम्,low confidence,Kept apart from the Śaunakīyā Caturādhyāyikā: two Atharvaveda prātiśākhyas are known.
+2 majority,item,w:ध्वनितत्वसमीक्षा,ध्वनितत्वसमीक्षा,low confidence,
+2 majority,item,w:कपीनामुपवासः,कपीनामुपवासः,low confidence,
+2 majority,item,w:दण्डान्वयः,दण्डान्वयः,unidentified,Daṇḍānvaya (2 KB) names no identifiable work.
+2 majority,item,w:दासबोध:,दासबोध:,low confidence,125-byte stub.
+2 majority,item,w:दासबोधः,दासबोधः,low confidence,"112-byte stub, duplicate of दासबोध:."
+2 majority,item,w:ब्रह्मगीता,ब्रह्मगीता,low confidence,
+2 majority,item,w:असाधारणव्यवहारमातृकाप्रकरणम्,असाधारणव्यवहारमातृकाप्रकरणम्,low confidence,
+2 majority,item,w:सारसमुच्चयः,सारसमुच्चयः,low confidence,
+2 majority,item,w:उदार जगदाधार,उदार जगदाधार,low confidence,
+2 majority,item,w:तां विद्यामिह लभेमहि।,तां विद्यामिह लभेमहि।,low confidence,
+2 majority,item,w:आनंदरामायणरामरक्षा,आनंदरामायणरामरक्षा,low confidence,Kept apart from the Rāmarakṣāstotra because the title names the Ānandarāmāyaṇa as source; may prove the same text.
+2 majority,item,w:आर्यासाहस्री,आर्यासाहस्री,low confidence,
+2 majority,item,w:ज्योतिर्लिङ्गम्,ज्योतिर्लिङ्गम्,low confidence,
+2 majority,item,w:दत्तलीला मंत्र,दत्तलीला मंत्र,low confidence,
+2 majority,item,w:दत्तस्तवस्त्रोत्रम,दत्तस्तवस्त्रोत्रम,low confidence,
+2 majority,item,w:पाशुपतस्तवः,पाशुपतस्तवः,low confidence,
+2 majority,item,w:प्रात:स्मरणम्,प्रात:स्मरणम्,low confidence,
+2 majority,item,w:रुद्र,रुद्र,low confidence,
+2 majority,item,w:लक्ष्मी श्लोकः,लक्ष्मी श्लोकः,low confidence,
+2 majority,item,w:शनि मंत्र,शनि मंत्र,low confidence,
+2 majority,item,w:शान्तिमन्त्रः,शान्तिमन्त्रः,low confidence,
+2 majority,item,w:शारदास्तवनम्,शारदास्तवनम्,low confidence,
+2 majority,item,w:शिव आरती,शिव आरती,low confidence,
+2 majority,item,w:श्री आदिमाता शुभंकरा स्तवनम्,श्री आदिमाता शुभंकरा स्तवनम्,low confidence,
+2 majority,item,w:श्री दुर्गासप्तशती सार,श्री दुर्गासप्तशती सार,low confidence,
+2 majority,item,w:श्रीकृष्णलीलामृतम्,श्रीकृष्णलीलामृतम्,low confidence,67-byte stub.
+2 majority,item,w:सनातनदेवीसूक्तम्,सनातनदेवीसूक्तम्,low confidence,
+2 majority,item,w:देवीपूजा,देवीपूजा,low confidence,
+2 majority,item,w:दक्षिणामूर्तिस्तोत्रम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्-२),दक्षिणामूर्तिस्तोत्रम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्-२),low confidence,"Split from the other Dakṣiṇāmūrtistotra pages: the -2 marks a second, distinct hymn in the Bṛhatstotraratnākara."
+2 majority,item,w:दक्षिणामूर्त्यष्टकम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्),दक्षिणामूर्त्यष्टकम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्),low confidence,"Kept apart from the Dakṣiṇāmūrtistotra, though the name is often used for Śaṅkara's hymn."
+2 majority,item,w:शिवपञ्चाक्षरीस्तोत्रम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्),शिवपञ्चाक्षरीस्तोत्रम् (बृहत्स्तोत्ररत्नाकरान्तर्गतम्),low confidence,Kept apart from the Śivapañcākṣarastotra: the Bṛhatstotraratnākara prints both.
+2 majority,item,w:अघोरकष्टोद्धारणस्तोत्रम्,अघोरकष्टोद्धारणस्तोत्रम्,low confidence,Probably Vāsudevānanda Sarasvatī's Ghorakaṣṭoddhāraṇastotra; title as given.
+2 majority,item,w:अर्धनारीश्वराष्टकम्,अर्धनारीश्वराष्टकम्,low confidence,"Kept apart from the Ardhanārīśvarastotra by its name, though it may be the same hymn."
+2 majority,item,w:उमासहस्रनामस्तोत्रम्,उमासहस्रनामस्तोत्रम्,low confidence,Ten subpages and 154 KB: perhaps Gaṇapati Muni's Umāsahasra rather than a nāma stotra.
+2 majority,item,w:कृष्णसहस्रनामस्तोत्रम्,कृष्णसहस्रनामस्तोत्रम्,low confidence,"Source not stated; the Garga and Sātvata versions in this shard are different texts, so not merged."
+2 majority,item,w:चण्डीपाठः,चण्डीपाठः,low confidence,Caṇḍīpāṭha is the Devīmāhātmya; at 3 KB the page may hold only part or an outline.
+2 majority,item,w:मनोबोधः,मनोबोधः,low confidence,
+2 majority,item,w:वेदान्तस्तोत्राणि,वेदान्तस्तोत्राणि,unidentified,"Empty page (0 bytes), probably a list of Vedānta stotras."
+2 majority,item,w:शंकरस्तोत्रम्,शंकरस्तोत्रम्,low confidence,
+2 majority,item,w:शारदाभुजङ्गस्तोत्रम्,शारदाभुजङ्गस्तोत्रम्,low confidence,Grouped with the Śāradābhujaṅgaprayātāṣṭaka: a different name for what is very likely the same eight verses (pages of nearly equal size).
+2 majority,item,w:श्रीकृष्णाष्टकं,श्रीकृष्णाष्टकं,low confidence,"Split from the two ascribed Kṛṣṇāṣṭakas in this shard, since it cannot be told which, if either, it is."
+2 majority,item,w:श्रीगणेशभजनावलिः,श्रीगणेशभजनावलिः,low confidence,
+2 majority,item,w:सुभाषितरत्नकरण्डकः,सुभाषितरत्नकरण्डकः,low confidence,
+2 majority,item,w:सुभाषितानि,सुभाषितानि,low confidence,
+2 majority,item,w:ध्रुव सूक्तं,ध्रुव सूक्तं,low confidence,
+2 majority,item,w:सुभाषितानि संस्कृते,सुभाषितानि संस्कृते,low confidence,
+2 majority,item,w:Bible,Bible,low confidence,Short page of unclear content.
+2 majority,item,w:Chandrapeedacharitam,Chandrapeedacharitam,low confidence,
+2 majority,item,w:Kadambari samgraham,Kadambari samgraham,low confidence,
+2 majority,item,w:Manimalikalu,Manimalikalu,unidentified,Scan index (pdf) of 218 bytes; nothing says what the work is.
+2 majority,item,w:Pramana lakshana,Pramana lakshana,low confidence,
+2 majority,item,w:अग्नि धनंजय मन्त्र,अग्नि धनंजय मन्त्र,low confidence,
+2 majority,item,w:अग्नेरार्षेयं(त्वामग्ने),अग्नेरार्षेयं(त्वामग्ने),low confidence,
+2 majority,item,w:अथर्ववेदभाष्यम् भागः १,अथर्ववेदभाष्यम् भागः १,low confidence,Grouped by name with Kṣemakaraṇadāsa Trivedī's bhāṣya; the page does not name its commentator.
+2 majority,item,w:अथर्ववेदभाष्यम् भागः २,अथर्ववेदभाष्यम् भागः २,low confidence,Grouped by name with Kṣemakaraṇadāsa Trivedī's bhāṣya; the page does not name its commentator.
+2 majority,item,w:अध्यायः ०१,अध्यायः ०१,unidentified,A chapter page with no work named.
+2 majority,item,w:अध्यायाः ७४ - ७६,अध्यायाः ७४ - ७६,unidentified,A chapter page with no work named.
+2 majority,item,w:अभिधर्म,अभिधर्म,unidentified,Empty page (0 bytes).
+2 majority,item,w:अमरवाणी,अमरवाणी,unidentified,Title ('the immortal speech') does not say what the page is.
+2 majority,item,w:अवन्तीखण्डः/रेवा खण्डम्,अवन्तीखण्डः/रेवा खण्डम्,low confidence,"A 15-byte page, likely a stub or redirect."
+2 majority,item,w:अष्टावक्रीयम्,अष्टावक्रीयम्,low confidence,Not identified from the title; kept as its own title.
+2 majority,item,w:आपः सूक्तम्,आपः सूक्तम्,low confidence,"Short Āpaḥ sūkta page, taken as the Ṛgvedic hymn (Āpo hi ṣṭhā, 10.9); the recited Āpaḥ sūkta of the Taittirīya tradition is a compilation."
+2 majority,item,w:आपस्तम्बीयं श्रौतसूत्रम् (सभाष्यम्),आपस्तम्बीयं श्रौतसूत्रम् (सभाष्यम्),low confidence,The commentary is not named; Dhūrtasvāmin's bhāṣya assumed.
+2 majority,item,w:आरम्भकालः,आरम्भकालः,unidentified,433-byte page 'Ārambhakāla'; not a recognisable work.
+2 majority,item,w:आरवन,आरवन,unidentified,
+2 majority,item,w:आलोकः,आलोकः,low confidence,A 495 KB text titled only 'Āloka'; which Āloka is not known.
+2 majority,item,w:आश्रम,आश्रम,unidentified,8-byte page.
+2 majority,item,w:उपक्रमोपसंहारावभ्यासोऽपूर्वताफलम् । अर्थवादोपपत्ती च लिङ्ग तात्पर्यनिर्णये ।।,उपक्रमोपसंहारावभ्यासोऽपूर्वताफलम् । अर्थवादोपपत्ती च लिङ्ग तात्पर्यनिर्णये ।।,unidentified,"107-byte page holding a single verse on the six marks of tātparya (upakramopasaṃhārau…), quoted in Vedānta manuals."
+2 majority,item,w:एप्रिलमासस्य प्रवचनानि,एप्रिलमासस्य प्रवचनानि,low confidence,Modern discourses ('April discourses').
+2 majority,item,w:औमापतम्,औमापतम्,low confidence,
+2 majority,item,w:कठोपनिषद्भाष्यम्,कठोपनिषद्भाष्यम्,low confidence,Author of the bhāṣya not named.
+2 majority,item,w:कथक्,कथक्,low confidence,Page on Kathak dance.
+2 majority,item,w:कात्यायनः,कात्यायनः,low confidence,"381-byte page on Kātyāyana, probably a disambiguation or author page."
+2 majority,item,w:कादम्बरी-काशिनाथपाण्डुरङ्गः,कादम्बरी-काशिनाथपाण्डुरङ्गः,low confidence,"Title names the editor, not the author; the NSP edition assumed to carry the Bhānucandra–Siddhicandra commentary."
+2 majority,item,w:कादम्बरीस्वीकरणसूत्रमञ्जरी,कादम्बरीस्वीकरणसूत्रमञ्जरी,low confidence,
+2 majority,item,w:कादम्बरीस्वीकरणसूत्रमञ्जरीटीका,कादम्बरीस्वीकरणसूत्रमञ्जरीटीका,low confidence,
+2 majority,item,w:कापासे,कापासे,unidentified,8-byte page.
+2 majority,item,w:कारिकावली (षट्टीकोपेता),कारिकावली (षट्टीकोपेता),low confidence,"Six-commentary edition; the Muktāvalī, Dinakarī and Rāmarudrī assumed, the others (Prabhā, Mañjūṣā, Gaṅgārāmī) not mapped."
+2 majority,item,w:काव्यरत्नम्,काव्यरत्नम्,low confidence,
+2 majority,item,w:कुट्टाकारशिरोमणिः,कुट्टाकारशिरोमणिः,low confidence,Author from knowledge only.
+2 majority,item,w:कृष्णयजुर्वेदः,कृष्णयजुर्वेदः,low confidence,165-byte index page.
+2 majority,item,w:केरलोदयः - स्वप्नमञ्जरी - प्रथमः सर्गः,केरलोदयः - स्वप्नमञ्जरी - प्रथमः सर्गः,low confidence,584-byte stub.
+2 majority,item,w:कौमारसंहिता,कौमारसंहिता,low confidence,
+2 majority,item,w:कौल्मलबर्हिषे(त्वंह्येहि),कौल्मलबर्हिषे(त्वंह्येहि),low confidence,A sāman page.
+2 majority,item,w:क्रियापादः,क्रियापादः,low confidence,A division page whose parent work is not named.
+2 majority,item,w:क्षि,क्षि,unidentified,Large page titled 'Kṣi'.
+2 majority,item,w:गणिताध्याय,गणिताध्याय,low confidence,"285-byte stub; taken as Bhāskara II's Gaṇitādhyāya, the name also fits other siddhāntas."
+2 majority,item,w:गायामि गीतानि रसाश्रयाणि,गायामि गीतानि रसाश्रयाणि,unidentified,"Page titled with a phrase, 'gāyāmi gītāni rasāśrayāṇi'; probably a modern song."
+2 majority,item,w:गीतम्,गीतम्,unidentified,Short page titled 'Gīta'.
+2 majority,item,w:गीतार्थसंग्रहम् (व्याख्यासहितम्),गीतार्थसंग्रहम् (व्याख्यासहितम्),low confidence,"With an unnamed commentary, not mapped."
+2 majority,item,w:गीताशास्त्रार्थविवेकः,गीताशास्त्रार्थविवेकः,low confidence,
+2 majority,item,w:गोलाध्याय,गोलाध्याय,low confidence,167-byte stub; taken as Bhāskara II's Golādhyāya.
+2 majority,item,w:ग्रीवागतोतरापाद्या,ग्रीवागतोतरापाद्या,unidentified,27-byte page.
+2 majority,item,w:चतुर्भुजस्तोत्रम्,चतुर्भुजस्तोत्रम्,low confidence,209-byte stub; deity and source unknown.
+2 majority,item,w:चर्यापादः/अध्यायः १,चर्यापादः/अध्यायः १,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १०,चर्यापादः/अध्यायः १०,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ११,चर्यापादः/अध्यायः ११,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १२,चर्यापादः/अध्यायः १२,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १३,चर्यापादः/अध्यायः १३,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १४,चर्यापादः/अध्यायः १४,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १५,चर्यापादः/अध्यायः १५,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १६,चर्यापादः/अध्यायः १६,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १७,चर्यापादः/अध्यायः १७,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १८,चर्यापादः/अध्यायः १८,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः १९,चर्यापादः/अध्यायः १९,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २,चर्यापादः/अध्यायः २,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २०,चर्यापादः/अध्यायः २०,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २१,चर्यापादः/अध्यायः २१,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २२,चर्यापादः/अध्यायः २२,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २३,चर्यापादः/अध्यायः २३,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २४,चर्यापादः/अध्यायः २४,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २५,चर्यापादः/अध्यायः २५,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २६,चर्यापादः/अध्यायः २६,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २७,चर्यापादः/अध्यायः २७,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २८,चर्यापादः/अध्यायः २८,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः २९,चर्यापादः/अध्यायः २९,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ३,चर्यापादः/अध्यायः ३,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ३०,चर्यापादः/अध्यायः ३०,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ३१,चर्यापादः/अध्यायः ३१,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ३२,चर्यापादः/अध्यायः ३२,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ३३,चर्यापादः/अध्यायः ३३,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ४,चर्यापादः/अध्यायः ४,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ५,चर्यापादः/अध्यायः ५,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ६,चर्यापादः/अध्यायः ६,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ७,चर्यापादः/अध्यायः ७,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ८,चर्यापादः/अध्यायः ८,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चर्यापादः/अध्यायः ९,चर्यापादः/अध्यायः ९,low confidence,"Caryāpāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Jñānapāda pages."
+2 majority,item,w:चित्रप्रभा,चित्रप्रभा,low confidence,"Large work in three subpages, not identified from the title alone."
+2 majority,item,w:जन्मदिनपञ्चकम्,जन्मदिनपञ्चकम्,low confidence,
+2 majority,item,w:जम्मु काश्मीर,जम्मु काश्मीर,low confidence,"Short page named for a place; presumably a modern piece, not a work."
+2 majority,item,w:जानेवारीमासस्य प्रवचनानि,जानेवारीमासस्य प्रवचनानि,low confidence,Monthly instalments of one collection of daily discourses; grouped as one work.
+2 majority,item,w:जुलैमासस्य प्रवचनानि,जुलैमासस्य प्रवचनानि,low confidence,Monthly instalments of one collection of daily discourses; grouped as one work.
+2 majority,item,w:जूनमासस्य प्रवचनानि,जूनमासस्य प्रवचनानि,low confidence,Monthly instalments of one collection of daily discourses; grouped as one work.
+2 majority,item,w:जेंदावेस्ता,जेंदावेस्ता,low confidence,Page on the Zend Avesta; not a Sanskrit work.
+2 majority,item,w:ज्ञानपादः/अध्यायः १,ज्ञानपादः/अध्यायः १,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः १०,ज्ञानपादः/अध्यायः १०,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ११,ज्ञानपादः/अध्यायः ११,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः १२,ज्ञानपादः/अध्यायः १२,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः २,ज्ञानपादः/अध्यायः २,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ३,ज्ञानपादः/अध्यायः ३,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ४,ज्ञानपादः/अध्यायः ४,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ५,ज्ञानपादः/अध्यायः ५,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ६,ज्ञानपादः/अध्यायः ६,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ७,ज्ञानपादः/अध्यायः ७,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ८,ज्ञानपादः/अध्यायः ८,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानपादः/अध्यायः ९,ज्ञानपादः/अध्यायः ९,low confidence,"Jñānapāda of a four-pāda saṃhitā; taken to be the Pādmasaṃhitā, with the Caryāpāda pages."
+2 majority,item,w:ज्ञानसारः,ज्ञानसारः,low confidence,
+2 majority,item,w:ज्ञानाधिकारः,ज्ञानाधिकारः,unidentified,61-byte page; title alone (a chapter heading?) does not identify a work.
+2 majority,item,w:डिसेम्बरमासस्य प्रवचनानि,डिसेम्बरमासस्य प्रवचनानि,low confidence,Monthly instalments of one collection of daily discourses; grouped as one work.
+2 majority,item,w:तत्त्वसङ्ख्यानम् (सटीका),तत्त्वसङ्ख्यानम् (सटीका),low confidence,Ṭīkā taken to be Jayatīrtha's Vivaraṇa; not named.
+2 majority,item,w:तन्त्रसंग्रहः,तन्त्रसंग्रहः,low confidence,
+2 majority,item,w:त्रिपिटक,त्रिपिटक,unidentified,Empty page named for the Buddhist canon.
+2 majority,item,w:त्वत्पादौ स्पृशामि नैतन्मया कृतमित्येवंविधः शपथविशेषः,त्वत्पादौ स्पृशामि नैतन्मया कृतमित्येवंविधः शपथविशेषः,low confidence,90-byte page that reads as a dictionary or glossary entry.
+2 majority,item,w:त्वमेवब्रूहिस्तोत्रम्,त्वमेवब्रूहिस्तोत्रम्,low confidence,
+2 majority,item,w:दशक ०८ - गुणरूपम्,दशक ०८ - गुणरूपम्,low confidence,"Dāsabodha daśaka; numbered 08 but titled as daśaka 9 (Guṇarūpa), likely a mislabelled duplicate."
+2 majority,item,w:दशावतारस्तुतिः,दशावतारस्तुतिः,low confidence,
+2 majority,item,w:दशावतारस्तोत्रम्,दशावतारस्तोत्रम्,low confidence,
+2 majority,item,w:दाशरथीयतन्त्रम्,दाशरथीयतन्त्रम्,low confidence,
+2 majority,item,w:दाशस्पत्यानि (इन्दुर्वाजी),दाशस्पत्यानि (इन्दुर्वाजी),unidentified,246-byte stub; title not identifiable.
+2 majority,item,w:दिव्यदृष्टिः (नारायणशास्त्री),दिव्यदृष्टिः (नारायणशास्त्री),low confidence,
+2 majority,item,w:देवी सूक्तम्,देवी सूक्तम्,low confidence,Which Devīsūkta is not settled by the metadata.
+2 majority,item,w:द्वितीयाह्निकम्,द्वितीयाह्निकम्,unidentified,"A 246-byte stub ""second āhnika"" of an unnamed work."
+2 majority,item,w:द्वैतकोशः,द्वैतकोशः,low confidence,
+2 majority,item,w:धात्वर्थनिर्णयः,धात्वर्थनिर्णयः,low confidence,
+2 majority,item,w:नागकन्या,नागकन्या,low confidence,
+2 majority,item,w:निद्रा मन्त्रम्,निद्रा मन्त्रम्,low confidence,
+2 majority,item,w:नोवेम्बरमासस्य प्रवचनानि,नोवेम्बरमासस्य प्रवचनानि,low confidence,"Modern discourses in Sanskrit, grouped with the February page as one series."
+2 majority,item,w:न्यायबोधिनी,न्यायबोधिनी,low confidence,
+2 majority,item,w:न्यायरक्षामणिः,न्यायरक्षामणिः,low confidence,54-byte stub.
+2 majority,item,w:न्यायसुधा,न्यायसुधा,low confidence,"85-byte stub, likely a redirect or disambiguation to Jayatīrtha's Nyāyasudhā."
+2 majority,item,w:परमार्थप्रकाशिका,परमार्थप्रकाशिका,low confidence,
+2 majority,item,w:पातञ्जलयोगसूत्राणि (भाष्यत्रयोपेतम्),पातञ्जलयोगसूत्राणि (भाष्यत्रयोपेतम्),low confidence,"""Three commentaries"" not named; only the Yogabhāṣya is assumed."
+2 majority,item,w:पुत्रं परिग्रहिष्यन्,पुत्रं परिग्रहिष्यन्,unidentified,199-byte page titled with a verse fragment.
+2 majority,item,w:पुरुषोत्तम प्रपत्तिष्टकम्,पुरुषोत्तम प्रपत्तिष्टकम्,low confidence,
+2 majority,item,w:पूर्वखण्डः/प्रथमः भागः,पूर्वखण्डः/प्रथमः भागः,unidentified,"Empty subpage of an unnamed work (pūrvakhaṇḍa, part 1)."
+2 majority,item,w:प्रज्ञापारमिता,प्रज्ञापारमिता,unidentified,"52-byte stub ""Prajñāpāramitā""; which text is not said."
+2 majority,item,w:प्रणवोपनिषत्,प्रणवोपनिषत्,low confidence,"72-byte page, likely a disambiguation between the two Praṇavopaniṣads."
+2 majority,item,w:प्रथमः भागः/प्रकरणम् १,प्रथमः भागः/प्रकरणम् १,unidentified,"Subpage (part 1, prakaraṇa 1) of an unnamed work; same date as the pūrvakhaṇḍa page."
+2 majority,item,w:प्रदीपः सर्वविद्यानामुपायः सर्वकर्मणाम् । आश्रयः सर्वधर्माणां विद्योद्देशे प्रकीर्तिता,प्रदीपः सर्वविद्यानामुपायः सर्वकर्मणाम् । आश्रयः सर्वधर्माणां विद्योद्देशे प्रकीर्तिता,unidentified,"57-byte page titled with the verse ""pradīpaḥ sarvavidyānām…"" (Arthaśāstra 1.2, quoted in the Nyāyabhāṣya)."
+2 majority,item,w:प्रदीपिका,प्रदीपिका,unidentified,"""Pradīpikā"" is a generic title; the work is not identifiable from metadata."
+2 majority,item,w:प्रबोधरत्नमाला,प्रबोधरत्नमाला,low confidence,
+2 majority,item,w:प्रहेलिकानीवी,प्रहेलिकानीवी,low confidence,
+2 majority,item,w:प्रामाणविचारः,प्रामाणविचारः,low confidence,
+2 majority,item,w:फेब्रुवारीमासस्य प्रवचनानि,फेब्रुवारीमासस्य प्रवचनानि,low confidence,Grouped with the November page as one series.
+2 majority,item,w:बालावतार,बालावतार,low confidence,
+2 majority,item,w:बोवर पाण्डुलिपिः,बोवर पाण्डुलिपिः,low confidence,"A manuscript of several texts, kept as one title."
+2 majority,item,w:भजन रत्नावली,भजन रत्नावली,low confidence,
+2 majority,item,w:भरतकवचम्,भरतकवचम्,low confidence,
+2 majority,item,w:भावप्रकाशिका-भागः १,भावप्रकाशिका-भागः १,low confidence,
+2 majority,item,w:भावप्रकाशिका-भागः २,भावप्रकाशिका-भागः २,low confidence,
+2 majority,item,w:भुवनेश्वरीमहास्तोत्रम्,भुवनेश्वरीमहास्तोत्रम्,low confidence,
+2 majority,item,w:मङ्गलाचरणम्,मङ्गलाचरणम्,unidentified,"128-byte page ""Maṅgalācaraṇa"" of no named work."
+2 majority,item,w:मध्यमक,मध्यमक,unidentified,"Empty page ""Madhyamaka""."
+2 majority,item,w:मनोहरकाव्यमाला,मनोहरकाव्यमाला,low confidence,Empty page for an anthology that is the print source of other pages.
+2 majority,item,w:मम गुरुनाथः,मम गुरुनाथः,unidentified,Short page 'my guru'; likely a modern composition.
+2 majority,item,w:मयमतस्य हिन्दी व्याख्या,मयमतस्य हिन्दी व्याख्या,low confidence,Mayamata with a modern Hindi commentary; the Hindi commentary itself is not a Sanskrit work.
+2 majority,item,w:महायानसूत्रम्,महायानसूत्रम्,unidentified,198-byte stub titled 'Mahāyānasūtra'; no specific work.
+2 majority,item,w:मार्चमासस्य प्रवचनानि,मार्चमासस्य प्रवचनानि,low confidence,Grouped with the May discourses as one series.
+2 majority,item,w:मिवारप्रतापम्,मिवारप्रतापम्,low confidence,
+2 majority,item,w:मुख्यसमस्याः,मुख्यसमस्याः,low confidence,'Main problems': a site or essay page.
+2 majority,item,w:मृच्चकटिकम कथासंग्रह,मृच्चकटिकम कथासंग्रह,low confidence,"Story summary of the Mṛcchakaṭika, not the play."
+2 majority,item,w:मेमासस्य प्रवचनानि,मेमासस्य प्रवचनानि,low confidence,Grouped with the March discourses as one series.
+2 majority,item,w:मोघदूतम्,मोघदूतम्,low confidence,'Moghadūta' taken as a misspelling of Meghadūta; size fits the poem.
+2 majority,item,w:योगरत्नसमुच्चयः,योगरत्नसमुच्चयः,low confidence,Empty page.
+2 majority,item,w:योगरहस्य,योगरहस्य,low confidence,
+2 majority,item,w:योगसारसंग्रहः चतुर्दशोध्यायः,योगसारसंग्रहः चतुर्दशोध्यायः,low confidence,
+2 majority,item,w:योगसारसंग्रहः पंचदशोध्यायः,योगसारसंग्रहः पंचदशोध्यायः,low confidence,
+2 majority,item,w:रत्नाकाङ्क्षा,रत्नाकाङ्क्षा,unidentified,Short page; probably a modern poem.
+2 majority,item,w:रसरत्नाकरः (मूलप्रतिसहितः),रसरत्नाकरः (मूलप्रतिसहितः),low confidence,
+2 majority,item,w:राजमार्ताण्डः,राजमार्ताण्डः,low confidence,
+2 majority,item,w:रामायण पारायण श्लोकाः,रामायण पारायण श्लोकाः,low confidence,
+2 majority,item,w:लक्षणसङ्ग्रहः,लक्षणसङ्ग्रहः,low confidence,
+2 majority,item,w:लीलावती 2,लीलावती 2,low confidence,
+2 majority,item,w:लीलावती ३,लीलावती ३,low confidence,
+2 majority,item,w:लौशे(तरोभि),लौशे(तरोभि),low confidence,A single sāman chant page; mapped to the Sāmaveda.
+2 majority,item,w:वम्षि,वम्षि,low confidence,Personal name; a user or bio page.
+2 majority,item,w:वाक्याभ्यासशतकम्,वाक्याभ्यासशतकम्,low confidence,Sentence-practice exercises; learning material.
+2 majority,item,w:वाग्व्यवहारादर्शः,वाग्व्यवहारादर्शः,low confidence,Possibly learning material rather than a work.
+2 majority,item,w:वात्स्यायन,वात्स्यायन,low confidence,Stub page with an author's name.
+2 majority,item,w:वादावली,वादावली,low confidence,
+2 majority,item,w:वायु मन्त्र घनपाठ,वायु मन्त्र घनपाठ,low confidence,Ghanapāṭha of the mantra.
+2 majority,item,w:वारवन्तीयम्(अश्वंन),वारवन्तीयम्(अश्वंन),low confidence,A single sāman chant page; mapped to the Sāmaveda.
+2 majority,item,w:वार्शाणि(आतेदक्षं),वार्शाणि(आतेदक्षं),low confidence,A single sāman chant page; mapped to the Sāmaveda.
+2 majority,item,w:वाल्मीकिरामायणम् (व्याख्यासहितम्),वाल्मीकिरामायणम् (व्याख्यासहितम्),low confidence,Commentary not named.
+2 majority,item,w:विनयपिटक,विनयपिटक,low confidence,Empty page (0 bytes); only the title names the work.
+2 majority,item,w:विशिष्टाद्वैतसिद्धिः,विशिष्टाद्वैतसिद्धिः,low confidence,
+2 majority,item,w:विशुद्धोपागमः (प्राणविद्या),विशुद्धोपागमः (प्राणविद्या),low confidence,
+2 majority,item,w:वेङ्कटेश्वरसहस्रनामावलि,वेङ्कटेश्वरसहस्रनामावलि,low confidence,"A nāmāvali, grouped with the 1008-name Veṅkaṭeśa text in item 165."
+2 majority,item,w:वेदशिक्षा,वेदशिक्षा,unidentified,"'Vedaśikṣā', 4KB: could be a Vedic Śikṣā text or a modern page on Vedic education."
+2 majority,item,w:वेदान्तसारः,वेदान्तसारः,low confidence,"Large (941KB, 6 subpages) Vedāntasāra with no author; grouped with Sadānanda's (item 42), but it could be Rāmānuja's Vedāntasāra."
+2 majority,item,w:व्रत(२),व्रत(२),unidentified,"'Vrata (2)', 214KB: probably a vrata compilation or encyclopaedia entry; nothing names the work."
+2 majority,item,w:शकुन्तलोपाख्यानम्,शकुन्तलोपाख्यानम्,low confidence,
+2 majority,item,w:शङ्करविजयः,शङ्करविजयः,low confidence,Kept apart from the Śaṅkaradigvijaya (item 135); which Śaṅkaravijaya this is is not stated.
+2 majority,item,w:शतक चन्द्रिका,शतक चन्द्रिका,low confidence,
+2 majority,item,w:शाक्राणि(आनोविश्वा),शाक्राणि(आनोविश्वा),low confidence,
+2 majority,item,w:शाखाशमानम्,शाखाशमानम्,unidentified,"'Śākhāśamāna', 6KB: unrecognised; possibly a Vedic ritual text."
+2 majority,item,w:शाब्दतरङ्गिणी,शाब्दतरङ्गिणी,low confidence,
+2 majority,item,w:शास्त्रपिटक,शास्त्रपिटक,unidentified,Empty page (0 bytes) titled 'Śāstrapiṭaka'.
+2 majority,item,w:शिक्षा,शिक्षा,low confidence,"264-byte page 'Śikṣā', likely a disambiguation or index page."
+2 majority,item,w:शिवस्तुतिः,शिवस्तुतिः,low confidence,"Generic 'Śivastuti' without ascription; not grouped with either ascribed Śivastuti (items 88, 89) since it cannot belong to both."
+2 majority,item,w:शृङ्गारशतकम्,शृङ्गारशतकम्,low confidence,"Unascribed Śṛṅgāraśataka, taken as Bhartṛhari's; Dhanada's and Narahari's (items 106, 107) are separate works."
+2 majority,item,w:श्रीअनन्ततत्त्वामृतम्,श्रीअनन्ततत्त्वामृतम्,low confidence,
+2 majority,item,w:श्रीगीतार्थसुधा,श्रीगीतार्थसुधा,low confidence,
+2 majority,item,w:श्रीत्रिपुराम्बाशाम्भवीमहाप्रपत्तिः,श्रीत्रिपुराम्बाशाम्भवीमहाप्रपत्तिः,low confidence,
+2 majority,item,w:श्रीदत्तभावसुधारसस्तोत्रम्,श्रीदत्तभावसुधारसस्तोत्रम्,low confidence,
+2 majority,item,w:श्रीनन्दकुमाराष्टकम्,श्रीनन्दकुमाराष्टकम्,low confidence,
+2 majority,item,w:श्रीपरात्रिंशिका,श्रीपरात्रिंशिका,low confidence,"320KB scan; the size suggests Abhinavagupta's Vivaraṇa with the text, which the title does not say."
+2 majority,item,w:श्रीभक्तिचन्द्रिका,श्रीभक्तिचन्द्रिका,low confidence,
+2 majority,item,w:श्रीमहादेवीव्याकरणम्,श्रीमहादेवीव्याकरणम्,low confidence,
+2 majority,item,w:श्रीरामाष्टोत्तरशतनामस्तोत्रम्,श्रीरामाष्टोत्तरशतनामस्तोत्रम्,low confidence,"Stotra form kept apart from the Ānandarāmāyaṇa nāmāvali (items 136, 155); many 108-name Rāma stotras exist."
+2 majority,item,w:श्रीरामाष्टोत्तरशतनामावलि,श्रीरामाष्टोत्तरशतनामावलि,low confidence,"Same title as item 136, grouped with the Ānandarāmāyaṇa nāmāvali without independent confirmation."
+2 majority,item,w:श्रीवेङ्कटेशाष्टोत्तरसहस्रनाम,श्रीवेङ्कटेशाष्टोत्तरसहस्रनाम,low confidence,"57KB scan, probably with commentary or translation; grouped with the nāmāvali of item 32."
+2 majority,item,w:श्रीवैष्णववन्दना,श्रीवैष्णववन्दना,low confidence,
+2 majority,item,w:श्रीसीतारामगीतम्,श्रीसीतारामगीतम्,low confidence,
+2 majority,item,w:श्रीसुबोधिनी,श्रीसुबोधिनी,low confidence,Kept apart from the Subodhinī on the Bṛhatpārāśarahorāśāstra (item 137); identified with Vallabha's on the Bhāgavata only from the title form.
+2 majority,item,w:श्रीसुब्बरामभट्ट विरचित वार्ता,श्रीसुब्बरामभट्ट विरचित वार्ता,unidentified,229-byte page 'a vārtā composed by Subbarāma Bhaṭṭa'; no work is identifiable.
+2 majority,item,w:श्रुतिसिद्धान्तदीपिका,श्रुतिसिद्धान्तदीपिका,low confidence,
+2 majority,item,w:श्र्यङ्ककाव्यम्,श्र्यङ्ककाव्यम्,low confidence,
+2 majority,item,w:श्वेताश्वतराद्युपनिषत्पुरुषसूक्तभाष्यम्,श्वेताश्वतराद्युपनिषत्पुरुषसूक्तभाष्यम्,low confidence,
+2 majority,item,w:संस्काररत्नमाला,संस्काररत्नमाला,low confidence,132-byte stub page.
+2 majority,item,w:सप्टेम्बरमासस्य प्रवचनानि,सप्टेम्बरमासस्य प्रवचनानि,unidentified,"Discourses for September; perhaps a translation of a modern guru's daily discourses, not identified."
+2 majority,item,w:समूर्तार्चनाधिकरणम्,समूर्तार्चनाधिकरणम्,low confidence,"Page of 45 bytes, probably a stub or redirect."
+2 majority,item,w:सम्प्रदायमीमांसापात्रम्,सम्प्रदायमीमांसापात्रम्,unidentified,Title does not identify a known work.
+2 majority,item,w:सरटः,सरटः,unidentified,'The lizard': perhaps a modern poem or essay.
+2 majority,item,w:सरस्वतीकण्ठाभरणम्,सरस्वतीकण्ठाभरणम्,low confidence,"Bhoja wrote two works of this name; five subpages suggest the alaṅkāra work in five paricchedas, but it may be the grammar."
+2 majority,item,w:सर्वेश्वरी विद्या,सर्वेश्वरी विद्या,low confidence,
+2 majority,item,w:सारमञ्जरी,सारमञ्जरी,low confidence,
+2 majority,item,w:साहित्यसारः,साहित्यसारः,low confidence,
+2 majority,item,w:सिगिपम्,सिगिपम्,unidentified,Title does not identify a known work.
+2 majority,item,w:सिद्धान्तदर्पणम्,सिद्धान्तदर्पणम्,low confidence,
+2 majority,item,w:सिद्धान्तदीपक,सिद्धान्तदीपक,low confidence,
+2 majority,item,w:सिद्धान्तसारसमुच्चयः,सिद्धान्तसारसमुच्चयः,low confidence,
+2 majority,item,w:सुभाषितम्,सुभाषितम्,unidentified,"23-byte page, prob. a redirect; 'subhāṣita' alone names no work."
+2 majority,item,w:सुमङ्गलस्तोत्र,सुमङ्गलस्तोत्र,low confidence,Empty page (0 bytes).
+2 majority,item,w:सूत्रपिटक,सूत्रपिटक,low confidence,Empty page (0 bytes).
+2 majority,item,w:सूर्यमन्त्रम्,सूर्यमन्त्रम्,low confidence,
+2 majority,item,w:सोम(वृषाप),सोम(वृषाप),low confidence,Page for one sāman (gāna) of the Sāmaveda.
+2 majority,item,w:सोमसामानि(सोमउषु),सोमसामानि(सोमउषु),low confidence,Page for sāmans of the Sāmaveda.
+2 majority,item,w:सौभराणि(तंगूर्धया),सौभराणि(तंगूर्धया),low confidence,Page for the Saubhara sāmans of the Sāmaveda.
+2 majority,item,w:स्वयंबोध अमनस्कयोग,स्वयंबोध अमनस्कयोग,low confidence,
+2 majority,item,w:हनूमत्स्तुतिः,हनूमत्स्तुतिः,low confidence,
+2 majority,item,w:हरिश्चन्द्रः,हरिश्चन्द्रः,low confidence,
+2 majority,item,w:हेमन्तवैभवम्,हेमन्तवैभवम्,low confidence,
+2 majority,item,w:বিধবা বিবাহ খণ্ডনং,বিধবা বিবাহ খণ্ডনং,low confidence,"Empty page (0 bytes), Bengali script."
+2 majority,item,w:Ashwalayana gruhya sutra bhashyam.pdf,Ashwalayana gruhya sutra bhashyam.pdf,low confidence,Which bhāṣya is not stated.
+2 majority,item,w:KalpaManjari1969.djvu,KalpaManjari1969.djvu,low confidence,
+2 majority,item,w:Prabandhaprakasha.pdf,Prabandhaprakasha.pdf,low confidence,
+2 majority,item,w:Samasakusumavali.djvu,Samasakusumavali.djvu,low confidence,
+2 majority,item,w:ShriMarutiStava1907VenkateshwarPress.djvu,ShriMarutiStava1907VenkateshwarPress.djvu,low confidence,
+2 majority,item,w:Smp-1.djvu,Smp-1.djvu,low confidence,"'Smp-1' read as part 1 of the Smṛtimuktāphala, beside 'Smrithi Muktha Phalam Part 2'."
+2 majority,item,w:SukavihRdayAnandinI.djvu,SukavihRdayAnandinI.djvu,low confidence,
+2 majority,item,w:ThaaravalistotramSanskrit.djvu,ThaaravalistotramSanskrit.djvu,low confidence,
+2 majority,item,w:अभिनवकौस्तुभमाला-दक्षिणामूर्तिस्तवौ.djvu,अभिनवकौस्तुभमाला-दक्षिणामूर्तिस्तवौ.djvu,low confidence,
+2 majority,item,w:काव्यसंग्रहः.pdf,काव्यसंग्रहः.pdf,low confidence,
+2 majority,item,w:नाडीपरीक्षा.djvu,नाडीपरीक्षा.djvu,low confidence,
+2 majority,item,w:पद्यपुष्पाञ्जलिः.pdf,पद्यपुष्पाञ्जलिः.pdf,low confidence,
+2 majority,item,w:भारतानुवर्णनम्.djvu,भारतानुवर्णनम्.djvu,low confidence,
+2 majority,item,w:श्री अमरेश्वरदर्शनम् (अमरनाथमाहात्म्यम्).djvu,श्री अमरेश्वरदर्शनम् (अमरनाथमाहात्म्यम्).djvu,low confidence,Small scan index page; the two names in title and parentheses taken as one māhātmya.
+2 majority,item,w:श्रीविष्णुगीता.djvu,श्रीविष्णुगीता.djvu,low confidence,
+2 majority,item,w:श्री ध्रुव चरित्र,श्री ध्रुव चरित्र,low confidence,
+2 majority,item,w:द्वादशाध्याय:,द्वादशाध्याय:,low confidence,"Subpage filed under the category ज्ञानेश्वरकृतय:; taken as chapter 12 of the Jñāneśvarī, which comments on Gītā 12."
+2 majority,item,w:रामगीता,रामगीता,low confidence,
+2 majority,item,w:श्री प्रह्लाद चरित्र,श्री प्रह्लाद चरित्र,low confidence,
+2 majority,item,w:श्रीवेङ्कटेशस्तोत्रम्,श्रीवेङ्कटेशस्तोत्रम्,low confidence,
+2 majority,item,w:ज्योतिषम्,ज्योतिषम्,unidentified,418-byte page titled only ज्योतिषम्; probably a stub or list page
+2 majority,item,w:तन्त्राख्यायिका,तन्त्राख्यायिका,low confidence,"filed under Pūrvamīmāṃsā, but Tantrākhyāyikā is the name of the old Pañcatantra recension"
+2 majority,item,w:पूर्वमीमासाशास्त्रम्,पूर्वमीमासाशास्त्रम्,low confidence,0-byte page named after the śāstra and its own category; a category or index page
+2 majority,item,w:अद्वयपरमार्थनामसंगीतिः,अद्वयपरमार्थनामसंगीतिः,low confidence,Advayaparamārthanāmasaṅgīti taken as the Mañjuśrīnāmasaṅgīti
+2 majority,item,w:अभिसमयालङ्कारवृत्तिः,अभिसमयालङ्कारवृत्तिः,low confidence,Abhisamayālaṅkāravṛtti taken as Haribhadra's Sphuṭārthā
+2 majority,item,w:क्रियासंग्रहकारिका,क्रियासंग्रहकारिका,low confidence,
+2 majority,item,w:चतुर्हस्तिका,चतुर्हस्तिका,low confidence,
+2 majority,item,w:धम्मपदपठनम्,धम्मपदपठनम्,low confidence,"धम्मपदपठनम्: a Dhammapada text, language and recension unclear"
+2 majority,item,w:निबन्धावली,निबन्धावली,low confidence,"The page is only 'निबन्धावली' under Buddhist philosophy; read as Ratnakīrti's Nibandhāvalī, a guess from size and category."
+2 majority,item,w:पञ्चस्कन्धप्रकरणम्,पञ्चस्कन्धप्रकरणम्,low confidence,"Two works share this title (Vasubandhu, Candrakīrti); assigned to Vasubandhu's without confirmation."
+2 majority,item,w:भवसङ्क्रान्तिटीका,भवसङ्क्रान्तिटीका,low confidence,Assumed to comment on Nāgārjuna's Bhavasaṅkrānti and to carry its verses.
+2 majority,item,w:महादेवीव्याकरणम्,महादेवीव्याकरणम्,low confidence,
+2 majority,item,w:सभिकसौगतशासनप्रव्रज्याव्रतचरणपरिवर्तः,सभिकसौगतशासनप्रव्रज्याव्रतचरणपरिवर्तः,low confidence,
+2 majority,item,w:शङ्कराचार्यविरचितानि स्तोत्राणि (द्वितीयः भागः),शङ्कराचार्यविरचितानि स्तोत्राणि (द्वितीयः भागः),low confidence,"Tiny page, probably the index of the scanned anthology volume."
+2 majority,item,w:शङ्कराचार्यविरचितानि स्तोत्राणि (प्रथमः भागः),शङ्कराचार्यविरचितानि स्तोत्राणि (प्रथमः भागः),low confidence,"Tiny page, probably the index of the scanned anthology volume."
+2 majority,item,w:श्रीशङ्कराचार्यप्रकरणग्रन्थसंग्रहः,श्रीशङ्कराचार्यप्रकरणग्रन्थसंग्रहः,low confidence,Empty page (0 bytes); mapped to the anthology its title names.
+2 majority,item,w:दक्षिणामूर्त्यष्टकम्,दक्षिणामूर्त्यष्टकम्,low confidence,Dakṣiṇāmūrtyaṣṭaka grouped with the Dakṣiṇāmūrtistotra (a common alternative name); both pages in one anthology could mean two works.
+2 majority,item,w:भावनासारसङ्ग्रह,भावनासारसङ्ग्रह,low confidence,
+2b,title,w:t0015,Abhinavakaustubhamālā,low confidence,
+2b,title,w:t0029,Adhikaraṇaratnamālā,low confidence,
+2b,title,w:t0034,Ādimātā Aśubhanāśinī Stavana,low confidence,
+2b,title,w:t0035,Ādimātāśubhaṅkarāstavana,low confidence,
+2b,title,w:t0044,Advaitarasamañjarī,low confidence,
+2b,title,w:t0057,Aghorakaṣṭoddhāraṇastotra,low confidence,
+2b,title,w:t0058,Agnerārṣeya,low confidence,
+2b,title,w:t0059,Agnidhanañjayamantra,low confidence,
+2b,title,w:t0086,Āloka,low confidence,
+2b,title,w:t0087,Amanaskayoga,low confidence,
+2b,title,w:t0091,Amareśvaradarśana,low confidence,
+2b,title,w:t0107,Ānandalaharī,low confidence,"Readers differ: one took the page as an independent ~20-verse hymn, the other as the first part of the Saundaryalaharī. Kept as one work under the commoner identification; check the page length."
+2b,title,w:t0110,Ānandarāmāyaṇarāmarakṣā,low confidence,
+2b,title,w:t0113,Anantatattvāmṛta,low confidence,
+2b,title,w:t0131,Annapūrṇāstotra,low confidence,"Grouped Dd0130 with Dd0131: both are the Annapūrṇā hymn ascribed to Śaṅkara, the popular one known by both names; not verified against the texts."
+2b,title,w:t0137,Anuttaraprakāśapañcāśikā,low confidence,
+2b,title,w:t0153,Āpastambaśrautasūtrabhāṣya,low confidence,
+2b,title,w:t0160,Ardhanārīśvarāṣṭaka,low confidence,
+2b,title,w:t0182,Āryāsāhasrī,low confidence,
+2b,title,w:t0186,Asādhāraṇavyavahāramātṛkāprakaraṇa,low confidence,
+2b,title,w:t0205,Aṣṭāvakrīya,low confidence,
+2b,title,w:t0206,Āśubodhavyākaraṇa,low confidence,
+2b,title,w:t0210,Āśvalāyanagṛhyasūtrabhāṣya,low confidence,
+2b,title,w:t0214,Atharvaprātiśākhya,low confidence,"Grouped d0212 and d0219: the same title (Atharva- / Atharvaveda-prātiśākhya) with nothing to tell them apart; two such works are known, so a later step may split them."
+2b,title,w:t0226,Ātreyaśikṣākārikā,low confidence,
+2b,title,w:t0229,Aumāpata,low confidence,
+2b,title,w:t0234,Avadhūtopaniṣadvyākhyā,low confidence,
+2b,title,w:t0253,Bālāvatāra,low confidence,
+2b,title,w:t0273,Bhajanaratnāvalī,low confidence,
+2b,title,w:t0276,Bhakticandrikā,low confidence,
+2b,title,w:t0284,Bharatakavaca,low confidence,
+2b,title,w:t0287,Bhāratānuvarṇana,low confidence,
+2b,title,w:t0300,Bhāvanāsārasaṃgraha,low confidence,
+2b,title,w:t0302,Bhāvanopaniṣad,low confidence,
+2b,title,w:t0305,Bhāvaprakāśikā,low confidence,"Kept as one by identical title with no contrary evidence; Bhāvaprakāśikā is a very common commentary name (many in Pandit), so the unidentified two-part page may be a different work."
+2b,title,w:t0309,Bhavasaṅkrāntiṭīkā,low confidence,
+2b,title,w:t0323,Bhṛgusaṃhitā,low confidence,
+2b,title,w:t0327,Bhuvaneśvarīmahāstotra,low confidence,
+2b,title,w:t0340,Bodhisattvādikarmikamārgāvatāradeśanā,low confidence,
+2b,title,w:t0344,Bower Manuscript,low confidence,
+2b,title,w:t0345,Brahmagītā,low confidence,
+2b,title,w:t0351,Brahmasandhāna,low confidence,
+2b,title,w:t0398,Candrāpīḍacarita,low confidence,
+2b,title,w:t0411,Catuḥślokī,low confidence,
+2b,title,w:t0414,Caturbhujastotra,low confidence,
+2b,title,w:t0416,Caturhastikā,low confidence,
+2b,title,w:t0434,Citralakṣaṇa,low confidence,
+2b,title,w:t0436,Citraprabhā,low confidence,
+2b,title,w:t0450,Dakṣiṇāmūrtistava,low confidence,
+2b,title,w:t0451,Dakṣiṇāmūrtistotra,low confidence,"Dossier Dd0452 split: the page marked -2 is a second hymn of the name, kept apart. Grouped with Dd0454: Dakṣiṇāmūrtyaṣṭaka is the common alternative name of Śaṅkara's stotra, and another reader already put a Dakṣiṇāmūrtyaṣṭaka page here; the Bṛhatstotraratnākara carrying both pages is the reason for low."
+2b,title,w:t0452,Dakṣiṇāmūrtistotra,low confidence,Split from Dd0452: the -2 page marks a second hymn of the same name.
+2b,title,w:t0462,Dāsabodha,low confidence,
+2b,title,w:t0465,Dāśarathīyatantra,low confidence,
+2b,title,w:t0469,Daśāvatārastotra,low confidence,
+2b,title,w:t0470,Daśāvatārastuti,low confidence,
+2b,title,w:t0471,Dattabhāvasudhārasastotra,low confidence,
+2b,title,w:t0473,Dattalīlāmantra,low confidence,
+2b,title,w:t0476,Dattastavastotra,low confidence,
+2b,title,w:t0478,Dattātreyabodha,low confidence,
+2b,title,w:t0502,Devīpūjā,low confidence,
+2b,title,w:t0505,Devīsūkta,low confidence,
+2b,title,w:t0511,Dhanurveda,low confidence,
+2b,title,w:t0522,Dhātvarthanirṇaya,low confidence,
+2b,title,w:t0524,Dhruvacarita,low confidence,
+2b,title,w:t0525,Dhruvasūkta,low confidence,
+2b,title,w:t0526,Dhūrtākhyāna,low confidence,
+2b,title,w:t0529,Dhvanitattvasamīkṣā,low confidence,
+2b,title,w:t0540,Dīpikā,low confidence,
+2b,title,w:t0541,Divyadṛṣṭi,low confidence,
+2b,title,w:t0548,Durgāsaptaśatīsāra,low confidence,
+2b,title,w:t0553,Dvādaśajyotirliṅgastotra,low confidence,"Grouped Dvādaśaliṅgastotra with Dvādaśajyotirliṅgastotra by name: nothing in the metadata separates them, though the Śaṅkara ascription may mark the longer hymn."
+2b,title,w:t0555,Dvaitadyumaṇi,low confidence,
+2b,title,w:t0556,Dvaitakośa,low confidence,
+2b,title,w:t0563,Ekākṣarakośa,low confidence,"Kept the Amarakavi ekākṣarī-kośa and the unattributed Ekākṣarakośa together by title; several lexicons bear the name, so they may need splitting. | Kept as one by the same title, with no contrary evidence; may need splitting if the anonymous page is another Ekākṣarakośa (e.g. Puruṣottamadeva's)."
+2b,title,w:t0585,Gaṇeśabhajanāvali,low confidence,
+2b,title,w:t0633,Gītārthasaṃgraha,low confidence,"Split from Abhinavagupta's Gītārthasaṃgraha. The uncategorised page with a commentary is kept with Yāmuna's work as its reader judged, but nothing on the page names the author."
+2b,title,w:t0635,Gītārthasudhā,low confidence,
+2b,title,w:t0636,Gītāśāstrārthaviveka,low confidence,
+2b,title,w:t0646,Gopālasahasranāmastotraṭīkā,low confidence,
+2b,title,w:t0659,Gorakṣayogaśāstra,low confidence,
+2b,title,w:t0672,Guruguṇamaṇimālā,low confidence,
+2b,title,w:t0688,Hanūmatstuti,low confidence,
+2b,title,w:t0690,Hariharasubhāṣita,low confidence,
+2b,title,w:t0691,Hariharatāratamya,low confidence,
+2b,title,w:t0694,Hariścandra,low confidence,
+2b,title,w:t0695,Haristotra,low confidence,
+2b,title,w:t0714,Hemantavaibhava,low confidence,
+2b,title,w:t0736,Jābālyupaniṣad,low confidence,
+2b,title,w:t0751,Janmadinapañcaka,low confidence,
+2b,title,w:t0759,Jātakapaddhati,low confidence,
+2b,title,w:t0776,Jñānadīkṣā,low confidence,
+2b,title,w:t0781,Jñānasāra,low confidence,
+2b,title,w:t0784,Jñāneśvarī,low confidence,
+2b,title,w:t0789,Jyotirnibandha,low confidence,
+2b,title,w:t0795,Kādambarīsaṅgraha,low confidence,
+2b,title,w:t0796,Kādambarīsvīkaraṇasūtramañjarī,low confidence,
+2b,title,w:t0798,Kādambarīṭīkā,low confidence,
+2b,title,w:t0808,Kālahastīśavilāsa,low confidence,
+2b,title,w:t0827,Kalpamañjarī,low confidence,
+2b,title,w:t0828,Kalpavṛkṣa,low confidence,
+2b,title,w:t0889,Kaṭhopaniṣadbhāṣya,low confidence,"The unattributed bhāṣya page is grouped with Śaṅkara's by identical title; no evidence it is another commentator's. | Grouped the unascribed bhāṣya page with the Śāṅkarabhāṣya: same title, no contrary evidence; Śaṅkara's is the usual Kaṭha bhāṣya."
+2b,title,w:t0901,Kaumārasaṃhitā,low confidence,
+2b,title,w:t0923,Kāvyaratna,low confidence,
+2b,title,w:t0924,Kāvyasaṃgraha,low confidence,
+2b,title,w:t0929,Keralodaya,low confidence,Grouped the Keraḷodaya dossier (a first-sarga stub page) with the Keralodaya: same title and genre; the sarga page is a division.
+2b,title,w:t0930,Keśavīśikṣā,low confidence,
+2b,title,w:t0950,Kriyāpāda,low confidence,
+2b,title,w:t0951,Kriyāsaṅgrahakārikā,low confidence,
+2b,title,w:t0952,Kriyāsāra,low confidence,Two readings of the same title grouped; that the Tattvaprakāśinī comments on Nīlakaṇṭha's Kriyāsāra is not confirmed by the page.
+2b,title,w:t0958,Kṛṣṇalīlāmṛta,low confidence,
+2b,title,w:t0960,Kṛṣṇasahasranāmastotra,low confidence,"Split from the Gargasaṃhitā and Sātvatatantra versions: these are different texts, and this page names neither source. | Split from d0964: the Garga and Sātvata versions are different texts by source, and this unsourced page cannot be placed in either."
+2b,title,w:t0963,Kṛṣṇāṣṭaka,low confidence,"Unascribed Kṛṣṇāṣṭaka pages kept apart from the Śaṅkara and Vallabha ones, which differ from each other, since neither can be chosen. | Split from d0965 by ascription: the Śaṅkara Kṛṣṇāṣṭaka."
+2b,title,w:t0966,Kṛṣṇayajurveda,low confidence,
+2b,title,w:t0990,Kuṭṭākāraśiromaṇi,low confidence,
+2b,title,w:t1006,Laghuṭippaṇī on the Cārudatta,low confidence,
+2b,title,w:t1011,Lakṣaṇasaṅgraha,low confidence,
+2b,title,w:t1025,Lakṣmīśloka,low confidence,
+2b,title,w:t1041,Līlāvatī,low confidence,
+2b,title,w:t1043,Liṅgānuśāsana,low confidence,
+2b,title,w:t1065,Mahādevīvyākaraṇa,low confidence,
+2b,title,w:t1087,Mahāvīrasvāmistotra,low confidence,"Split from the dossier: Hemacandra numbers two distinct Mahāvīra stotras (-1, -2), and Jinavallabhasūri wrote a third; different compositions."
+2b,title,w:t1088,Mahāvīrasvāmistotra,low confidence,"Split from the dossier: Hemacandra's second numbered Mahāvīra stotra, a different composition from his first and from Jinavallabhasūri's."
+2b,title,w:t1130,Mañjuśrīnāmasaṅgīti,low confidence,
+2b,title,w:t1132,Manobodha,low confidence,
+2b,title,w:t1134,Manoharakāvyamālā,low confidence,
+2b,title,w:t1135,Mantrabhāṣya,low confidence,"Split from Uvaṭa's Mantrabhāṣya on the Vājasaneyisaṃhitā: the page is a tantric miscellany, and nothing ties it to Uvaṭa. | Split from Uvaṭa's Vedic Mantrabhāṣya: this one is filed among tantra texts and printed with a Sarasvatī stotra."
+2b,title,w:t1151,Mārutistava,low confidence,
+2b,title,w:t1177,Mivārapratāpa,low confidence,
+2b,title,w:t1213,Nādabindūpaniṣaṭṭīkā,low confidence,
+2b,title,w:t1216,Nāḍīparīkṣā,low confidence,
+2b,title,w:t1217,Nāgakanyā,low confidence,
+2b,title,w:t1224,Nakṣatramālāṭīkā,low confidence,
+2b,title,w:t1231,Nandakumārāṣṭaka,low confidence,
+2b,title,w:t1233,Nāradabaiṭh,low confidence,
+2b,title,w:t1234,Nāradabaiṭhparibhāṣā,low confidence,
+2b,title,w:t1267,Nayasaṅgatimālikā,low confidence,
+2b,title,w:t1270,Nidrāmantra,low confidence,
+2b,title,w:t1292,Nītiśataka,window conflict,Split from Dhanada's Nītiśataka by author; part_of left blank since the other reader mapped the Śatakatraya page to the three śatakas rather than treating it as a work. | Split from Bhartṛhari's Nītiśataka: the page names Dhanada (धनदविरचितम्) as author. | Overlapping windows decided these members differently; taken as the union of the two: p2b-016 Nītiśataka (3); p2b-017 Nītiśataka (2); p2b-017 Nītiśataka (1)
+2b,title,w:t1301,Nṛsiṃhatāpanīyopaniṣad,window conflict,"Grouped the Nṛsiṃhapūrvatāpanīyopaniṣad dossier (mapped from the bhāṣya page) with the Nṛsiṃhatāpanīyopaniṣad, whose reader treats the pūrva and uttara parts as divisions of one work; the parts are often counted as two upaniṣads. | Overlapping windows decided these members differently; taken as the union of the two: p2b-017 Nṛsiṃhatāpanīyopaniṣad (3); p2b-016 Nṛsiṃhatāpanīyopaniṣad (2); p2b-016 Nṛsiṃhapūrvatāpanīyopaniṣad (1)"
+2b,title,w:t1305,Nyāyabodhinī,low confidence,
+2b,title,w:t1311,Nyāyamuktāvalī,low confidence,
+2b,title,w:t1327,Pādmasaṃhitā,low confidence,"Grouped the two readers' Pādmasaṃhitā entries; the unattached Caryāpāda, Jñānapāda and Yogapāda pages are identified with it by structure (four pādas, adhyāya counts), not by the metadata."
+2b,title,w:t1330,Padyapuṣpāñjali,low confidence,
+2b,title,w:t1345,Pañcaskandhaprakaraṇa,low confidence,
+2b,title,w:t1362,Paramārthaprakāśikā,low confidence,
+2b,title,w:t1364,Paramārthasāra,low confidence,"Split from Abhinavagupta's Paramārthasāra: an unattributed page filed under Advaita, taken as Ādiśeṣa's; it could also be the Paramārthasāra(saṃgraha) ascribed to Śaṅkara. | Split from Abhinavagupta's Paramārthasāra: the wiki keeps a separate unascribed page beside the one marked as Abhinavagupta's, which the reader took as Ādiśeṣa's work. Uncertain."
+2b,title,w:t1391,Pariṣkāradarpaṇa,low confidence,
+2b,title,w:t1400,Pāśupatastava,low confidence,
+2b,title,w:t1417,Prabandhaprakāśa,low confidence,
+2b,title,w:t1421,Prabodharatnamālā,low confidence,
+2b,title,w:t1423,Prahelikānīvī,low confidence,
+2b,title,w:t1424,Prahlādacarita,low confidence,
+2b,title,w:t1432,Pramāṇalakṣaṇa,low confidence,"Kept together on the shared title: nothing on the romanized page points to a different work, but it is not confirmed as Madhva's."
+2b,title,w:t1436,Pramāṇavicāra,low confidence,
+2b,title,w:t1439,Prāṇāgnihotra,low confidence,
+2b,title,w:t1455,Praśnottararatnamālikā,low confidence,"Grouped the Praśnottararatnamālā page ascribed to Vimala with the Praśnottararatnamālikā ascribed to Śaṅkara: the catechism is known under both names and all three ascriptions. Split again if the Vimala page proves a different text. | Grouped Praśnottararatnamālā (Vimala) with Praśnottararatnamālikā (Śaṅkara): one catechism known under both names and all three ascriptions; the Jain and Advaita recensions differ in extent, so a split by version is possible."
+2b,title,w:t1475,Pravacanāni,low confidence,
+2b,title,w:t1476,Pravīṇa,low confidence,
+2b,title,w:t1485,Puruṣottamaprapattyaṣṭaka,low confidence,
+2b,title,w:t1488,Pūrvapakṣīyavyāpti,low confidence,
+2b,title,w:t1501,Rājamārtaṇḍa,low confidence,
+2b,title,w:t1514,Rāmagītā,low confidence,
+2b,title,w:t1531,Rāmāṣṭottaraśatanāmastotra,low confidence,
+2b,title,w:t1539,Rāmāyaṇapārāyaṇaślokāḥ,low confidence,
+2b,title,w:t1540,Rāmāyaṇavyākhyā,low confidence,
+2b,title,w:t1549,Rasaratnākara,low confidence,"One reader took the uncategorized (मूलप्रतिसहितः) page for a different, poetic Rasaratnākara, but nothing in its metadata says so; grouped with Nityanātha's work by title."
+2b,title,w:t1551,Rasaratnasamuccayaṭīkā,low confidence,
+2b,title,w:t1562,Ratnakīrtinibandhāvalī,low confidence,
+2b,title,w:t1568,Rāvaṇabaiṭh,low confidence,
+2b,title,w:t1569,Rāvaṇabaiṭhparibhāṣā,low confidence,
+2b,title,w:t1571,Ravisiddhāntamañjarī,low confidence,
+2b,title,w:t1579,Ṛgvedabhāṣya,low confidence,
+2b,title,w:t1589,Ṛtusaṃhāracandrikā,low confidence,
+2b,title,w:t1590,Rudrādhyāya,low confidence,
+2b,title,w:t1604,Śābdataraṅgiṇī,low confidence,
+2b,title,w:t1607,Sabhikasaugataśāsanapravrajyāvratacaraṇaparivarta,low confidence,
+2b,title,w:t1622,Sāhityasāra,low confidence,
+2b,title,w:t1626,Śākrāṇi,low confidence,
+2b,title,w:t1629,Śakuntalopākhyāna,low confidence,
+2b,title,w:t1642,Samāsakusumāvalī,low confidence,
+2b,title,w:t1644,Sāmaveda,low confidence,"Grouped dossiers Sāmaveda and Sāmavedasaṃhitā: same name for the same Veda (the saṃhitā page is itself titled सामवेदः). Low because the gāna pages carry sāman chants (gānas), which might be catalogued apart from the ārcika saṃhitā."
+2b,title,w:t1645,Sāmavedaprātiśākhya,low confidence,"Grouped dossiers Sāmaprātiśākhya and Sāmavedaprātiśākhya: same name, no context to tell them apart; low because several Sāmaveda prātiśākhyas exist."
+2b,title,w:t1654,Sāṃkhyakośa,low confidence,
+2b,title,w:t1657,Sāṃkhyasaṃgraha,low confidence,
+2b,title,w:t1674,Sanātanadevīsūkta,low confidence,
+2b,title,w:t1681,Śanimantra,low confidence,
+2b,title,w:t1692,Śaṅkarastotra,low confidence,
+2b,title,w:t1693,Śaṅkaravijaya,low confidence,Kept apart from the Śaṅkaradigvijaya: several Śaṅkaravijayas exist and this one is not identified.
+2b,title,w:t1706,Śāntimantra,low confidence,
+2b,title,w:t1712,Śāradāstavana,low confidence,
+2b,title,w:t1715,Sāramañjarī,low confidence,The bare uncategorised page is grouped by name with the grammar Sāramañjarī; nothing confirms it is the same work.
+2b,title,w:t1719,Sārasamuccaya,low confidence,
+2b,title,w:t1723,Sarasvatīstotra,low confidence,
+2b,title,w:t1729,Śārīrakādhikaraṇaratnamālā,low confidence,
+2b,title,w:t1730,Śārīrakakārikāvalī,low confidence,
+2b,title,w:t1746,Sarveśvarī vidyā,low confidence,
+2b,title,w:t1752,Śatakacandrikā,low confidence,
+2b,title,w:t1759,Ṣaṭkāraka,low confidence,
+2b,title,w:t1776,Saubhāgyataraṅgiṇī,low confidence,
+2b,title,w:t1791,Siddhāntadarpaṇa,low confidence,"Kept together: the second page is uncategorized and could be Baladeva's Vedānta Siddhāntadarpaṇa; nothing settles it, so grouped by name."
+2b,title,w:t1792,Siddhāntadīpaka,low confidence,
+2b,title,w:t1800,Siddhāntasārasamuccaya,low confidence,
+2b,title,w:t1806,Siddhāntasudhānidhi,low confidence,
+2b,title,w:t1809,Siddhilakṣmī Ārāmika,low confidence,
+2b,title,w:t1823,Sītāharaṇa,low confidence,
+2b,title,w:t1825,Sītārāmagīta,low confidence,
+2b,title,w:t1838,Śivamānasapūjā,low confidence,"Grouped d1844 and d1845: Śivamānasapūjā and Śivamānasikapūjāstotra are the same name with the adjectival -ika; taken as the one popular mental-worship hymn, which the content would have to confirm. | Grouped d1844 and d1845: Śivamānasapūjā and Śivamānasikapūjāstotra are name forms of the same mental-worship hymn; nothing on either page sets them apart."
+2b,title,w:t1846,Śivapañcākṣaranakṣatramālāstotra,window conflict,"Grouped d1848 and d1855: both are 27-verse nakṣatramālā hymns to Śiva, the Śaṅkara one being the familiar nakṣatramālā; the names differ by pañcākṣara, so content should confirm. | Overlapping windows decided these members differently; taken as the union of the two: p2b-023 Śivapañcākṣaranakṣatramālāstotra (2); p2b-024 Śivanakṣatramālikāstotra (1); p2b-024 Śivapañcākṣaranakṣatramālāstotra (1)"
+2b,title,w:t1848,Śivapañcākṣarīstotra,low confidence,Kept apart from the Śivapañcākṣarastotra (d1856): the Bṛhatstotraratnākara prints both under different names.
+2b,title,w:t1855,Śivāratī,low confidence,
+2b,title,w:t1862,Śivaśataka,low confidence,
+2b,title,w:t1863,Śivāṣṭaka,low confidence,"Kept together as one generic title: the unascribed Śrīśivāṣṭaka gives no evidence that it differs from the Agastya-ascribed one, though several Śivāṣṭakas exist (Śaṅkara's prabhuṃ prāṇanātham among them)."
+2b,title,w:t1868,Śivastuti,low confidence,"Split from d1875: with three distinct ascribed Śivastutis in the dossier, the unascribed page cannot be grouped with one of them on evidence."
+2b,title,w:t1872,Śivasūtravārttika,low confidence,
+2b,title,w:t1874,Śivayogadarpaṇa,low confidence,
+2b,title,w:t1878,Skāndaśārīraka,low confidence,
+2b,title,w:t1884,Smṛtimuktāvalī,low confidence,
+2b,title,w:t1898,Sphuṭārthā,low confidence,Split from d1903: a different base text from the Śrīghanācārasaṃgraha commentary of the same name.
+2b,title,w:t1921,Śrutisiddhāntadīpikā,low confidence,
+2b,title,w:t1922,Śryaṅkakāvya,low confidence,
+2b,title,w:t1929,Subhāṣitāni,low confidence,
+2b,title,w:t1930,Subhāṣitāni saṃskṛte,low confidence,
+2b,title,w:t1932,Subhāṣitaratnakaraṇḍakakathā,low confidence,
+2b,title,w:t1935,Subodhamañjarī,low confidence,
+2b,title,w:t1937,Subodhinī,low confidence,"Split from d1937: not the Subodhinī on the Bṛhatpārāśarahorāśāstra. | Split from Dd1937: the page श्रीसुबोधिनी is taken as Vallabhācārya's Subodhinī on the Bhāgavata, distinct from the jyotiṣa commentary of the same name; identification from the title form only."
+2b,title,w:t1952,Sukavihṛdayānandinī,low confidence,
+2b,title,w:t1961,Sumaṅgalastotra,low confidence,
+2b,title,w:t1965,Sūryamantra,low confidence,
+2b,title,w:t1971,Sūtradīpikā,low confidence,
+2b,title,w:t1972,Sūtrapiṭaka,low confidence,
+2b,title,w:t1973,Sūtrārtharatnāvalī,low confidence,
+2b,title,w:t1993,Svarāṣṭakaśikṣā,low confidence,
+2b,title,w:t2001,Śvetāśvatarādyupaniṣatpuruṣasūktabhāṣya,low confidence,
+2b,title,w:t2011,Tāṃ vidyām iha labhemahi,low confidence,
+2b,title,w:t2015,Tantrākhyāyikā,low confidence,
+2b,title,w:t2020,Tantrasaṅgraha,low confidence,
+2b,title,w:t2024,Tantrayukti,low confidence,
+2b,title,w:t2035,Tārāvalīstotra,low confidence,
+2b,title,w:t2039,Tarkaśāstra,low confidence,
+2b,title,w:t2060,Tattvasaṅkhyānavivaraṇa,low confidence,
+2b,title,w:t2080,Tripurāmbāśāmbhavīmahāprapatti,low confidence,
+2b,title,w:t2092,Tvamevabrūhistotra,low confidence,
+2b,title,w:t2095,Udārajagadādhāra,low confidence,
+2b,title,w:t2101,Umāsahasranāmastotra,low confidence,
+2b,title,w:t2102,Uṇādikoṣa,low confidence,
+2b,title,w:t2119,Vādāvalī,low confidence,
+2b,title,w:t2120,Vāgbhaṭasaṃhitā,low confidence,
+2b,title,w:t2121,Vāgvyavahārādarśa,low confidence,
+2b,title,w:t2122,Vaidyanāthabaiṭh,low confidence,
+2b,title,w:t2134,Vaiṣṇavavandanā,low confidence,
+2b,title,w:t2181,Vāyumantra,low confidence,
+2b,title,w:t2200,Veṅkaṭeśasahasranāma,low confidence,
+2b,title,w:t2201,Veṅkaṭeśastotra,low confidence,"Kept as one generic Veṅkaṭeśastotra; one reader took its page as the suprabhāta-set stotra of Prativādibhayaṅkara Aṇṇa, which the other pages do not confirm, so no author is set."
+2b,title,w:t2206,Vidhavāvivāhakhaṇḍana,low confidence,
+2b,title,w:t2223,Viṃśikāvṛttivyākhyā,low confidence,
+2b,title,w:t2236,Viśiṣṭādvaitasiddhi,low confidence,
+2b,title,w:t2241,Viṣṇugītā,low confidence,
+2b,title,w:t2254,Viśuddhopāgama,low confidence,
+2b,title,w:t2256,Viśvahita,low confidence,
+2b,title,w:t2278,Vyāliśikṣā,low confidence,
+2b,title,w:t2304,Yogadīpikā,low confidence,
+2b,title,w:t2307,Yogarahasya,low confidence,
+2b,title,w:t2308,Yogaratnasamuccaya,low confidence,
+2b,title,w:t2310,Yogasārasaṃgraha,low confidence,"Not grouped with Vijñānabhikṣu's Yogasārasaṃgraha (d2303): this one runs to at least fifteen adhyāyas, which does not fit his four-aṃśa work; which of the several works of the name is unsettled."
+2b,title,w:t2314,Yogasūtrasāra,low confidence,
+2b,title,w:t2323,Yohibhāṣya,low confidence,
+2a,person,w:p0014,Amarakavi,low confidence,"Kept apart from Amarasiṃha: the Ekākṣarakośa's ""Amarakavi"" may be Amarasiṃha, but nothing confirms it."
+2a,person,w:p0028,Anantānandagiri,low confidence,
+2a,person,w:p0101,Brahmānanda,low confidence,"Kept together: nothing dates the Gopālāṣṭaka's Paramahaṃsa Svāmī Brahmānanda, so no evidence separates him from the Jyotsnā's author, but the name is very common and they may well be different persons."
+2a,person,w:p0130,Devarāja,low confidence,
+2a,person,w:p0151,Dvārikāprasāda Śarmā Caturvedī,low confidence,
+2a,person,w:p0165,Gauḍapāda,window conflict,"Kept the Sāṃkhyakārikābhāṣya author with the Advaitin: tradition and Pandit 85194 give both works to one Gauḍapāda, though modern scholarship often separates them. | Split Dd0170: the Advaitin of the Māṇḍūkyakārikā kept apart from the author of the bhāṣya on the Sāṃkhyakārikā, as Pandit does (85189 vs 85194). | Split from Dd0170: the Sāṃkhya commentator's identity with the Advaitin Gauḍapāda is disputed; Pandit keeps them apart. | Overlapping windows decided these members differently; taken as the union of the two: p2a-003 Gauḍapāda (3); p2a-002 Gauḍapāda (2); p2a-002 Gauḍapāda (1) | Pandit hints differ: 85189, 85194"
+2a,person,w:p0168,Gautama,low confidence,Split from Dd0173. The tantra's speaker is grouped with the Dharmasūtra's Gautama because the wiki files all three works under one category (गौतमरचनाः); whether one sage is meant is a judgement call. | Split from Akṣapāda Gautama of the Nyāyasūtra; the tantra's speaker is grouped here because the wiki files it under गौतमरचनाः with the Dharmasūtra.
+2a,person,w:p0196,Harihara,low confidence,
+2a,person,w:p0198,Harirāma,low confidence,
+2a,person,w:p0212,Jaimini,low confidence,"Kept as one traditional figure: the Mīmāṃsāsūtra, Jaiminīya school and Jaiminibhārata are all ascribed to Vyāsa's disciple Jaimini, though historically distinct."
+2a,person,w:p0251,Kaśyapa,low confidence,Grouped Kaśyapa and Kāśyapa: all are ascriptions to the one sage; the Vaikhānasa and āyurveda ascriptions may yet be told apart. | Grouped Kaśyapa (Dd0255) with Kāśyapa (Dd0256): all are traditional ascriptions to the same mythical sage; the wiki files the āyurvedic Kāśyapasaṃhitā under dharmaśāstra Kāśyaparacanāḥ too. Could be split by discipline.
+2a,person,w:p0253,Kātyāyana,low confidence,"Kept the vārttikakāra with the Vedic sūtrakāra and smṛti eponym, as tradition and Pandit 40605 do; a later step may split them. | Kept as one traditional author-figure; the vārttikakāra and the late smṛti author may be distinct, but nothing in the items separates them."
+2a,person,w:p0255,Kauṇḍinya,low confidence,"Split from the Pāśupata Kauṇḍinya: a Vedic śikṣā eponym, different tradition. | Split from the Pāśupata Kauṇḍinya: a śikṣā eponym and the bhāṣyakāra of the Pāśupatasūtra belong to different traditions."
+2a,person,w:p0265,Keśava Daivajña,low confidence,
+2a,person,w:p0274,Kṛṣṇācārya,low confidence,
+2a,person,w:p0275,Kṛṣṇa Daivajña,low confidence,
+2a,person,w:p0311,Mādhava,low confidence,"Kept the Śaṅkaradigvijaya author with Vidyāraṇya as tradition identifies them; scholars date that work later, so it may be a different Mādhava."
+2a,person,w:p0334,Maitreyanātha,low confidence,Not grouped with the Abhisamayālaṅkāra's Maitreya: different work and Pandit keeps the commentator separate; identity unsettled.
+2a,person,w:p0340,Māṇḍūkeya,low confidence,
+2a,person,w:p0341,Maṇirāma,low confidence,
+2a,person,w:p0351,Mathurānātha Śukla,low confidence,
+2a,person,w:p0359,Moggallāna,low confidence,"Split from the grammarian Moggallāna; usually distinguished, though debated."
+2a,person,w:p0360,Moggallāna,low confidence,"Split from the lexicographer Moggallāna of the Abhidhānappadīpikā, usually taken as a different thera of the same reign; the identity is debated."
+2a,person,w:p0367,Nāgarāja,low confidence,
+2a,person,w:p0374,Nandikeśvara,low confidence,"Split from the legendary Nandikeśvara of the Abhinayadarpaṇa and the Kāśikā; Pandit's record joins this one with the Kāśikā, so the split is uncertain."
+2a,person,w:p0375,Nandikeśvara,low confidence,Split from the Vīraśaiva author; both ascriptions are to the legendary figure.
+2a,person,w:p0378,Narahari,low confidence,Split from the Rājanighaṇṭu's Narahari for want of any tie.
+2a,person,w:p0387,Nārāyaṇaśāstrī,low confidence,
+2a,person,w:p0388,Nāthamuni,low confidence,
+2a,person,w:p0494,Śāstrī,low confidence,
+2a,person,w:p0500,Siddhicandra,low confidence,
+2a,person,w:p0505,Śivadatta Śāstrī,low confidence,
+2a,person,w:p0506,Śivarāja,low confidence,
+2a,person,w:p0529,Subbarāma Bhaṭṭa,low confidence,
+2a,person,w:p0530,Sudarśanācārya,low confidence,"Split from Sudarśanasūri of the Śrutaprakāśikā: a Kalpasūtra commentator, identity with the Vedāntin not established."
+2a,person,w:p0542,Śvetāyana Vyāsa,low confidence,
+2a,person,w:p0545,Telaṅga,low confidence,
+2a,person,w:p0558,Upamanyu,low confidence,
+2a,person,w:p0564,Vādirāja,low confidence,"Not grouped with d0572 Vādirājasūri: the Pavanadūta is a late Jain dūtakāvya (Vādicandra, 17th c.), not by the 11th-c. Vādirāja."
+2a,person,w:p0588,Vararuci,low confidence,"Kept d0592 together: the śikṣā eponym and the Prākṛtaprakāśa author share the name, and nothing in context sets them apart."
+2a,person,w:p0594,Vāsudevānanda Sarasvatī,low confidence,
+2a,person,w:p0599,Vātsyāyana,low confidence,Kept d0604 together: the stub page gives nothing to tell which Vātsyāyana it means.
+2a,person,w:p0612,Vidyāvāgīśa,low confidence,
+2a,person,w:p0637,Vyāḍi,low confidence,
+2a,person,w:p0638,Vyāsa,low confidence,"Kept d0644 together: several readers made one Vyāsa the author of both the epics and the Yogabhāṣya, so the Yogabhāṣyakāra (p1-catalogue-004:p20) cannot be cleanly separated; whether he should be is a judgement call."
