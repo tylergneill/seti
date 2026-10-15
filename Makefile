@@ -50,6 +50,7 @@ research-apply:
 #   make group-consolidate COLLECTION=g RUN=<run> WORKERS=10   # pass 2, all steps
 #   make group-eval                                     # GRETIL's registry against SETI
 #   make group-keep COLLECTION=g RUN=<run>              # copy what the agents wrote to data/grouping/runs
+#   make group-link RUN=<run> WORKERS=10                # pass 3 over all five registries, IDs, outputs
 #
 # COLLECTION is an Atlas code: g, j, e, w or d.
 
@@ -58,7 +59,7 @@ only_words = $(if $(ONLY), Dispatch only these batches: $(ONLY).)
 part_words = $(if $(LIMIT), Dispatch only the first $(LIMIT) pending batches, once, and stop there.)
 group_args = --run $(RUN) --collection $(COLLECTION)
 
-.PHONY: group-check-args group-prep group-read group-validate group-consolidate group-eval group-keep
+.PHONY: group-check-args group-prep group-read group-validate group-consolidate group-eval group-keep group-link
 
 group-check-args:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required" && exit 1)
@@ -82,3 +83,7 @@ group-eval:
 
 group-keep: group-check-args
 	$(PYTHON) scripts/grouping_keep.py $(group_args)
+
+group-link:
+	@test -n "$(RUN)" || (echo "RUN=<run> is required" && exit 1)
+	claude "Run pass 3 of the grouping job for the run $(RUN) using subagents, following agents/grouping/dispatcher.md and its section 'Pass 3 as a whole'. Use a workflow for each fan-out step.$(workers_words) Finish every step even with failed batches."

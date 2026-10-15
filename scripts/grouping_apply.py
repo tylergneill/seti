@@ -34,7 +34,7 @@ import collections
 import csv
 
 from common import ROOT, norm
-from grouping_common import (COLLECTIONS, DATA, Groups, batches, item_metadata, load_opinions, member_id,
+from grouping_common import (ALL, COLLECTIONS, DATA, Groups, batches, item_metadata, load_opinions, member_id,
                              read_json, read_jsonl, run_dir, sort_key, write_json)
 
 RANK = {"low": 0, "medium": 1, "high": 2}
@@ -60,8 +60,11 @@ def uniq(values):
 
 # ---------- uniting the windows ----------
 
-def unite(run, code, kind):
-    step = "persons" if kind == "person" else "titles"
+def unite(run, code, kind, step=None):
+    """Unite one step's windows into <kind>s.json. Pass 3 calls this too,
+    with code 'all' and its own step."""
+    step = step or ("persons" if kind == "person" else "titles")
+    out_name = f"{kind}s.json"
     base = run_dir(run, code)
     groups = Groups()
     members, dossier_of, decisions, failed = {}, {}, [], []
@@ -83,7 +86,7 @@ def unite(run, code, kind):
             if mine:
                 decisions.append({**e, "members": mine, "window": batch.name})
     if not members:
-        raise SystemExit(f"No {step} windows under {base.relative_to(ROOT)}; run grouping_dossiers.py first.")
+        raise SystemExit(f"No {step} windows under {base.relative_to(ROOT)}; cut the dossiers first.")
 
     decided = set()
     for e in decisions:
@@ -152,12 +155,13 @@ def unite(run, code, kind):
 
     entities.sort(key=lambda e: (sort_key(e["name"]), e["name"], e["members"]))
     member_of = {}
+    width = 5 if code == ALL else 4
     for n, e in enumerate(entities, start=1):
-        e["key"] = f"{code}:{kind[0]}{n:04d}"
+        e["key"] = f"{code}:{kind[0]}{n:0{width}d}"
         for m in e["members"]:
             member_of[m] = e["key"]
-    write_json(base / f"{step}.json", {"entities": entities, "member_of": member_of, "failed_windows": failed})
-    print(f"{step}, {COLLECTIONS[code]}: {len(members)} shard entities united into {len(entities)}; "
+    write_json(base / out_name, {"entities": entities, "member_of": member_of, "failed_windows": failed})
+    print(f"{step}, {COLLECTIONS.get(code, 'all collections')}: {len(members)} shard entities united into {len(entities)}; "
           f"{sum(e['conflict'] for e in entities)} window conflict(s), "
           f"{sum(e['confidence'] == 'low' for e in entities)} at low"
           + (f"; {len(failed)} window(s) unfinished: {', '.join(failed)}" if failed else ""))

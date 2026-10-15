@@ -29,7 +29,8 @@ def build_prompt(step, code):
     for c in codes:
         notes = AGENTS / "notes" / f"{c}.md"
         if notes.exists():
-            text = (text.rstrip() + f"\n\n## Notes on this collection: {COLLECTIONS[c]}\n\n"
+            heading = "Notes on this collection" if code != ALL else "Notes on the collection"
+            text = (text.rstrip() + f"\n\n## {heading}: {COLLECTIONS[c]}\n\n"
                     + notes.read_text(encoding="utf-8").strip() + "\n")
     return text.rstrip() + "\n\nYour batch directory is:\n"
 

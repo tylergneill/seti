@@ -562,8 +562,9 @@ Run `2026-10-13-one`, one reading per item.
 | E-bhāratīsampat | 5,529 | done, 28 shards | done | `data/grouping/collections/e/` |
 | Sanskrit Documents | 9,754 | done, 49 shards | done | `data/grouping/collections/d/` |
 
-Pass 3 has not started: `agents/grouping/linker.md`, `scripts/grouping_ids.py`
-and `scripts/grouping_report.py` are not yet written.
+Pass 3 is done, over all five registries, with `agents/grouping/linker.md`,
+`scripts/grouping_link.py` and `scripts/grouping_ids.py`.
+`scripts/grouping_report.py` is not yet written.
 
 Registries so far: GRETIL 720 titles and 294 persons; Jain Quantum 1,331
 and 1,069; Wikisource 2,327 and 648; E-bhāratīsampat 3,234 and 2,228
@@ -589,7 +590,15 @@ Sub-agent tokens, by collection:
 Sanskrit Documents' titles ran in two sittings (29 windows, then 70 at
 6.0M), so its consolidation figure is an estimate.
 
-Still to come: pass 3.
+Pass 3 linked the 5,536 registry persons into 4,222 (51 windows, 4.4M
+tokens; 660 at low, 4 window conflicts) and the 16,268 registry titles into
+13,140 (159 windows, about 13M; 1,469 at low, 10 window conflicts). Of the
+titles, 2,068 are in more than one collection: 1,222 in two, 689 in three,
+136 in four and 21 in all five. The registry is in `data/grouping/`, with
+21,775 items, 17,362 IDs minted in `ids.csv` and 6,265 rows for review.
+Of 1,808 `Part Of` and 889 `Comments On`, 1,632 and 827 resolve to IDs.
+
+Still to come: `scripts/grouping_report.py`.
 
 ### Decisions made along the way
 
@@ -614,6 +623,13 @@ Still to come: pass 3.
   index had them and how the run was cut, to `data/grouping/runs/`
   (gitignored). `scripts/grouping_restore.py` rebuilds everything else
   from them; restoring GRETIL reproduced its registry byte for byte.
+- **In pass 3 a collection's entity is indivisible.** A linker joins
+  entities, and cannot split one, since that would mean dividing its items;
+  where an entity seems to bundle two, it says so in a note at `low`. Two
+  entities of one collection are joined only with a note, at `low`.
+- **Pass 3 ties** are a shared canonical name or variant, ignoring case,
+  between entities of different collections, or a shared `pandit_hint`. No
+  dossier grew past 23 entities, so no tie needed capping.
 - **Workflow scripts** hand each sub-agent the path of an assembled prompt
   file rather than the prompt itself, so that Claude Code can show the
   script when asking for approval.

@@ -226,6 +226,12 @@ def check_consolidated(batch, rep):
             if m not in members:
                 rep.error(where, f"member {m!r} is not in this window")
             placed[m] += 1
+        # Pass 3: a collection's own consolidator kept its entities apart, and
+        # joining two of them again needs a reason.
+        if window.get("collection") == ALL:
+            same = collections.Counter(str(m).split(":")[0] for m in entity.get("members", []))
+            if any(n > 1 for n in same.values()) and not entity.get("note"):
+                rep.error(where, "joins two entities of the same collection, which needs a note saying why")
         if kind == "title":
             for a in entity.get("authors", []):
                 if not isinstance(a, dict) or a.get("person") not in persons:

@@ -113,3 +113,25 @@ remove batches to cut them again unless the user asks for it.
 The validator exits with an error when a batch is unfinished or wrong.
 Report what it says, and go on: each apply step uses what did finish and
 marks the rest for review. Show the user what each apply step printed.
+
+## Pass 3 as a whole
+
+When the request is for pass 3, run its steps in this order, dispatching
+each fan-out step as above, with the collection `all`. Every
+`grouping_link.py` command takes `--run <run>`; the others take
+`--run <run> --collection all`.
+
+1. Persons. `python3 scripts/grouping_link.py --step dossiers-persons`
+   cuts the windows. Dispatch the step `link-persons`. Then
+   `python3 scripts/grouping_validate.py --step link-persons` and
+   `python3 scripts/grouping_link.py --step persons`.
+2. Titles, which need the persons linked. `grouping_link.py --step
+   dossiers-titles`, dispatch `link-titles`, validate `link-titles`, and
+   `grouping_link.py --step titles`.
+3. `python3 scripts/grouping_link.py --step registry` mints the IDs and
+   writes the registry to `data/grouping/`.
+4. `python3 scripts/grouping_keep.py` copies what the linkers wrote to
+   `data/grouping/runs/<run>/all/`.
+
+As in pass 2, a cutting command refuses on a resumed run because its
+windows exist: go on to dispatching what is pending.
