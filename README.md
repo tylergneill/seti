@@ -9,6 +9,13 @@ an author in the [Pandit Project](https://www.panditproject.org/).
 the master as an input, the same way it takes a Pandit export.
 
 This repo holds the master and the tools that improve its Pandit IDs.
+
+`data/seti-master.csv` here is the master. The public [SETI Google
+Sheet](https://docs.google.com/spreadsheets/d/1MpHlU-wnWbTsC-2eWZ-gowsM8oiBeGapcifeFFeaitI/edit?gid=0#gid=0)
+used to be, with this file copied from it; that is now reversed, and the
+sheet will in time be filled from this file. Make changes here, not in
+the sheet.
+
 The code's version is in `VERSION`; the master is dated by the copies
 taken of it.
 
