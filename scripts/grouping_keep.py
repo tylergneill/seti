@@ -8,6 +8,7 @@ again is what they wrote:
 
   opinions.json       the readers, pass 1
   consolidated.json   the consolidators and linkers, passes 2 and 3
+  proposals.json      the grounders, against Pandit
   decisions.json      the item adjudicators, pass 2c
 
 This copies those, batch directory by batch directory, to
@@ -43,7 +44,7 @@ def main():
             shutil.copy2(base / name, out / name)
     kept = 0
     for step, spec in STEPS.items():
-        if (args.collection == ALL) != step.startswith("link-"):
+        if (args.collection == ALL) != (step.startswith("link-") or step == "ground"):
             continue
         for batch, done in batches(args.run, args.collection, step):
             if done:

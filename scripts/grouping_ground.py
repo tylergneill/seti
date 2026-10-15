@@ -34,8 +34,18 @@ the agents' own pandit_hint beside it for comparison.
            hint otherwise). Disagreements go to
            reports/<date>-grounding-eval.csv.
 
+  --prep   cut titles for the research pass (agents/grouping/grounder.md)
+           into batches, tmp/grouping/<run>/all/p4-NNN/items.json: those
+           the matcher scored from --low up to the threshold, by default
+           the near misses
+  --apply  gather the grounders' proposals into
+           data/grouping/grounding/research-titles.csv; --eval then counts
+           a research ID at or above the threshold before the matcher's
+
   grouping_ground.py
   grouping_ground.py --eval
+  grouping_ground.py --prep --run 2026-10-13-one [--low 0.8]
+  grouping_ground.py --apply --run 2026-10-13-one
 """
 
 import argparse
@@ -47,7 +57,7 @@ import re
 
 from atlas_works import GRETIL_TREE, seti_rows, to_iast
 from common import AMBIGUITY_MARGIN, DEFAULT_THRESHOLD, OPEN, REPORTS, ROOT, Pandit, norm, split_cell
-from grouping_common import DATA
+from grouping_common import ALL, DATA, batches, read_json, run_dir, write_json
 from match import (Q_ALIAS, Q_EXACT, W_AUTHOR_AMBIGUOUS, W_AUTHOR_UNIQUE, W_UNCORROBORATED,
                    W_UNIQUE_AUTHORLESS, build_indexes)
 
@@ -272,9 +282,16 @@ def evaluate():
         g = grounding[t]
         return g["Pandit ID"] if g["Status"] == "grounded" else ""
 
+    research = {}
+    if (OUT / "research-titles.csv").exists():
+        research = {r["Title ID"]: r["Pandit ID"] for r in read_csv(OUT / "research-titles.csv")
+                    if r["Pandit ID"] and float(r["Confidence"]) >= DEFAULT_THRESHOLD}
     sources = {"agent hints": lambda t: grounding[t]["Agent Hint"],
                "matcher": matcher,
                "matcher, else hint": lambda t: matcher(t) or grounding[t]["Agent Hint"]}
+    if research:
+        sources["research, matcher, hint"] = lambda t: research.get(t) or matcher(t) or grounding[t]["Agent Hint"]
+    last = list(sources)[-1]
     print(f"GRETIL items with a SETI work ID: {len(truth)}")
     out = []
     for label, source in sources.items():
@@ -287,7 +304,7 @@ def evaluate():
             covered += 1
             if got & ids:
                 agree += 1
-            elif label == "matcher, else hint":
+            elif label == last:
                 out.append([item, rows[item]["Text Name"], ", ".join(sorted(ids)),
                             "; ".join(pandit.name_of(i) for i in sorted(ids)), rows[item]["Title Names"],
                             ", ".join(sorted(got)), "; ".join(pandit.name_of(i) for i in sorted(got)),
@@ -300,15 +317,123 @@ def evaluate():
         w.writerow(["Item ID", "Text Name", "SETI Work IDs", "SETI Work Names", "Title Names",
                     "Grounded IDs", "Grounded Names", "How"])
         w.writerows(out)
-    print(f"disagreements (matcher, else hint): {len(out)}, in {path.relative_to(ROOT)}")
+    print(f"disagreements ({last}): {len(out)}, in {path.relative_to(ROOT)}")
+
+
+# ---------- the research pass ----------
+
+LINES = 5
+RESEARCH_COLUMNS = ["Title ID", "Name", "Pandit ID", "Pandit Name", "Confidence", "Reasoning", "Matcher ID",
+                    "Agrees With Matcher", "Agent Hint", "Batch"]
+
+
+def prep(run, low, threshold, size):
+    base = run_dir(run, ALL)
+    if any(base.glob("p4-*")):
+        raise SystemExit(f"{base.relative_to(ROOT)} already has p4 batches. Apply them, or remove them to cut again.")
+    grounding = read_csv(OUT / "titles.csv")
+    titles = {r["Title ID"]: r for r in read_csv(DATA / "titles.csv")}
+    persons = {r["ID"]: r for r in read_csv(OUT / "persons.csv")}
+    lines = collections.defaultdict(list)
+    for r in read_csv(DATA / "master.csv"):
+        line = {k: v for k, v in (("collection", r["Collection"]), ("title", r["Text Name"]),
+                                  ("native", r["Native Text Name"]), ("author", r["Author Name"]),
+                                  ("editor", r["Editor Name"])) if v}
+        for t in cells(r["Title IDs"]):
+            lines[t].append(line)
+    def named(ref):
+        """part_of and comments_on hold a title ID where the target is in the registry."""
+        return titles[ref]["Name"] if ref in titles else ref
+
+    chosen = [g for g in grounding if g["Status"] == "candidate" and low <= float(g["Confidence"]) < threshold]
+    items = []
+    for g in chosen:
+        t = titles[g["ID"]]
+        authors = []
+        for pid, name, attr in zip(cells(t["Author IDs"]), cells(t["Author Names"]),
+                                   cells(t["Attribution"]) or [""] * 99):
+            p = persons.get(pid, {})
+            grounded = p.get("Pandit ID") if p.get("Status") == "grounded" else p.get("Agent Hint")
+            authors.append({k: v for k, v in (("name", name), ("attribution", attr),
+                                              ("pandit_person", grounded)) if v})
+        candidates = [{"id": g["Pandit ID"], "name": g["Pandit Name"], "score": float(g["Confidence"]),
+                       "why": g["Basis"]}]
+        for other in g["Other Candidates"].split("; ") if g["Other Candidates"] else []:
+            m = re.match(r"(.*) \((\d+)\) ([\d.]+)$", other)
+            if m:
+                candidates.append({"id": m.group(2), "name": m.group(1), "score": float(m.group(3))})
+        item = {"title": t["Title ID"], "name": t["Name"], "variants": cells(t["Alternative Names"]),
+                "authors": authors, "part_of": named(t["Part Of"]), "comments_on": named(t["Comments On"]),
+                "context": t["Context"], "collections": t["Collections"], "items": int(t["Items"]),
+                "lines": lines[t["Title ID"]][:LINES], "candidates": candidates, "agent_hint": t["Pandit Hint"]}
+        items.append({k: v for k, v in item.items() if v not in ("", [], None) or k in ("title", "name")})
+    for n in range(0, len(items), size):
+        batch = base / f"p4-{n // size + 1:03d}"
+        batch.mkdir(parents=True)
+        write_json(batch / "items.json", items[n:n + size])
+    print(f"ground: {len(items)} titles scored from {low} to below {threshold}, in "
+          f"{len(range(0, len(items), size))} batch(es) under {base.relative_to(ROOT)}")
+
+
+def apply(run):
+    pandit = Pandit()
+    grounding = {r["ID"]: r for r in read_csv(OUT / "titles.csv")}
+    rows, problems, pending = [], [], []
+    for batch, done in batches(run, ALL, "ground"):
+        asked = {it["title"]: it for it in read_json(batch / "items.json")}
+        if not done:
+            pending.append(batch.name)
+            continue
+        for f in read_json(batch / "proposals.json"):
+            t = f.get("title") if isinstance(f, dict) else None
+            if t not in asked:
+                problems.append(f"{batch.name}: a finding for a title it was not given: {f!r}")
+                continue
+            wid = str(f.get("id") or "")
+            if wid and wid not in pandit.works:
+                problems.append(f"{batch.name}: {t} was given {wid}, which is not a Pandit work; set aside")
+                wid = ""
+            g = grounding[t]
+            rows.append({"Title ID": t, "Name": asked[t]["name"], "Pandit ID": wid,
+                         "Pandit Name": pandit.name_of(wid), "Confidence": f"{float(f.get('confidence') or 0):.2f}",
+                         "Reasoning": str(f.get("reasoning", "")).strip(), "Matcher ID": g["Pandit ID"],
+                         "Agrees With Matcher": "" if not wid else ("yes" if wid == g["Pandit ID"] else "no"),
+                         "Agent Hint": g["Agent Hint"], "Batch": batch.name})
+    path = OUT / "research-titles.csv"
+    old = {r["Title ID"]: r for r in read_csv(path)} if path.exists() else {}
+    old.update({r["Title ID"]: r for r in rows})
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, RESEARCH_COLUMNS, lineterminator="\n")
+        w.writeheader()
+        w.writerows(sorted(old.values(), key=lambda r: r["Title ID"]))
+    ids = [r for r in rows if r["Pandit ID"]]
+    confident = [r for r in ids if float(r["Confidence"]) >= DEFAULT_THRESHOLD]
+    print(f"ground: {len(rows)} findings; {len(confident)} IDs at or above {DEFAULT_THRESHOLD}, "
+          f"{len(ids) - len(confident)} below, {len(rows) - len(ids)} not in Pandit; "
+          f"of the confident, {sum(r['Agrees With Matcher'] == 'yes' for r in confident)} agree with the "
+          f"matcher's best candidate; written to {path.relative_to(ROOT)}"
+          + (f"; {len(pending)} batch(es) pending: {', '.join(pending)}" if pending else ""))
+    for line in problems:
+        print("  problem:", line)
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
     ap.add_argument("--eval", action="store_true", help="score the grounding against SETI on GRETIL")
+    ap.add_argument("--prep", action="store_true", help="cut the near misses into batches for the research pass")
+    ap.add_argument("--apply", action="store_true", help="gather the research pass's proposals")
+    ap.add_argument("--run", help="the grouping run whose all/ directory holds the batches")
+    ap.add_argument("--low", type=float, default=0.8, help="lowest matcher score to research (default 0.8)")
+    ap.add_argument("--batch-size", type=int, default=10, help="titles per grounder (default 10)")
     args = ap.parse_args()
-    if args.eval:
+    if (args.prep or args.apply) and not args.run:
+        ap.error("--prep and --apply need --run")
+    if args.prep:
+        prep(args.run, args.low, args.threshold, args.batch_size)
+    elif args.apply:
+        apply(args.run)
+    elif args.eval:
         evaluate()
     else:
         ground(args.threshold)

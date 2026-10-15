@@ -298,8 +298,45 @@ def check_decisions(batch, rep):
             rep.error(f"item {item}", f"appears {seen[item]} times")
 
 
+def check_proposals(batch, rep):
+    """Grounding: one grounder's proposals.json against its titles."""
+    out = _load_output(batch, "proposals.json", rep)
+    if out is None:
+        return
+    if not isinstance(out, list):
+        rep.error(batch.name, "proposals.json must be a list of findings")
+        return
+    asked = {it["title"] for it in json.loads((batch / "items.json").read_text(encoding="utf-8"))}
+    seen = collections.Counter()
+    for n, f in enumerate(out):
+        title = f.get("title") if isinstance(f, dict) else None
+        where = f"title {title or '#%d' % (n + 1)}"
+        if title not in asked:
+            rep.error(where, "is not a title of this batch")
+            continue
+        seen[title] += 1
+        wid = f.get("id")
+        if wid not in (None, "") and str(wid) not in pandit().works:
+            rep.error(where, f"id {wid!r} is not a work in the Pandit extract; give an ID the lookup tool "
+                             "showed you, or null")
+        try:
+            confidence = float(f.get("confidence"))
+        except (TypeError, ValueError):
+            confidence = -1
+        if not 0 <= confidence <= 1:
+            rep.error(where, f"confidence {f.get('confidence')!r} is not a number from 0 to 1")
+        if not str(f.get("reasoning", "")).strip():
+            rep.error(where, "needs reasoning an editor can check")
+    for title in sorted(asked):
+        if seen[title] == 0:
+            rep.error(f"title {title}", "is in the batch but not in proposals.json")
+        elif seen[title] > 1:
+            rep.error(f"title {title}", f"appears {seen[title]} times")
+
+
 CHECKS = {"read": check_opinions, "persons": check_consolidated, "titles": check_consolidated,
-          "items": check_decisions, "link-persons": check_consolidated, "link-titles": check_consolidated}
+          "items": check_decisions, "link-persons": check_consolidated, "link-titles": check_consolidated,
+          "ground": check_proposals}
 
 
 def main():

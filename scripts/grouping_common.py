@@ -141,6 +141,7 @@ STEPS = {
     "items":        {"prompt": "adjudicator.md",  "glob": "p2c-*", "input": "items.json",    "output": "decisions.json"},
     "link-persons": {"prompt": "linker.md",       "glob": "p3a-*", "input": "dossiers.json", "output": "consolidated.json"},
     "link-titles":  {"prompt": "linker.md",       "glob": "p3b-*", "input": "dossiers.json", "output": "consolidated.json"},
+    "ground":       {"prompt": "grounder.md",     "glob": "p4-*",  "input": "items.json",    "output": "proposals.json"},
 }
 ALL = "all"
 
