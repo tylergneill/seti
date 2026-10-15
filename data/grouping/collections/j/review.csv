@@ -1,0 +1,444 @@
+Pass,Kind,Key,Name,Reason,Detail
+2 majority,item,j:001165,Sagarvihangam,low confidence,Taken as a modern Sanskrit translation made from Meera Bhatt's Gujarati version of a foreign book; the roles of the four names are a guess.
+2 majority,item,j:001472,Granthtrai,low confidence,A volume of three works that the metadata does not name; the collective title stands for them.
+2 majority,item,j:001772,Tithinirnay,low confidence,The catalogue's author is taken as the modern editor; the Tithinirṇaya's own author is not given.
+2 majority,item,j:001835,Katharatnakar,low confidence,"The well-known Kathāratnākara is Hemavijaya Gaṇi's (1600 CE); the catalogue names Hemahaṃsa Gaṇi, perhaps by a slip. The title is given Hemavijaya, the name kept as written."
+2 majority,item,j:002210,Aatma ka Darshan,low confidence,"Hindi title from Jain Vishva Bharati; it may carry old texts with translation, but the metadata names none."
+2 majority,item,j:002211,Panch Stotrani,low confidence,Five stotras that the metadata does not name; the catalogue's author is taken as the modern editor.
+2 majority,item,j:002237,Mohonmulanvadsthanakam,low confidence,Both names are taken as modern editors of an older tract; one of them may be its author.
+2 majority,item,j:002246,Nayamrutam,low confidence,"Taken as a modern volume of older naya texts, with the catalogue's author as its editor."
+2 majority,item,j:002249,Pani Piyush Payasvini,low confidence,The metadata does not show what kind of book this is.
+2 majority,item,j:002277,Adhyatmopnishat Prakaranam Savrutti,low confidence,"Which Adhyātmopaniṣad this is, and who wrote the vṛtti, are guesses: taken as Yaśovijaya's text with a modern vṛtti by Trailokyamaṇḍanavijaya."
+2 majority,item,j:002369,Siddhant Chandrika Purvarddham,low confidence,The Siddhāntacandrikā is taken as Rāmāśrama's Sārasvata grammar; 'Ramsharma' may be its editor or a slip for the author. The year 1800 is doubtful.
+2 majority,item,j:002579,Kirtikala,low confidence,"Kīrtikalā is taken as a modern commentary on a work of Hemacandra, who is author of the base text only; which base text is not said."
+2 majority,item,j:002985,Agam 44 Chulika 01 Nandi Sutra,low confidence,"'Chandrasuri' on a Nandīsūtra is taken as Śrīcandrasūri, author of a gloss on Haribhadra's Nandīvṛtti, and as a different man from the 'Chandrasuri' of j:001564; both points are uncertain."
+2 majority,item,j:003072,Samaysara,low confidence,"Titled Samayasāra, but with Mahāprajña as author in 1991 this is taken to be his Hindi discourses on Kundakunda's Samayasāra, not an edition of it."
+2 majority,item,j:003079,Jain Yoga ke Sat Granth,low confidence,"An anthology of seven older Jain yoga texts with Hindi translation; the metadata names none, so the collection stands as the title. Dulaharāja is its editor and translator."
+2 majority,item,j:003089,Yogakshema Sutra,low confidence,Taken as a modern Hindi book despite 'Sutra' in the title.
+2 majority,item,j:003135,Devdravyadisiddhi Aparnam Bechar Hitshiksha,low confidence,An early 20th-century polemical tract; its language and whether the two laymen are authors or publishers cannot be told from the metadata.
+2 majority,item,j:003687,Stavanavali,low confidence,A hymn collection whose contents and language the metadata does not give.
+2 majority,item,j:004155,Swarup Deshna Vimarsh,low confidence,Taken as a modern Hindi volume of discussion on Viśuddhasāgara's discourses on the Svarūpasambodhana; it may carry that text.
+2 majority,item,j:004339,Shantinath Charitram,low confidence,Which Śāntināthacaritra this is cannot be told; the catalogue's author is taken as a 20th-century editor.
+2 majority,item,j:004352,Jin Darshan Chovisi,low confidence,"A caubīsī is a set of twenty-four hymns to the Jinas, but the metadata does not say whose or in what language; it may be a picture book."
+2 majority,item,j:004372,Agam Sudha Sindhu Part 11,low confidence,"Filed under 'Chedasūtra > Kalpasūtra'. Taken as the Paryuṣaṇākalpa and so split from the Bṛhatkalpa of j:004353, since the series' other Chedasūtras fall in Part 09; it could be the Bṛhatkalpa."
+2 majority,item,j:004391,Jain Gyan Gun Sangraha,low confidence,"Taken as a 1936 vernacular compendium of Jain lore, not a Sanskrit work; the metadata does not settle it."
+2 majority,item,j:004393,Narbhavdrushtantopnaymala,low confidence,"Jinendrasūri is taken as the later name of Jinendravijaya Gaṇi and as editor; he could be the author, and the two could be different persons."
+2 majority,item,j:004404,Karmgranth tatha Sukshmarth Vicharsar Prakaran,low confidence,"'Karmagrantha' grouped with Devendrasūri's, though the volume may hold one of the older Karmagranthas; the catalogue's author is the 1974 editor."
+2 majority,item,j:004409,Sthaviravali,low confidence,'Hivadacharya' read as Himavadācārya and the item as the Sthavirāvalī ascribed to him; 12 pages with three modern names may instead be a discussion of that text.
+2 majority,item,j:004422,Prakaran Pushpmala,low confidence,Collection of prakaraṇas whose contents are not named; Ratnasiṃhasūri taken as author and Devavijaya as editor.
+2 majority,item,j:004433,Parshwanath Paramparaya Itihas,low confidence,Taken as a modern Sanskrit history from the Sanskrit form of the title; could be ancillary. Śukla's role is a guess.
+2 majority,item,j:004442,Chakshurprapyakaritawad,low confidence,Punyapālasūri taken as modern editor; he may instead be the author or commentator.
+2 majority,item,j:004478,Prakrit Shabda Rupavali,low confidence,"Prākṛtaśabdarūpāvalī: taken as modern learning material (Prakrit paradigms after Hemacandra), so ancillary and Hemacandra left unplaced."
+2 majority,item,j:004483,Madhyam Siddh Prabha Vyakaranam,low confidence,"Jinendrasūri taken as editor, as on the Kāvyaṣaṭka; the grammar's author is not given."
+2 majority,item,j:004489,Arshbhiyacharit Vijayollas tatha Siddhasahasra Namkosh,low confidence,"Three works of Yaśovijaya Upādhyāya in one volume (1976). The catalogue's 'Yashovijay-2' is read as the modern editor Yaśovijaya, set apart by the homonym mark from 'Yashovijay Upadhyay'; if the mark means the Upādhyāya himself, he is the author."
+2 majority,item,j:004490,Prakrit Vyakaranam,low confidence,"Which Prakrit grammar this is, and whether Saṃyamasāgara is editor or author, the metadata does not say."
+2 majority,item,j:004491,Kalplatavatarika,low confidence,"Kalpalatāvatārikā read as Vijayāmṛtasūri's commentary on Yaśovijaya's Syādvādakalpalatā, which the edition would carry; from memory, not from the metadata."
+2 majority,item,j:006147,Bramhopnishad,low confidence,"Not grouped with the Atharvavedic Brahmopaniṣad: a Jain monk's 2012 publication, probably his own commentary on an unnamed older text."
+2 majority,item,j:008422,Mantungashastram,low confidence,The work and which Mānatuṅga is meant are not identified.
+2 majority,item,j:008446,Nyayasamucchaya,low confidence,"Nyāyasamuccaya read as Hemahaṃsa Gaṇi's collection of the Siddhahema paribhāṣās (Nyāyasaṅgraha) in Vijayalāvaṇyasūri's edition with his own commentaries; Lāvaṇyasūri is editor and commentator, not the compiler. From memory, not from the metadata."
+2 majority,item,j:008451,Saptabhangimimansa,low confidence,Taken as a modern Sanskrit composition by the monk named; he could be an editor.
+2 majority,item,j:008459,Bruhad Dharana Yantra,low confidence,Astrological tables; whether an old text or a modern compilation is not clear.
+2 majority,item,j:008533,Atmashuddhipayog,low confidence,Kept apart from Śuddhopayoga (j:008664) on the different title and page count; they may be one work.
+2 majority,item,j:008592,Jain Syadvadamuktawali,low confidence,Buddhisāgara kept as author as the catalogue has it; he may only have edited an older Syādvādamuktāvalī.
+2 majority,item,j:008623,Nitya Mangal aur Gautamswami Ka Ras,low confidence,"Devotional booklet with a Hindi title: daily auspicious recitations and the vernacular Gautamasvāmī Rāsa; taken as ancillary, though it may hold Sanskrit or Prakrit recitations."
+2 majority,item,j:008627,Parmatma Darshan,low confidence,Probably largely Gujarati; kept as a work because the catalogue files it as Sanskrit.
+2 majority,item,j:008665,Snatrapooja,low confidence,Probably a vernacular pūjā; kept as a work because the catalogue files it as Sanskrit.
+2 majority,item,j:008673,Tattva Bindu,low confidence,Possibly Gujarati; kept as a work because the catalogue files it as Sanskrit.
+2 majority,item,j:008691,Yugadi Vandana,low confidence,Contents not identified; taken as a devotional collection compiled by the monk named.
+2 majority,item,j:009507,Kavyanushasanam,low confidence,"Taken as Hemacandra's Kāvyānuśāsana (sūtra text, 92 pages) in a modern Jain edition; Vāgbhaṭa's work of the same name is possible."
+2 majority,item,j:009528,Kriya kosha,low confidence,"Modern topical cyclopaedia of canonical passages on kriyā with Hindi (1969); taken as a reference compilation, not a Sanskrit work."
+2 majority,item,j:009530,Samanyanirukti Chandrakala kalavilas Tika,low confidence,"Sāmānyanirukti with the two commentaries Candrakalā and Kalāvilāsa; both are put under Vāmācaraṇa, though one may be by another hand."
+2 majority,item,j:009543,Samta Sagar Charitam,low confidence,"A 2004 work on a modern monk, so the name is a modern Hemacandrasūri, kept apart from the 12th-c. Hemacandra ('Hemchandracharya')."
+2 majority,item,j:009650,Vaddhamana Deshna,low confidence,"The Prakrit title points to Śubhavardhana's Vaddhamāṇadesaṇā, the named Rājakīrti to the Sanskrit prose version; taken as one work. Sūracandra's part is unknown."
+2 majority,item,j:009694,Kshetra Sparshana Prakaranam,low confidence,"The contemporary monk is taken as editor of an older prakaraṇa, but he may be its author."
+2 majority,item,j:009700,Jambuswami Charitra,low confidence,"Which Jambūsvāmicarita this is, and whether Vimla Jain edits, translates or retells it, the metadata does not say."
+2 majority,item,j:010010,Jain Siddhanta,low confidence,"Taken as a Hindi exposition of Jain doctrine by the Sthānakavāsī Upādhyāya Ātmārāma (1915), not a Sanskrit work."
+2 majority,item,j:010020,Jain Ratnasara,low confidence,Taken as a compendium of rites and hymns compiled by the yati; how much of it is Sanskrit is not known.
+2 majority,item,j:010024,Jain Vrat Katha Sangraha,low confidence,"A 39-page collection of vrata stories; the catalogue's author is taken as compiler but may be only the publisher, and the language may be Hindi."
+2 majority,item,j:010805,Chattrish Bol Sangraha,low confidence,"A Sthānakavāsī collection of thirty-six doctrinal 'bol' (topic lists) in Hindi, taken as learning material rather than a Sanskrit work."
+2 majority,item,j:016110,Abhidhan Chintamani Nammala Tika,low confidence,"The ṭīkā is not named; it is taken as Hemacandra's own, since no other author is given."
+2 majority,item,j:016122,Hemchandra Kosh,low confidence,"'Hemacandrakośa' is taken as the Abhidhānacintāmaṇi, the usual sense of that name in early prints; it could be another of Hemacandra's lexica (Anekārthasaṃgraha)."
+2 majority,item,j:020015,Atha Vedanga Prakash,low confidence,"Taken as one part (69 pp.) of Dayānanda Sarasvatī's Vedāṅgaprakāśa, a grammar primer in Sanskrit and Hindi; it could as well be counted as learning material."
+2 majority,item,j:020066,Anyokti Shatakam,low confidence,"Darśanavijaya is taken as the author, but in a 1937 print the name may be that of a modern editor."
+2 majority,item,j:020069,Aradhana Swarup,low confidence,Neither the nature of the text nor the role of the name is clear from the metadata.
+2 majority,item,j:020071,Arthsangraha,low confidence,"Taken as Laugākṣi Bhāskara's Arthasaṃgraha in a Bengal edition (1821 Śaka = 1899/1900), whose 474 pages point to a commentary; the catalogue's author would then be its editor or commentator, not the author of the Arthasaṃgraha."
+2 majority,item,j:020072,Ashtaprakari Pooja Kathanak,low confidence,"'Aṣṭaprakārī-pūjā-kathānaka' is taken as the Vijayacandrakevalicaritra of Candraprabha Mahattara, whose hero the catalogue gives as author."
+2 majority,item,j:020077,Atharvaved Samhitaya,low confidence,The genitive title ('Atharvavedasaṃhitāyāḥ …') and 116 pages suggest an index or a portion of the Saṃhitā rather than the whole text.
+2 majority,item,j:020134,Bruhat Paryushananirnay,low confidence,"Taken as a modern Hindi polemic on the date of Paryuṣaṇa (1922), not a Sanskrit work."
+2 majority,item,j:020143,Chandrayash Charitram,low confidence,Which Vardhamānasūri is meant is not clear; grouped with the one on j:020345 for want of evidence to split.
+2 majority,item,j:020172,Dangvopakhyanam,low confidence,Identified from the title alone; language and source are not stated.
+2 majority,item,j:020322,Drushtant Shatakam,low confidence,Bhūpendrasūri is taken as editor or expositor of an older Dṛṣṭāntaśataka; he may instead be its author.
+2 majority,item,j:020325,Dwadash Parv Vyakhtyana Bhashantaram,low confidence,"A vernacular translation (bhāṣāntara) of a Dvādaśaparvavyākhyāna, taken as Kṣamākalyāṇa's because the publisher is Kharataragaccha."
+2 majority,item,j:020327,Dwadashanupreksha Bhasha Tika Sahit,low confidence,Taken as the twelve-anuprekṣā section of Śubhacandra's Jñānārṇava with a Hindi commentary; the metadata does not say which Śubhacandra or which text.
+2 majority,item,j:020328,Dwait Samrajya,low confidence,Known only by its title.
+2 majority,item,j:020342,Gautamswamyashtakam,low confidence,The aṣṭaka is taken as the traditional hymn and the modern monk as its editor and expositor (58 pp. for eight verses); he may instead have composed it.
+2 majority,item,j:020344,Geetashastrasya Pratikandam,unidentified,"'Gītāśāstrasya pratikāṇḍam' with no author: perhaps a work on the Bhagavadgītā, but the metadata does not say what this 410-page book is."
+2 majority,item,j:020345,Ghantakarna Pratishtha Vidhi_,low confidence,Which Vardhamānasūri is meant is not clear; grouped with the one on j:020143 for want of evidence to split.
+2 majority,item,j:020365,Gurugun Shattrinshat Shattrinshika,low confidence,The catalogue's author is taken as the modern editor; the work is put under Ratnaśekharasūri from knowledge. Which Buddhisāgara is meant is uncertain (grouped with the Kharatara Buddhisāgara Gaṇi; the Tapāgaccha Buddhisāgarasūri is possible).
+2 majority,item,j:020372,Hetvabhas Savyabhichar,low confidence,"A Navyanyāya section on the savyabhicāra fallacy; 'Gangadhar' may be a slip for Gadādhara, in which case this is part of the Gādādharī."
+2 majority,item,j:020378,Hirvijaysuri Jivan Charitra,low confidence,"A 28-page modern life of Hīravijayasūri (1961), taken as a vernacular booklet rather than a Sanskrit work."
+2 majority,item,j:020380,Hitopdesh,low confidence,"Grouped with Nārāyaṇa's Hitopadeśa on the title alone. 'Kanthsuri' is unexplained: if it names an author, this is a different, Jain Hitopadeśa. Both roles are guesses."
+2 majority,item,j:020393,Jain Ling Nirnay,low confidence,No author and no sign of the language; may be a modern vernacular tract.
+2 majority,item,j:020402,Jambuswami Charitam,low confidence,"Grouped with j:020401 on title and near-equal size; the metadata names only a modern monk, who may be editor or the author of a new Sanskrit rendering, in which case this is a different composition."
+2 majority,item,j:020406,Jinduttasuri Charitram Purvarddha,low confidence,"The layman named is probably the publisher or patron, not the author; 'editor' is the nearest role. The author is not given."
+2 majority,item,j:020423,Kusumavali,low confidence,What this 1943 'Kusumāvali' holds is not clear from the metadata; Hemacandra is taken as the 12th c. polymath.
+2 majority,item,j:020435,Kamghat Kathanakam,low confidence,The Kāmaghaṭakathānaka is an anonymous Jain tale; the name is taken as a modern editor or translator.
+2 majority,item,j:020445,Kshama Rushi,low confidence,A 48-page booklet of 1921; it may be a vernacular retelling and so ancillary.
+2 majority,item,j:020446,Kulingivadanodgar Mimansa Part 01,low confidence,"A 1926 sectarian polemic; its language is not known, and it may be vernacular."
+2 majority,item,j:020453,Kushalchandrasuripatta Prashasti,low confidence,Three names with nothing to tell their roles apart; the sūri is taken as author and the other two as those who brought the book out.
+2 majority,item,j:020467,Mahimna Stotra Tika,low confidence,Taken as the Śivamahimnaḥstotra with an unnamed commentary; a Jain Mahimnaḥstotra is not ruled out.
+2 majority,item,j:020481,Mohan Sanjivani,low confidence,Language and contents are not known; if it is a vernacular biography it is ancillary. Roles are a guess.
+2 majority,item,j:020489,Murtimandan,low confidence,"A modern polemic; its language is not known, and it may be Hindi and so ancillary."
+2 majority,item,j:020492,Nadigyan Tarangini,low confidence,"The name is taken as the Gujarati translator or publisher of an older treatise, not its author."
+2 majority,item,j:020495,Nandi Sutra Tika,low confidence,The commentator is not named; probably Malayagiri's vṛtti.
+2 majority,item,j:020511,Niti Sangraha,low confidence,Grouped by name with the Kāvyamālā editor Durgāprasāda; nothing confirms that it is the same man. Year 1812 is presumably Śaka.
+2 majority,item,j:020520,Padhamvaggo,unidentified,"'Paḍhamavaggo' is only 'first section' of some Prakrit work, which the metadata does not name (perhaps one of Vijayakastūrasūri's modern Prakrit works)."
+2 majority,item,j:020534,Panchamrutabhishek Path,low confidence,The layman named is probably the publisher; 'editor' is the nearest role.
+2 majority,item,j:020550,Pathya,low confidence,Taken as a modern vernacular book on diet in Āyurveda.
+2 majority,item,j:020578,Pratigyasutra,low confidence,No author or context; read as the Śuklayajurveda Pratijñāsūtra with a commentary.
+2 majority,item,j:020594,Rajvidya,low confidence,Neither the work nor the author can be identified from the metadata; the 'name' is an epithet.
+2 majority,item,j:020596,Rampanchdashi Satik,low confidence,Not a work I can identify; printed with an unnamed commentary.
+2 majority,item,j:020597,Ranpingal  Part 01,low confidence,"The Raṇapiṅgala is a modern Gujarati treatise on prosody (vol. 1), so not a Sanskrit work; it could instead be counted as a vernacular work."
+2 majority,item,j:020599,Ransinh Charitram,low confidence,The author's name is garbled or abbreviated and cannot be identified.
+2 majority,item,j:020605,Rekhaganit,low confidence,Either a geometry schoolbook by this author (then ancillary) or an edition of the Sanskrit Rekhāgaṇita; the metadata does not settle it.
+2 majority,item,j:020615,Sadharmik Vatsalya Prakash,low confidence,Grouped by name with the 13th c. Devendrasūri; a modern namesake is possible.
+2 majority,item,j:020617,Sagarotpatti,low confidence,Language and contents not known; possibly a vernacular polemic and so ancillary.
+2 majority,item,j:020639,Sanshay Timir Pradip,low confidence,Taken as a modern Hindi doctrinal tract (1909).
+2 majority,item,j:020656,Saptapadi Shastra,low confidence,The catalogue's author is taken as the modern editor of a Pārśvacandragaccha text; he may instead be its author.
+2 majority,item,j:020661,Sarva Dev Samanyo Dev Pujan Prayog,low confidence,A modern ritual manual; whether the name is its author or compiler is a guess.
+2 majority,item,j:020690,Nar Vikram Charitram,low confidence,"An episode of Guṇacandra's Mahāvīracariya issued separately in Sanskrit; Śubhaṅkaravijaya is its redactor, entered as editor, though he could be counted as author of the rendering."
+2 majority,item,j:020695,Shanti Shloak Tika Tatha Anyamat Dushanam,low confidence,"Two short pieces in one booklet; Vikramavijaya is taken as their author, though he may be only the editor."
+2 majority,item,j:020696,Sharirik Mimansa Bhashye Part 01,low confidence,"The catalogue's author is the editor. 'Śārīrakamīmāṃsābhāṣya' is the formal title of both Rāmānuja's and Śaṅkara's bhāṣyas; read as Rāmānuja's Śrībhāṣya from the editor's name, and probably printed with a sub-commentary."
+2 majority,item,j:020697,Sharirik Mimansa Bhashye Part 02,low confidence,As j:020696.
+2 majority,item,j:020712,Shauchnirnay Trayambakiya,low confidence,"'Tryambakīya' in the title points to an author Tryambaka, who is not otherwise identified."
+2 majority,item,j:020724,Shripal Charitram,low confidence,The catalogue's author is a contemporary editor; which Sanskrit Śrīpālacaritra this is the metadata does not say. Kept apart from the Prakrit Sirivālakahā of j:020748.
+2 majority,item,j:020729,Shvetambar Digamber Part 01 02,low confidence,"Taken as a modern Hindi book on the Śvetāmbara–Digambara division, parts 1–2."
+2 majority,item,j:020768,Sudha Sanchit,low confidence,Work not recognised; the name may be its author or its compiler/editor.
+2 majority,item,j:020811,Tattva Nirnayprasad,low confidence,"Tattvanirṇayaprāsāda: a Hindi doctrinal and polemical treatise by Ātmārāma (Vijayānandasūri, d. 1896), edited by his disciple Vallabhavijaya. Not a Sanskrit work, though filed as Sanskrit; could instead be counted as a work."
+2 majority,item,j:020813,Tattvartha Sutram Part 01,low confidence,"Ghāsīlāla's Tattvārthasūtra with his Dīpikā and Niryukti (1973). His sūtra text is a Sthānakavāsī redaction of his own, grouped here with Umāsvāti's Tattvārthasūtra for want of evidence to split. The catalogue's author is the editor."
+2 majority,item,j:020815,Tattvavatar,low confidence,Work not recognised; the first name is taken as author and Becaradāsa as editor.
+2 majority,item,j:020831,Tibba Ratnakar,low confidence,"Tibba Ratnākara (1882): a Hindi book of Unani medicine, not a Sanskrit work; the roles of the two names are a guess."
+2 majority,item,j:020833,Tilak Manjri,low confidence,"Only 84 pages, so a fragment or first fascicle. Padmasāgara is taken as commentator; Lāvaṇyasūri is known for his Parāga commentary but may be only the editor here."
+2 majority,item,j:020838,Trinshshloki,low confidence,No author; which Triṃśacchlokī this is cannot be told from the metadata.
+2 majority,item,j:020861,Uvvatbhashya,low confidence,"'Uvaṭabhāṣya' with no base text named; taken as his bhāṣya on the Vājasaneyisaṃhitā, but it could be on the Ṛk- or Vājasaneyiprātiśākhya."
+2 majority,item,j:020881,Vedang Prakash,low confidence,"One part (77 pp.) of Dayānanda's Vedāṅgaprakāśa, which part is not stated. Grammar manuals in Sanskrit with Hindi exposition: counted as a work, but could be ancillary learning material."
+2 majority,item,j:020882,Vedang Prakash,low confidence,Another part or parts (326 pp.) of the Vedāṅgaprakāśa; see j:020881.
+2 majority,item,j:020884,Vedant Chintamani,low confidence,No author; which Vedāntacintāmaṇi this is cannot be told.
+2 majority,item,j:020885,Vedant Prakaranam,low confidence,Work not recognised; the name may be author rather than editor.
+2 majority,item,j:020897,Vipak Sutra,low confidence,The name is not recognised and is taken as the editor of the 1877 edition.
+2 majority,item,j:020911,Vishva Gunadarsh Champu,low confidence,"Neither name is the author, Veṅkaṭādhvarin. Both are taken as hands of the 1910 edition; 'Gangadev Bhatt' may be a commentator or a garbled name."
+2 majority,item,j:020915,Vividh Payannav Churi Tika,low confidence,"'Various Prakīrṇakas with avacūri': a collection of several Prakīrṇakas, of which only the Catuḥśaraṇa is identified, by the catalogue's category. The others and the avacūri are not named."
+2 majority,item,j:020916,Vruddhi Ratnamala,low confidence,Title and name coincide; he may be the compiler or the person honoured.
+2 majority,item,j:020917,Vruttabodh,low confidence,Possibly a school primer rather than an old work.
+2 majority,item,j:020946,Yajurved Samhitaya,low confidence,"'Yajurvedasaṃhitāyāḥ …', a truncated genitive title of 45 pages from the Ārya Samāj press: taken as part of, or an index to, the Mādhyandina Vājasaneyisaṃhitā. It may be ancillary."
+2 majority,item,j:020947,Yamdand,low confidence,"Yamadaṇḍa: a Gujarati devotional poem of the Svāminārāyaṇa tradition, not a Sanskrit work though filed as Sanskrit; could instead be counted as a work."
+2 majority,item,j:020950,Yavanraj Vanshavali,low confidence,Work not recognised; language and authorship are taken from the catalogue.
+2 majority,item,j:022036,Samavsaran Prakaran,low confidence,The catalogue's author is taken as the modern translator/editor of an old prakaraṇa whose author is not given.
+2 majority,item,j:022038,Vinay Vijayabhyuday Kavyam,low confidence,"Work not recognised; the name may be the author, the editor or a patron."
+2 majority,item,j:022066,Saman Dhamma Rasayanam,low confidence,"Work not recognised; taken as a modern Prakrit composition by Dharmadhurandharasūri, edited by Bhuvanacandravijaya."
+2 majority,item,j:022269,Jambudwip Laghu Sangrahani,low confidence,Vijayodayasūri is taken as the author of a modern commentary on Haribhadra's text; he may be only the editor.
+2 majority,item,j:022270,Kaysthiti Prakaranam,low confidence,"Roles guessed: both are 20th-c. monks; either may be author, commentator or editor."
+2 majority,item,j:022321,Gyananand Shravakachar,low confidence,"Jñānānandaśrāvakācāra: a Digambara work on lay conduct in old Hindi (Rāyamalla, 18th c.), not Sanskrit though filed as Sanskrit; could instead be counted as a work. The named person is the publisher's manager."
+2 majority,item,j:022363,Padarth Pradip,low confidence,"Work not recognised; probably a modern compilation, and he may be compiler rather than author. The catalogue's year '132' is the page count."
+2 majority,item,j:022371,Prakaran Ratna,low confidence,"A collection of prakaraṇas; kept apart from the Prakaraṇaratnākara (j:022320) of the same publisher, though they may be one series."
+2 majority,item,j:022390,Praman Paribhasha,low confidence,"Dharmsuri taken as Vijayadharmasūri, author of the text; Nyāyavijaya, entered twice, as author of the vṛtti printed with it. The vṛtti and its name are from memory, not the metadata."
+2 majority,item,j:022431,Jagat Kartutva Mimansa Prakaranam,low confidence,Whether Śivānandavijaya is the author or the editor is not clear; the same tract reappears in j:022444 under Suśīlasūri.
+2 majority,item,j:022444,Vishva Kartutva Mimansa Evam Jagat Kartutva Mimansa,low confidence,Two tracts in one book; which of them Suśīlasūri wrote is not clear from the metadata.
+2 majority,item,j:022586,Gacchayar Ppayanna,low confidence,"Roles guessed: Rājendrasūri as vernacular translator, Gulābavijaya as editor. Any Sanskrit ṭīkā printed with the text is not named."
+2 majority,item,j:022602,Jivan Shreyaskar Pathmala,low confidence,A compilation whose contents the metadata does not name.
+2 majority,item,j:022611,Nandisutra Mahatmya,low confidence,"Not grouped with the Nandīsūtra: the title says Māhātmya, and whether the book is the sūtra or a tract on it cannot be told."
+2 majority,item,j:022638,Chandraprabh Charitram Part 01,low confidence,"Grouped by title with Vīranandin's Candraprabhacarita, but a Śvetāmbara editor and three times the length suggest Devendrasūri's Candraprabhacaritra instead."
+2 majority,item,j:022639,Chandraprabh Charitram Part 02,low confidence,"As Part 01: possibly Devendrasūri's Candraprabhacaritra, not Vīranandin's."
+2 majority,item,j:022726,Vijay Prashasti Sar,low confidence,"Taken as Vidyāvijaya's vernacular summary (sāra) of Hemavijaya's Vijayapraśasti, not the kāvya itself; Harshchandra Bhurabhai is the publisher."
+2 majority,item,j:022760,Vastusar Ratnapal Charitre,low confidence,"The dual ""caritre"" is read as two texts, a Vastusāra and a Ratnapālacaritra; it could also be two caritras (Vastusāra-, Ratnapāla-)."
+2 majority,item,j:022763,Muldev Nrup Charitram,low confidence,Whether Harṣavijaya is author or editor is not clear; taken as editor.
+2 majority,item,j:022846,Dharm Parikshano Ras,low confidence,"An Old Gujarati rāsa, not Sanskrit; kept as a work. The catalogue's author is the publisher."
+2 majority,item,j:023397,Haimnutan Laghu Prakriya,low confidence,"Roles guessed: the ācārya as author, the paṇḍit as editor."
+2 majority,item,j:023422,Tattvabindu,low confidence,Not grouped with Vācaspati Miśra's Tattvabindu: a Jain publication of 1910; language and author not clear.
+2 majority,item,j:023434,Karakmala,low confidence,Roles guessed; the metadata does not say who wrote and who edited.
+2 majority,item,j:023437,Indriya Parajay Digdarshan,low confidence,"Taken as one of Vijayadharmasūri's vernacular -digdarśana tracts, not an old Sanskrit work."
+2 majority,item,j:032041,Bhram Vidhvansanam,low confidence,"A 19th-c. Rajasthani work, not Sanskrit; kept as a work."
+2 majority,item,j:032131,Bhota Prakasa,low confidence,Bhoṭaprakāśa: a modern Tibetan chrestomathy and grammar written in Sanskrit; taken as learning material.
+2 majority,item,j:032145,Sutra Rahasyam,low confidence,Language and content not clear from the metadata; may be a vernacular exposition.
+2 majority,item,j:032147,Vidyopasna,low confidence,Taken as a modern vernacular book; the metadata does not show an old text.
+2 majority,item,j:032837,Ubbudo Ma Puno Nibuddijja,low confidence,Taken as a modern vernacular discourse under a Prakrit title; the metadata does not show an old text.
+2 majority,item,j:032868,Nijdhruvshuddhatmanubhav,low confidence,Taken as a modern Digambara vernacular book; roles guessed.
+2 majority,item,j:034068,Sujatvartarshi Charitram,low confidence,Title read as Sujāta-Vārtaka-ṛṣi-caritra.
+2 majority,item,j:034081,Prastavik Duha Sangrah,low confidence,A vernacular collection of dohās; it may belong under ancillary.
+2 majority,item,j:034168,Aparajit Kathanakam,low confidence,
+2 majority,item,j:034170,Chaumasi Vyakhyan Bhashantar Tatha Ter Kathiyanu Swarup,low confidence,"Gujarati translation of a Cāturmāsikavyākhyāna, with a Gujarati tract on the thirteen kāṭhiyās; grouped with the Āṣāḍhacāturmāsikavyākhyāna on the title alone."
+2 majority,item,j:034185,Surchandra Charitram,low confidence,Kept apart from the Vardhamānasūri of the Ācāradinakara.
+2 majority,item,j:034217,Kavya Prakash Dwitya Trutiya Ullas,low confidence,"Ullāsas 2-3 with Upādhyāya Yaśovijaya's commentary; the catalogue's ""Yashovijay-2"" is taken as the modern editor of that name, not the commentator."
+2 majority,item,j:034463,Siddhant Kaumudi Vyakhyan Vyakaran,low confidence,An unidentified exposition of the Siddhāntakaumudī.
+2 majority,item,j:034474,Ath Shatkalyanak Nirnay,low confidence,Ṣaṭkalyāṇakanirṇaya: taken as a modern Hindi gaccha polemic (part of Maṇisāgara's Bṛhatparyuṣaṇānirṇaya).
+2 majority,item,j:034484,Bruhat Paryushana Nirnay,low confidence,Bṛhatparyuṣaṇānirṇaya: taken as a modern Hindi gaccha polemic.
+2 majority,item,j:034509,Harsh Hriday Darpanasya Dwitiya Bhag,low confidence,"Harṣahṛdayadarpaṇa, part 2: taken as a modern Hindi gaccha polemic."
+2 majority,item,j:034540,Lalita Dukhdarshak,low confidence,"A Gujarati play; catalogued as Sanskrit, perhaps a Sanskrit rendering."
+2 majority,item,j:034599,Saddharm Mandanam,low confidence,Saddharmamaṇḍana: taken as a modern Hindi Sthānakavāsī polemic.
+2 majority,item,j:034602,Sanskar Paddhati,low confidence,Roles of the two Śāstrīs are a guess.
+2 majority,item,j:034606,Shasan Jay Pataka,low confidence,A 1946 tract in the tithi dispute; language and authorship uncertain.
+2 majority,item,j:034647,Tirthyak,unidentified,"""Tirthyak"" (1933) is not identifiable from the metadata."
+2 majority,item,j:034788,Chamatkari Savchuri Stotra Sangraha tatha Vankchuliya Sutra Saransh,low confidence,A stotra collection with avacūris and a summary of the Vaṅgacūlikā.
+2 majority,item,j:034789,Chandramalstotram,low confidence,
+2 majority,item,j:034996,Parvtithi Prakash Timir Bhaskar,low confidence,
+2 majority,item,j:035285,Tattvavetta,low confidence,Tattvavettā (1954): taken as a modern Hindi book.
+2 majority,item,j:035299,Vastravarnasiddhi,low confidence,Vastravarṇasiddhi: taken as a modern Hindi tract on the colour of monks' robes.
+2 majority,item,j:035331,Tattvarthadhigam Parishishtam,low confidence,An appendix volume to an edition of the Tattvārthādhigamasūtra; it may be indexes only.
+2 majority,item,j:090118,Charitra Shuddhi Vrat,low confidence,
+2 majority,item,j:090452,Saptopadhanvidhi,low confidence,
+2 majority,item,j:090458,Updeshsaptatika,low confidence,"No author given; grouped with Kṣemarāja's ""navyā"" Upadeśasaptatikā, but it may be Somadharmagaṇi's older work."
+2 majority,item,j:090468,Chitrasambhutcharitram,low confidence,
+2 majority,item,j:090469,Dhanya Charitam Padyam,low confidence,"Vijayānandasūri taken as editor, not author; a guess."
+2 majority,item,j:600059,Adhyatma Kalpadrum,low confidence,"Ratnachandra is taken as Ratnacandra Gaṇi, author of the Adhyātmakalpalatā commentary printed with the text in 1940; he could instead be a modern Ratnacandra as editor or translator."
+2 majority,item,j:600081,Khamansutta Pakkhiyasutta Khamangasuttani Savchuriyai,low confidence,"Three Prakrit ritual texts with an anonymous avacūri. Khamansutta is read as the monks' pratikramaṇa sūtra (Samaṇasutta), which is a guess."
+2 majority,item,j:600086,Chaturvinshati Jinanandstutaya,low confidence,"Kumudvijay is taken as the modern editor, which the metadata does not settle."
+2 majority,item,j:600105,Navpad Prakaranam,low confidence,"Split from Yaśovijaya: the 710-page Navapadaprakaraṇa of 1927 is Devagupta's text with the Bṛhadvṛtti of Yaśodeva Upādhyāya, and the catalogue's Yashovijay Upadhyay is read as a slip for him."
+2 majority,item,j:600134,Sangrahani Sutram,low confidence,"Lalitavijaya is taken as the editor of the 1915 edition. Which Saṅgrahaṇī this is, and so its author, is not said."
+2 majority,item,j:600138,Subodh Samachari,low confidence,Macchindracharya is read as a garbled Śrīcandrācārya: the Subodhā Sāmācārī is Śrīcandrasūri's.
+2 majority,item,j:600174,Dhanna Shalibhadrano Ras,low confidence,"An Old Gujarati rāsa filed as Sanskrit; kept as a work, not ancillary. The catalogue's author is the publisher."
+2 majority,item,j:600175,Meghmala Vichar,low confidence,The catalogue's author is the publisher. The language and author of this weather-lore text are not said.
+2 majority,item,j:600177,Vissthanakno Ras,low confidence,"An Old Gujarati rāsa filed as Sanskrit; kept as a work, not ancillary, and not grouped with Jinaharṣa's Sanskrit Viṃśatisthānakacarita. The catalogue's author is the publisher."
+2 majority,item,j:600178,Hingul Prakaran,low confidence,The catalogue's author is the publisher. The ascription of the Hiṅgulaprakaraṇa to Vinayasāgara is from memory.
+2 majority,item,j:600191,Kumarpal Pratibodh Prabandh,low confidence,"The catalogue's author is a modern editor. The prabandha's author is not said, and it is kept apart from Jinamaṇḍana's Kumārapālaprabandha (j:600161)."
+2 majority,item,j:600193,Arhan Mahapujan tatha Poshtik Mahapujan,low confidence,"The two rites are taken as extracts from Vardhamānasūri's Ācāradinakara, a title the metadata does not give; Anantacandra is taken as editor."
+2 majority,item,j:600196,Syadwad bhasha Devdharmpariksha Adhyatmopnishad Adhyatmikmatpariksha Yatilakshansamucchay,low confidence,"Five short works. The Syādvādabhāṣā is Śubhavijaya's and the other four Yaśovijaya's. The Ādhyātmikamataparīkṣā of this 138-page book is taken as his short Ādhyātmikamatakhaṇḍana, split from the Adhyātmamataparīkṣā of j:600058."
+2 majority,item,j:600197,Shripal Rajano Ras,low confidence,"An Old Gujarati rāsa filed as Sanskrit; kept as a work, not ancillary, and apart from the Sanskrit and Prakrit Śrīpāla works. The catalogue's author is the publisher."
+2 majority,item,j:600200,Chakkavattisa Kaha,low confidence,Jayānandavijaya is taken as a modern editor; he could be the author of a modern Prakrit story.
+2 majority,item,j:600203,Paryushan Satparvashtanhika Vyakhyan,low confidence,"A translation (bhāṣāntara) of an Aṣṭāhnikavyākhyāna, grouped with Kṣamākalyāṇa's (j:600210) on the title alone; other works of this name exist."
+2 majority,item,j:600209,Adhyatmavichar Jeet Sangraha,low confidence,A modern collection whose language and contents the metadata does not say; it may be ancillary.
+2 majority,item,j:600212,Sadhu Sadhvi Aradhana tatha Antkriya Vidhi,low confidence,An 18-page ritual manual; Buddhimuni is taken as its compiler and kept apart from Buddhisāgara Gaṇi.
+2 majority,item,j:600214,Vidyaratna Mahanidhi,low confidence,Neither the work nor this Bhadragupta is known to me; he may be a traditional ascription or a modern compiler.
+2 majority,item,j:600215,Yogopnishad,low confidence,Five pages only; Kalyāṇabodhisūri may be the author of a short modern work or the editor or commentator of an older Yogopaniṣad.
+2 majority,item,j:600227,Samvayangasutram,low confidence,"The author is left unplaced. The commentary printed is probably Abhayadeva's, but as the metadata does not name him it is not mapped."
+2 majority,item,j:600233,Pind Niryukti,low confidence,"The author is left unplaced. The commentary printed is probably Malayagiri's, but as the metadata does not name him it is not mapped."
+2 majority,item,j:600270,Chandraprabhswamicharitam,low confidence,The catalogue's author is the modern editor; which Candraprabhacarita this is the metadata does not say.
+2 majority,item,j:600329,Surdipikadi Prakaran Sangraha,low confidence,A collection whose works are not identified; the collection itself is the title.
+2 majority,item,j:600334,Kalpsutram,low confidence,"The name is taken as the author of the Dānadīpikā commentary; it could instead be a modern editor (Dānavijaya, later Vijayadānasūri)."
+2 majority,item,j:600358,Paryushanasthahnika Vyakhyan,low confidence,Maṇivijaya is taken as the editor of an older Sanskrit sermon; he could be its author.
+2 majority,item,j:600373,Jiv Samas Arth Sahit,low confidence,The Jīvasamāsa 'with meaning'; Rasika Muni is taken as the modern translator.
+2 majority,item,j:600392,Satik Gacchachar Prakirnak Sutram,low confidence,"The unnamed ṭīkā is grouped with Vānararṣi's (Vijayavimala's) commentary; Dānavijaya is taken as the modern editor, later Vijayadānasūri."
+2 majority,item,j:600397,Prakaran Sangraha,low confidence,A collection naming no work; the collection itself is the title.
+2 majority,item,j:600398,Sukta Muktavali,low confidence,Which Sūktamuktāvalī this is the metadata does not say; Bhūpendrasūri is taken as compiler and Gulābavijaya as editor.
+2 majority,item,j:600421,Surchandra Charitram,low confidence,A single tale printed as a pamphlet; which Vardhamānasūri and which source work is not established.
+2 majority,item,j:600423,Sadaivvatsakumar Charitram,low confidence,"'Sadaivvatsa' is read as Sadayavatsa; Matisāgara is taken as author on the catalogue's word alone, and the śāstrī as editor."
+2 majority,item,j:600446,Mahadandak Stotrapar Paryayalpabahutva Vichar Stavanam,low confidence,"Kept apart from Samayasundara's Alpabahutvagarbhita Mahāvīrastavana (j:600336) for want of an author, though the subject is the same and they may be one work."
+2 majority,item,j:600447,Avashyak Sutra Niryukterev Churni Part 01,low confidence,"'Niryukterev Churni' is read as 'niryukter avacūrṇiḥ', the later Avacūrṇi, and so kept apart from Jinadāsa's Āvaśyakacūrṇi; Mānavijaya is taken as the 1965 editor."
+2 majority,item,j:600449,Nalayanam,low confidence,Grouped with the other Nalāyana (j:600422) despite the different catalogue author.
+2 majority,item,j:600450,Mahopnishad,low confidence,"Read as the Upaniṣad in a modern Jain edition; Vijayakalyāṇabodhisūri is taken as editor, though the book may carry a Sanskrit commentary of his own or be a new work of his under this name."
+2 majority,item,j:600451,Kalpasutram,low confidence,The catalogue's author is taken as the modern editor; any commentary in the edition is not named.
+2b,title,j:t0004,Abhidhānacintāmaṇiṭīkā,low confidence,"Kept apart from the Abhidhānacintāmaṇi as its commentary; which ṭīkā the item carries is not stated, and the reader took it as Hemacandra's own."
+2b,title,j:t0020,Adhyātmakalpalatā,low confidence,
+2b,title,j:t0029,Adhyātmopaniṣadvṛtti,low confidence,
+2b,title,j:t0081,Anyoktiśataka,low confidence,Authorship doubtful: Darśanavijaya may be the modern editor of the 1937 print.
+2b,title,j:t0082,Aparājitakathānaka,low confidence,
+2b,title,j:t0090,Ārādhanāsvarūpa,low confidence,
+2b,title,j:t0125,Ātmaśuddhopayoga,low confidence,"May be the same work as Buddhisāgarasūri's Śuddhopayoga (j:008664), which is not in this window."
+2b,title,j:t0137,Āvaśyakaniryuktyavacūrṇi,low confidence,"Kept apart from Jinadāsa's Āvaśyakacūrṇi (d0136) on the reader's reading of the title as 'niryukter avacūrṇiḥ'; the metadata names no author, and the title could also be read as the Cūrṇi."
+2b,title,j:t0182,Brahmopaniṣad,low confidence,
+2b,title,j:t0183,Bṛhaddhāraṇāyantra,low confidence,
+2b,title,j:t0197,Cakkavaṭṭissa Kahā,low confidence,
+2b,title,j:t0198,Cakṣuraprāpyakāritāvāda,low confidence,
+2b,title,j:t0204,Candrāmalastotra,low confidence,
+2b,title,j:t0206,Candraprabhacarita,low confidence,"One member, so not split here, but its items may be two works: j:022629 is Vīranandin's Digambara mahākāvya (Kāvyamālā); j:022638-9 (two parts, 592 pp., Śvetāmbara editor) are more likely the Śvetāmbara Devendrasūri's Candraprabhacaritra, and may belong with Candraprabhasvāmicarita."
+2b,title,j:t0207,Candraprabhasvāmicarita,low confidence,"Kept apart from Candraprabhacarita (Vīranandin's): a Śvetāmbara edition, probably Devendrasūri's Candraprabhacaritra; the author is not named."
+2b,title,j:t0216,Caraṇavyūhabhāṣya,low confidence,"Dossiers d0217 and d0218 grouped: both are the unnamed commentary printed with the Caraṇavyūha, and both readers took it to be Mahidāsa's, the usual printed one. Neither item names the commentator, so the identity is a judgement."
+2b,title,j:t0219,Cāritraśuddhivrata,low confidence,
+2b,title,j:t0223,Cāturmāsikavyākhyāna,low confidence,"The one member unites Vijayalakṣmīsūri's Āṣāḍhacāturmāsikavyākhyāna (j:034752) and a Gujarati translation of a Cāturmāsikavyākhyāna (j:034170), on the title alone."
+2b,title,j:t0230,Citrasambhūticaritra,low confidence,
+2b,title,j:t0240,Ḍāṅgavopākhyāna,low confidence,
+2b,title,j:t0251,Devadravyādisiddhi,low confidence,
+2b,title,j:t0258,Dhannāśālibhadrarāsa,low confidence,
+2b,title,j:t0260,Dhanyacaritra,low confidence,"Dossier d0263 split: this item is titled padyam (verse) and names no author of the text, the other gadyabaddham (prose) by Jñānasāgara; different compositions on the story of Dhanya."
+2b,title,j:t0271,Dharmaparīkṣā,low confidence,"Dossier d0272 split by author: the item names Jinamaṇḍana, not Padmasāgara or Yaśovijaya. The reading of the garbled author name is the reader's, so low."
+2b,title,j:t0274,Dharmaparīkṣārāsa,low confidence,
+2b,title,j:t0278,Dharmasarvasvādhikāra,low confidence,
+2b,title,j:t0296,Dṛṣṭāntaśataka,low confidence,
+2b,title,j:t0299,Dvādaśānuprekṣā,low confidence,"Dossier d0299 split by author: the item names Śubhacandra, not Kundakunda. Its identification as an extract of the Jñānārṇava is the reader's guess; it may be another text on the anuprekṣās."
+2b,title,j:t0303,Dvaitasāmrājya,low confidence,
+2b,title,j:t0331,Granthatrayī,low confidence,
+2b,title,j:t0343,Haimanūtanalaghuprakriyā,low confidence,
+2b,title,j:t0352,Hetvābhāsasavyabhicāra,low confidence,
+2b,title,j:t0353,Himavantasthavirāvalī,low confidence,
+2b,title,j:t0354,Hiṅgulaprakaraṇa,low confidence,
+2b,title,j:t0358,Hitopadeśa,low confidence,"Split from d0358: kept apart from Prabhānandasūri's Jain Hitopadeśa, whose item names a different author; identification with Nārāyaṇa's work rests on the title alone."
+2b,title,j:t0367,Jagatkartṛtvamīmāṃsā,low confidence,
+2b,title,j:t0376,Jainaliṅganirṇaya,low confidence,
+2b,title,j:t0383,Jainaratnasāra,low confidence,
+2b,title,j:t0392,Jainasyādvādamuktāvalī,low confidence,
+2b,title,j:t0398,Jainatattvasāraṭīkā,low confidence,
+2b,title,j:t0401,Jainayoga ke sāta grantha,low confidence,
+2b,title,j:t0412,Jambūdvīpalaghusaṃgrahaṇīvṛtti,low confidence,
+2b,title,j:t0414,Jambūsvāmicarita,low confidence,"Split from d0414: the item names neither Rājamalla nor Ratnaprabhasūri, and nothing says which of the two namesake works, if either, it carries; left apart for a human rather than assigned to one. | Dossier d0414 split in three. This member's one item (j:009700, Vimla Jain, 1995) names no old author and cannot be assigned to Rājamalla's or to Ratnaprabhasūri's text; left on its own."
+2b,title,j:t0415,Jambūsvāmicarita,low confidence,"Split from d0414: Ratnaprabhasūri is a different author from Rājamalla. The reader's grouping of j:020402 with j:020401 rests on title and size only. | Dossier d0414 split in three: Ratnaprabhasūri is a different author from Rājamalla. The reader itself doubts whether j:020402 (Śubhaṅkaravijaya, 1954) is the same composition as j:020401."
+2b,title,j:t0423,Jinadarśanacaubīsī,low confidence,
+2b,title,j:t0432,Jīvanaśreyaskarapāṭhamālā,low confidence,
+2b,title,j:t0462,Kalpasūtradānadīpikā,low confidence,
+2b,title,j:t0470,Kārakamālā,low confidence,
+2b,title,j:t0502,Kāyasthitiprakaraṇa,low confidence,
+2b,title,j:t0507,Kīrtikalā,low confidence,
+2b,title,j:t0511,Kṣamāṛṣi,low confidence,
+2b,title,j:t0513,Kṣetrasparśanāprakaraṇa,low confidence,
+2b,title,j:t0518,Kumārapālapratibodhaprabandha,low confidence,
+2b,title,j:t0523,Kuśalacandrasūripaṭṭapraśasti,low confidence,
+2b,title,j:t0524,Kusumāvali,low confidence,
+2b,title,j:t0535,Lalitāduḥkhadarśaka,low confidence,
+2b,title,j:t0545,Madhyamasiddhaprabhā,low confidence,
+2b,title,j:t0548,Mahādaṇḍakastotra,low confidence,
+2b,title,j:t0556,Mahimnaḥstotraṭīkā,low confidence,
+2b,title,j:t0562,Mānatuṅgaśāstra,low confidence,
+2b,title,j:t0609,Nāgilacaritra,low confidence,"Dossier d0611 split on the catalogue's authors: j:020493 is given to Vardhamānasūri and j:600413 to Śubhaśīla Gaṇi. Both are 18-page pamphlets of 1935, so they may be one print catalogued twice with one author wrong; a human should check."
+2b,title,j:t0610,Nāgilacaritra,low confidence,"Dossier d0611 split on the catalogue's authors: this item is given to Śubhaśīla Gaṇi, the other to Vardhamānasūri. Same title, year and page count, so possibly one print; a human should check."
+2b,title,j:t0620,Nandīsūtramāhātmya,low confidence,"Kept apart from the Nandīsūtra: the title says Māhātmya, and the metadata does not show whether the book is the sūtra or a tract on it."
+2b,title,j:t0622,Nandīvṛtti,low confidence,"Dossiers d0622 and d0624 grouped: the unnamed 'Nandi Sutra Tika' of j:020495 has 512 pages, against 514 for the 1924 edition of Malayagiri's vṛtti (j:600244), and its reader already took it as probably Malayagiri's. The identification rests on the page count alone."
+2b,title,j:t0623,Nandīvṛttidurgapadavyākhyā,low confidence,"comments_on renamed from the reader's 'Nandīvṛtti' to Nandīsūtravivaraṇa, Haribhadra's commentary, so that it is not taken for Malayagiri's Nandīvṛtti in this window. That the item carries this gloss is the reader's uncertain reading of the catalogue's 'Chandrasuri'."
+2b,title,j:t0630,Navapadaprakaraṇabṛhadvṛtti,low confidence,
+2b,title,j:t0672,Nyāyālaṅkāra,low confidence,
+2b,title,j:t0674,Nyāyasaṅgraha,low confidence,
+2b,title,j:t0686,Padārthapradīpa,low confidence,
+2b,title,j:t0711,Pañcastotrāṇi,low confidence,
+2b,title,j:t0716,Pāṇipīyūṣapayasvinī,low confidence,
+2b,title,j:t0717,Parāga,low confidence,"The reader gives the author as j:p0500 Lāvaṇyasūri; the Pramodā in this window, by the same modern monk, carries j:p0994 Vijayalāvaṇyasūri. The two person keys probably name one man. Whether the 84-page item carries the Parāga at all is uncertain."
+2b,title,j:t0719,Paramātmadarśana,low confidence,"Same title and author, so kept together; the 1910 book of 432 pages and the short work in the 206-page Pañcagranthasaṅgraha may not be the same composition. | Same title and author in both items, though the 1910 book of 432 pages is far longer than the share of a five-work volume of 206 pages; the two may differ in extent or carry a commentary."
+2b,title,j:t0729,Pārśvanāthaparamparāyā Itihāsa,low confidence,
+2b,title,j:t0732,Parvatithiprakāśatimirabhāskara,low confidence,
+2b,title,j:t0733,Paryuṣaṇāṣṭāhnikavyākhyāna,low confidence,"Grouped d0735 and d0736 on the title alone, with no author or date to tell them apart; Maṇivijaya's j:600358 and Guṇasāgarasūri's translation j:600203 may be other Aṣṭāhnikavyākhyānas than Kṣamākalyāṇa's. | Grouped d0735 and d0736: the same generic title with no evidence of a different composition; only one item names an author (Kṣamākalyāṇa), and Maṇivijaya on j:600358 may be editor or author of another sermon. A later step may split."
+2b,title,j:t0753,Prakaraṇapuṣpamālā,low confidence,"Kept apart from the Prakaraṇasamuccaya (d0760), also under Ratnasiṃhasūri's name: the titles differ and neither item names its contents."
+2b,title,j:t0754,Prakaraṇaratna,low confidence,Kept apart from the Prakaraṇaratnākara (d0759) of the same publisher: the names differ and nothing shows the contents are the same.
+2b,title,j:t0755,Prakaraṇaratnākara,low confidence,Kept apart from the Prakaraṇaratna (d0758) of the same publisher: the names differ and nothing shows the contents are the same.
+2b,title,j:t0756,Prakaraṇasamuccaya,low confidence,"Kept apart from the Prakaraṇapuṣpamālā (d0757), also under Ratnasiṃhasūri's name: the titles differ and neither item names its contents."
+2b,title,j:t0793,Pratyākhyānasvarūpa,low confidence,"One member rests on a title cut off at 'Pratyā', read as the Pratyākhyānasvarūpa from the same publisher and year as the other item."
+2b,title,j:t0817,Rājavidyā,low confidence,
+2b,title,j:t0821,Rāmapañcadaśī,low confidence,
+2b,title,j:t0824,Raṇasiṃhacaritra,low confidence,"Split d0831: this printing names a Somagaṇi as author, the other Śubhaśīla Gaṇi; different authors and lengths (72 against 30 pages). The name is garbled, so the split is a judgement call."
+2b,title,j:t0825,Raṇasiṃhacaritra,low confidence,"Split d0831: Śubhaśīla Gaṇi is named as author here, a Somagaṇi on the other printing."
+2b,title,j:t0833,Ratnapālacaritra,low confidence,"Grouped d0839 and d0840: the same tale under Ratnapālacaritra and Ratnapālanṛpacaritra, neither with a named author; nothing in the metadata shows two compositions, but the page counts differ widely, hence low."
+2b,title,j:t0840,Rekhāgaṇita,low confidence,
+2b,title,j:t0858,Sadayavatsakumāracaritra,low confidence,
+2b,title,j:t0861,Sādharmikavātsalyaprakāśa,low confidence,
+2b,title,j:t0867,Sāgaravihaṅgama,low confidence,
+2b,title,j:t0868,Sāgarotpatti,low confidence,
+2b,title,j:t0876,Samaṇadhammarasāyaṇa,low confidence,
+2b,title,j:t0878,Sāmānyanirukticandrakalā,low confidence,
+2b,title,j:t0880,Sāmānyaniruktikalāvilāsa,low confidence,
+2b,title,j:t0884,Samatāsāgaracarita,low confidence,
+2b,title,j:t0922,Saṅgrahaṇīsūtra,low confidence,
+2b,title,j:t0928,Śāntināthacaritra,low confidence,"Grouped d0936 and d0937: Śāntināthacarita and Śāntināthacaritra under Ajitaprabha are one work. p1-catalogue-002:t68 (item j:004339, 'Amrutsuri', 1965, 388 pp.) names no old author and may be another Śāntināthacaritra (Munibhadra, Bhāvacandra, Māṇikyacandra); it is grouped here on the name alone, hence low."
+2b,title,j:t0930,Śāntiślokaṭīkā,low confidence,
+2b,title,j:t0932,Saptabhaṅgīmīmāṃsā,low confidence,
+2b,title,j:t0938,Saptapadīśāstra,low confidence,
+2b,title,j:t0944,Saptopadhānavidhi,low confidence,
+2b,title,j:t0950,Sarvadevasāmānyadevapūjanaprayoga,low confidence,
+2b,title,j:t0955,Śāsanajayapatākā,low confidence,
+2b,title,j:t0979,Śaucanirṇaya,low confidence,
+2b,title,j:t0994,Siddhāntakaumudīvyākhyāna,low confidence,
+2b,title,j:t1016,Snātrapūjā,low confidence,
+2b,title,j:t1025,Śramaṇapratikramaṇasūtra,low confidence,
+2b,title,j:t1030,Śreṇikacaritra,low confidence,"Kept as one by the title; nothing in the 1905 item's metadata shows a different composition, but nothing confirms it is Devendrasūri's either. | Kept as one by the rule for identical names, since the second item names no author; but the extents (44 pp. complete against 262 pp. for a first part) suggest two compositions. For review."
+2b,title,j:t1031,Śrībhāṣya,low confidence,
+2b,title,j:t1033,Śrīpālacaritra,low confidence,"Split from d1046 and left on its own: the item names only a modern editor, and with three differently authored Śrīpālacaritras in the window there is no ground for choosing one. | Dossier d1046 split by author. This member has no author, and its 334-page item fits none of the three attributed versions for certain (the others run 36-100 pp.), so it is left on its own rather than joined to one of them by guess."
+2b,title,j:t1038,Śrīpālarāsa,low confidence,
+2b,title,j:t1044,Stavanāvalī,low confidence,
+2b,title,j:t1074,Sudhāsañcita,low confidence,
+2b,title,j:t1076,Sujātavārtakarṣicaritra,low confidence,
+2b,title,j:t1083,Sūktamuktāvalī,low confidence,"Dossier d1094 split: ascribed to an old teacher, earlier and of different extent than Bhūpendrasūri's compilation. A judgement call; it may deserve regrouping if the two prove to be one book."
+2b,title,j:t1094,Sūradīpikādiprakaraṇasaṅgraha,low confidence,
+2b,title,j:t1109,Sūtrarahasya,low confidence,
+2b,title,j:t1157,Tattvāvatāra,low confidence,
+2b,title,j:t1169,Tithinirṇaya,low confidence,
+2b,title,j:t1174,Triṃśacchlokī,low confidence,
+2b,title,j:t1218,Vājasaneyisaṃhitābhāṣya,low confidence,
+2b,title,j:t1219,Vakāravādārtha,low confidence,
+2b,title,j:t1226,Vardhamānadeśanā,low confidence,Kept as one entity because the items do not let the Prakrit and the Sanskrit version be told apart; a later step may split by version.
+2b,title,j:t1229,Vargacūlikā,low confidence,"Grouped d1247 (Vargacūlikā, 2010 edition) and d1243 (Vaṅkacūliyā summary, 1923): taken as the same Vaggacūliyā/Vaṅgacūliyā under two spellings; no author on either side, so a judgement call."
+2b,title,j:t1233,Vastusāra,low confidence,"Grouped d1251 and d1252: items j:022760 and j:035332 are plainly two scans of one 1956 book (same title, 26 and 25 pp.), catalogued once as वस्तुसार and once as वास्तुसार. Which spelling is right, and whether it is a vāstu text, is open."
+2b,title,j:t1239,Vedāntacintāmaṇi,low confidence,
+2b,title,j:t1240,Vedāntaprakaraṇa,low confidence,
+2b,title,j:t1249,Vidyāratnamahānidhi,low confidence,
+2b,title,j:t1250,Vijayacandrakevalicaritra,low confidence,
+2b,title,j:t1262,Vinayavijayābhyudayakāvya,low confidence,
+2b,title,j:t1270,Vīsasthānakarāsa,low confidence,
+2b,title,j:t1276,Viśvakartṛtvamīmāṃsā,low confidence,
+2a,person,j:p0021,Ambālāla Jeṭhālāla Śāha,low confidence,
+2a,person,j:p0029,Amṛtalāla Śāstrī,low confidence,
+2a,person,j:p0030,Amṛtasūri,low confidence,
+2a,person,j:p0033,Anantacandra,low confidence,
+2a,person,j:p0034,Anantācārya,low confidence,
+2a,person,j:p0056,Ātmārāma Bābū,low confidence,
+2a,person,j:p0062,Bālabrahmacārī Yogirāja,low confidence,"'Bālabrahmacārī Yogirāja' is an epithet, not a name; kept as an entry of its own because the person behind it cannot be identified."
+2a,person,j:p0064,Bālacandrasūri,low confidence,"Split from d0064: a modern Kharatara monk, seven centuries later than the Vivekamañjarī commentator. His role on j:020453 is the reader's guess."
+2a,person,j:p0078,Bhadraguptasūri,low confidence,
+2a,person,j:p0119,Buddhimuni,low confidence,"Kept apart from Buddhisāgara Gaṇi (d0124–d0126) because the name differs, but the Kharatara Gaṇi Buddhimuni, pupil of Keśaramuni, may well be the same monk."
+2a,person,j:p0133,Candrasāgarasūri,low confidence,"Grouped d0140 and d0141 on the name, the years and the line: Candrasāgara Gaṇi, pupil of Sāgarānandasūri, edited the Siddhahema and was later sūri. The metadata does not confirm that the Gaṇi of 1948 is the Sūri of 1951."
+2a,person,j:p0155,Choṭelāla Paṇḍita,low confidence,
+2a,person,j:p0164,Dānavijaya Gaṇi,low confidence,Either the c. 1700 author of the Dānadīpikā on the Kalpasūtra or a modern Dānavijaya as editor; the metadata does not say.
+2a,person,j:p0166,Darśanavijaya,low confidence,"Kept as one: all three items are prints of 1937–1943 or undated under the bare name, and nothing in the metadata separates them. If the Anyoktiśataka is the 17th-c. Darśanavijaya Gaṇi's, p1-catalogue-004:darshanavijaya is a second person. | Kept as one: all three items are 20th-c. prints under the bare name Darshanvijay. The Anyoktiśataka may instead be by a 17th-c. Darśanavijayagaṇi, with the name on the 1937 print being his, not an editor's; nothing in the metadata settles it."
+2a,person,j:p0174,Devacandra,low confidence,"Split from d0185: a 20th-c. translator, not the 18th-c. Kharatara Devacandra. He may be the same as Devacandra Kacchī (d0186), a Kacchī Sthānakavāsī monk of that time, but only the name suggests it, so they are left apart."
+2a,person,j:p0175,Devacandra Kacchī,low confidence,
+2a,person,j:p0189,Devavijaya Gaṇi,low confidence,Split from d0198 on the role alone: as editor of a printed collection he would be modern. If he is a commentator he could be the 16th-c. Devavijaya Gaṇi after all.
+2a,person,j:p0194,Devīprasāda Kāyastha,low confidence,
+2a,person,j:p0205,Dharmacanda Harajīvanadāsa,low confidence,
+2a,person,j:p0240,Gaṅgādeva Bhaṭṭa,low confidence,
+2a,person,j:p0241,Gaṅgādhara Miśra,low confidence,
+2a,person,j:p0242,Gaṅgādhara Paṇḍita,low confidence,
+2a,person,j:p0247,Gaurīnātha Śukla,low confidence,
+2a,person,j:p0282,Hargovinddas Harjivandas,low confidence,
+2a,person,j:p0299,Harṣavijaya,low confidence,"Kept as one dossier on the name: nothing in the metadata separates an author Harṣavijaya from the modern editor, though they may well be two."
+2a,person,j:p0306,Hemacandrasūri,low confidence,Left apart from Hemacandra (d0321): a 2004 poem on a modern monk cannot be the 12th-c. polymath's. Which modern Hemacandrasūri is a judgement.
+2a,person,j:p0307,Hemahaṃsa Gaṇi,low confidence,"Dossiers d0324 and d0325 grouped: the grammarian and the Ārambhasiddhi commentator are the same 15th-c. Tapāgaccha Hemahaṃsa Gaṇi. The member read from the Kathāratnākara is kept here because the catalogue writes this name, though that work is Hemavijaya Gaṇi's (entity for him is separate); a human may prefer to move it. | Grouped d0324 and d0325: the same name, spelled as one word or two, with the same gaccha and century. The Kathāratnākara reading (p1-catalogue-001:p35) stays here because the catalogue names Hemahaṃsa, though the work may be Hemavijaya's. Pandit has him twice (85758, 86723)."
+2a,person,j:p0315,Himavat,low confidence,
+2a,person,j:p0321,Hīrālāla Śāstrī,low confidence,"The 1918–19 Benares Supāsanāhacariya is known as Haragovindadāsa T. Śeṭha's edition; ""Hiralal Shastri"" may be a catalogue slip, but the name is kept as written."
+2a,person,j:p0339,Jainīlāla Jaina,low confidence,
+2a,person,j:p0363,Jayasāgara,low confidence,"Kept apart from Jayasāgara Upādhyāya (d0387) and the 20th-c. Jayasāgarasūri (d0386): the name alone does not say which, if either, he is."
+2a,person,j:p0393,Jinasūra Muni,low confidence,"Grouped d0418 and d0419 on the reading of the catalogue's Jinsuri as Jinasūra, to whom a Rūpasenacaritra is ascribed; the metadata does not confirm it, and Jinasūri may be another man. | Grouped d0418 and d0419: the Rūpasenacaritra's 'Jinsuri' is taken as Jinasūra, to whom a Rūpasenacaritra is ascribed beside the Priyaṅkaranṛpakathā; from memory, not confirmed by Pandit, and no context disagrees."
+2a,person,j:p0430,Kanakavijaya,low confidence,"Grouped d0459 and d0460: same name and the same year, 1940, and nothing in the context tells them apart; but the name is common among modern monks."
+2a,person,j:p0431,Kanakavimalasūri,low confidence,
+2a,person,j:p0435,Kanthasūri,low confidence,
+2a,person,j:p0442,Kāṣṭhajīvaśrī,low confidence,
+2a,person,j:p0457,Kīrtiratnavijaya,low confidence,Probably the same man as a Ratnakīrtivijaya elsewhere in the registry; none is in this window.
+2a,person,j:p0484,Labdhisūri,low confidence,Grouped d0522 and d0523. The reader of the Mūrtimaṇḍana already identifies its Labdhivijaya as the later Vijayalabdhisūri. The Labdhivijaya of the Merutrayodaśīkathā (1916) is kept with him on the name and the compatible date alone; he could be an earlier namesake.
+2a,person,j:p0485,Labdhivijaya Gaṇi,low confidence,"Kept apart from Labdhisūri (Labdhivijaya of the Tapāgaccha): the book is a Kharatara one and his part in it is unknown. The date would also suit the Tapāgaccha Labdhivijaya, so this may be the same man."
+2a,person,j:p0534,Mānatuṅgasūri,window conflict,"Dossier kept whole and apart from d0576. Only the author of the Jayantīprakaraṇa is identified; the authors of the Aparājitakathānaka (j:034168) and the Mānatuṅgaśāstra (j:008422) are not, and either could be another Mānatuṅga, the Bhaktāmara poet included. Nothing in the metadata separates them. | Split d0577: these two members are left together on the identical name, with nothing in the items to identify the man or to tell the two apart. Either may belong to the Bhaktāmara Mānatuṅga or to the Mānatuṅgasūri of the Jayantīprakaraṇa. | Split d0577: the author of the Jayantīprakaraṇa is dated c. 1200 by his pupil Malayaprabha's commentary, and is set apart from the two Mānatuṅgasūris whose works are unidentified. | Overlapping windows decided these members differently; taken as the union of the two: p2a-008 Mānatuṅgasūri (3); p2a-007 Mānatuṅgasūri (2); p2a-007 Mānatuṅgasūri (1)"
+2a,person,j:p0536,Mānavijaya,low confidence,"Split d0578 from the 17th-c. Mānavijaya. The four modern readings are kept together on the name; the two of 1924 are surely one man, but editions spread over 1924–1965 may be the work of two monks of the name, and on the Jainatattvasāra (1941) 'Manvijay Gani' could be an older commentator. | Split d0578: modern editors, apart from the 17th-c. author. The two editions of 1924 are surely one man's; those of 1941, 1952 and 1965 may be another modern monk's, and on j:600374 'Manvijay Gani' could be the commentator rather than the editor."
+2a,person,j:p0546,Maṇicandra,low confidence,
+2a,person,j:p0558,Maṇivijaya,low confidence,
+2a,person,j:p0563,Matisāgara,low confidence,
+2a,person,j:p0582,Mūlacanda,low confidence,
+2a,person,j:p0618,Nemavijaya,low confidence,
+2a,person,j:p0621,Nemicandragaṇi,low confidence,Kept apart from the other Nemicandras of the window: different gaccha and work; identity and date uncertain.
+2a,person,j:p0623,Nemicandrasūri,low confidence,"Dossier d0667 split: the author of the Sukhabodhā (Nemicandra alias Devendragaṇi, fl. 1073-1085) is set apart as an earlier namesake of the same gaccha. Pandit 85410 holds both works under one person, so the split is a judgement call."
+2a,person,j:p0624,Nemicandrasūri (Devendragaṇi),low confidence,"Split from dossier d0667: the reader joined him with the author of the Pravacanasāroddhāra, who is usually held to be a later Nemicandra (pupil of Āmradeva, fl. c. 1160). Pandit 85410 conflates the two; if they are one, merge with that entity."
+2a,person,j:p0633,Nirmaloddhavasiṃha,low confidence,
+2a,person,j:p0661,Prabhācandra,low confidence,"Split from dossier d0705 (the Śvetāmbara author of the Prabhāvakacarita set apart). The author of the Kathākośa is kept with the logician: same sect, place and century, an identification often but not universally made."
+2a,person,j:p0688,Pūrṇacandrasāgarasūri,low confidence,"Dossiers d0733 and d0734 grouped: same name and lineage, the later form with the title sūri gained after 2005; not confirmed by the metadata. | Grouped d0733 and d0734: same name, same Sāgara line, eight years apart; the -sūri of 2013 is taken as the rank the editor of 2005 later received. Nothing in the metadata confirms it."
+2a,person,j:p0700,Rājaśekharasūri,low confidence,"Split from d0745 (a modern editor of 1992 and 2002 books, not the 14th-c. author) and grouped with d0746, whose reader identifies Rājaśekharavijaya as the later Rājaśekharasūri. The identity of the monk and the ācārya rests on that reader and on what is known of him, not on the metadata."
+2a,person,j:p0719,Rāmaśarman,low confidence,"Kept apart from Rāmāśrama (d0767), the author of the Siddhāntacandrikā: the name as written is Rāmaśarman, read as an editor, though it may be a slip for the author."
+2a,person,j:p0726,Ramyareṇu,low confidence,
+2a,person,j:p0731,Rasika Muni,low confidence,
+2a,person,j:p0734,Ratnacandra Gaṇi,low confidence,"Kept apart from the Śatāvadhānī Ratnacandra although both are written ""Ratnachandra Maharaj"": the item is the Adhyātmakalpadruma, on which the 17th-c. Gaṇi wrote the commentary printed in 1940. The name could instead be a modern editor or translator."
+2a,person,j:p0743,Ratnasiṃhasūri,low confidence,
+2a,person,j:p0752,Revāśaṅkara Vaidya,low confidence,
+2a,person,j:p0769,Sāgaracandrasūri,low confidence,
+2a,person,j:p0789,Śāntisūri,low confidence,"Split the dossier 'Śāntisūri': the Tilakamañjarīṭippaṇaka is by Śāntisūri of the Pūrṇatallagaccha, a different man, set apart. The rest are kept together on the name and on Pandit 85390, which gives the Śiṣyahitā, Jīvavicāra and Dharmaratnaprakaraṇa to one Śāntisūri; the authors of the Jīvavicāra (one reader says Bṛhadgaccha) and of the Ceiyavandaṇamahābhāsa may be other Śāntisūris of the 11th-12th c."
+2a,person,j:p0813,Siddhasenasūri,low confidence,Kept apart from Siddhasena Divākara: the Namaskāramāhātmya is a medieval work by a later Siddhasenasūri; the metadata gives only the name.
+2a,person,j:p0835,Somagaṇi,low confidence,
+2a,person,j:p0844,Śrīcandrasūri,low confidence,"Split the dossier 'Śrīcandrasūri'. These two members are kept together: the pupil of Dhaneśvarasūri is credited with both the Nandī gloss and the Nirayāvalikā commentary and Sāmācārī. The pupil of Maladhārī Hemacandra is set apart. Pandit 85487 runs the two together. The identifications rest on bare 'Chandrasuri' and a garbled 'Macchindracharya' in the metadata. | Split from dossier d0898: the glossator of the Nandīvṛtti and the author of the Nirayāvalikāvṛtti and Subodhā Sāmācārī are one man, the pupil of Dhaneśvarasūri, distinct from the Maladhāri author of the Muṇisuvvayasāmicariya. 'Macchindracharya' on the Subodhasāmācārī is a reader's reading of a garbled Śrīcandrācārya. Pandit 85487 conflates the two namesakes."
+2a,person,j:p0845,Śrīcandrasūri,low confidence,"Split from the dossier 'Śrīcandrasūri': the pupil of Maladhārī Hemacandra, a contemporary namesake of the pupil of Dhaneśvarasūri. | Split from dossier d0898 on lineage: the pupil of Maladhārī Hemacandra is kept apart from his contemporary, the pupil of Dhaneśvarasūri. Pandit 85487 (Candrasūri, 1180) lists works of both men under one record, so no hint is given."
+2a,person,j:p0850,Śrīkṛṣṇa Bhaṭṭācārya,low confidence,
+2a,person,j:p0861,Śubhacandra,low confidence,
+2a,person,j:p0872,Sudeva Śāstrī,low confidence,
+2a,person,j:p0878,Sūracandra Gaṇi,low confidence,"Groups dossiers d0937 and d0938. Two members are surely the author of the Jainatattvasāra; the third, the Sūracandra named with Rājakīrti Gaṇi on the Vardhamānadeśanā (j:009650), is kept with them on the name and on Rājakīrti's being a Kharatara of the same century, with nothing to confirm it."
+2a,person,j:p0884,Sūryamalla Yati,low confidence,Groups dossiers d0944 and d0945 on the name and the period alone: the Sāgarotpatti of 'Suryamal Maharaj' (1926) and the Jainaratnasāra of 'Suryamalla Yati' (1941). Nothing in the metadata confirms or contradicts that they are one man. Sūryamuni (d0946) is kept apart.
+2a,person,j:p0910,Trailokya,low confidence,
+2a,person,j:p0912,Tribhagavānavijaya,low confidence,
+2a,person,j:p0940,Vāgbhaṭa,low confidence,"Split from dossier d1003: the poet of the Neminirvāṇa is usually distinguished from the author of the Vāgbhaṭālaṃkāra, though the identity has been proposed; a judgement call."
+2a,person,j:p0949,Vāñcchāyamāśrī,low confidence,
+2a,person,j:p0953,Vardhamānasūri,low confidence,"Split from dossier d1015. The separately printed caritras of 1928-1935 are taken as extracts from the 13th-c. Vāsupūjyacaritra; for the Sūracandra-, Nāgila- and Candrayaśaścaritra this is a presumption from the like title, date and format. Member p1-catalogue-004:vardhamanasuri also covers a Ghaṇṭākarṇapratiṣṭhāvidhi (j:020345), which may rather belong to the Vardhamānasūri of the Ācāradinakara; the member cannot be divided and is placed here by its caritra."
+2a,person,j:p0983,Vijayadevasūri,low confidence,
+2a,person,j:p0998,Vijayānandasūri,low confidence,"Two readers' uncertain entries under one name, kept together for want of evidence to split: a Granthatrayī (1999) and a verse Dhanyacaritra. Whether either is Ātmārāma (Vijayānandasūri, 1837-1896) or a later ācārya of the name is not settled. | Two low-confidence readings of the same catalogue name on unidentified books; kept as one for want of evidence that they differ, but they may be two persons."
+2a,person,j:p1008,Vijayomaṅgasūri,low confidence,"Dossiers d0992 (Umaṅgasūri, 1937) and d0993 (Umaṅgavijaya Gaṇi, 1932) grouped as one monk before and after becoming ācārya: both are editors of Prakrit texts in the 1930s, five years apart. Not confirmed by the metadata; a judgement call."
+2a,person,j:p1010,Vijñānānanda Paṇḍita,low confidence,
+2a,person,j:p1016,Vimalā Jaina,low confidence,
+2a,person,j:p1022,Vinayasāgara,low confidence,"Split from dossier d1081: the Hiṅgulaprakaraṇa is an older didactic work by an Upādhyāya Vinayasāgara, not a writing of the modern Kharatara scholar (1929–2014) whom the other three members name as editor and essayist."
+2a,person,j:p1032,Vīravijaya,low confidence,Kept as one on the name alone. The Praśnacintāmaṇi's author is Pandit's Vīravijaya Gaṇi (86174); the Vīravijaya on the 1938 Adhyātmasāra may be the same (a ṭabo on that text goes under the name) or a 20th-c. editor.
+2a,person,j:p1063,Yaśodeva Upādhyāya,low confidence,"Kept apart from Yaśovijaya, as its reader did, and from Yaśodevasūri of the Pākṣikasūtravṛtti (d1122), who is of another gaccha; Pandit's Yaśodeva Sūri (85417) unites the works of both, so the two Yaśodevas may be one."
+2a,person,j:p1066,Yaśovijaya,low confidence,"Split from dossier d1125: these two readers took 'Yashovijay-2' on two volumes of 1976 as the modern editor. He did edit such volumes, but everywhere else in the window the catalogue's Yashovijay-2 is the Upādhyāya himself (editions of 1915–1946 among them), so the name on these two items probably means the author too, and this entry may need merging into the Upādhyāya."

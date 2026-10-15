@@ -1,0 +1,6 @@
+Row,Line,Collection,Text Name,Author Name,Field,Slot,Current,Suggested ID,Suggested Name,Confidence,Status,Basis
+617,617,GRETIL,Jātakamālā,Āryaśūra,Work ID,1,...,115242,Jātakamālā,1.00,filled,"work: exact name 'Jātakamālā'; author: Author ID already in the row 'Āryaśūra' (85195), listed in Pandit as its author"
+618,618,GRETIL,Jātakamālā,Āryaśūra,Work ID,1,...,115242,Jātakamālā,1.00,filled,"work: exact name 'Jātakamālā'; author: Author ID already in the row 'Āryaśūra' (85195), listed in Pandit as its author"
+660,660,GRETIL,Niṣpannayogāvali,Abhayākaragupta,Work ID,1,...,115592,Niṣpannayogāvalī,0.92,filled,"work: fuzzy 94% 'Niṣpannayogāvalī'; author: Author ID already in the row 'Abhayākaragupta' (85411), listed in Pandit as its author"
+1723,1750,UTA Dharmaśāstra,Tīrthacintāmaṇi,Vācaspati Miśra,Author ID,1,...,85319,Vācaspati Miśra,1.00,filled,"author: exact name 'Vācaspati Miśra'; Pandit lists them as author of 'Tīrthacintāmaṇi' (115320), matched by exact name"
+1723,1750,UTA Dharmaśāstra,Tīrthacintāmaṇi,Vācaspati Miśra,Work ID,1,...,115320,Tīrthacintāmaṇi,1.00,filled,"work: exact name 'Tīrthacintāmaṇi'; author: exact name 'Vācaspati Miśra' (85319), listed in Pandit as its author"

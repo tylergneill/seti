@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+
+# PyCharm
+.idea/
+
+# Research batches and workflow scripts: regenerable, and applied to the
+# master by research_apply.py.
+tmp/
+
+# What the grouping sub-agents wrote, run by run: kept, but not committed.
+# The registries built from it are in data/grouping/collections/.
+data/grouping/runs/
