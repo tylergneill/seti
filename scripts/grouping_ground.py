@@ -34,6 +34,9 @@ the agents' own pandit_hint beside it for comparison.
            hint otherwise). Disagreements go to
            reports/<date>-grounding-eval.csv.
 
+  --authors  titles not grounded whose author is: their names against only
+           that author's Pandit works and the author's commentaries on the
+           base text they name, to data/grouping/grounding/author-works.csv
   --prep   cut titles for the research pass (agents/grouping/grounder.md)
            into batches, tmp/grouping/<run>/all/p4-NNN/items.json: those
            the matcher scored from --low up to the threshold, by default
@@ -45,6 +48,7 @@ the agents' own pandit_hint beside it for comparison.
   grouping_ground.py
   grouping_ground.py --eval
   grouping_ground.py --prep --run 2026-10-13-one [--low 0.8]
+  grouping_ground.py --prep --run 2026-10-13-one --low 0.6 --high 0.8 --sample 100
   grouping_ground.py --apply --run 2026-10-13-one
 """
 
@@ -53,7 +57,9 @@ import collections
 import csv
 import datetime
 import json
+import random
 import re
+from difflib import SequenceMatcher
 
 from atlas_works import GRETIL_TREE, seti_rows, to_iast
 from common import AMBIGUITY_MARGIN, DEFAULT_THRESHOLD, OPEN, REPORTS, ROOT, Pandit, norm, split_cell
@@ -282,6 +288,8 @@ def evaluate():
         g = grounding[t]
         return g["Pandit ID"] if g["Status"] == "grounded" else ""
 
+    authorworks = {r["Title ID"]: r["Pandit ID"] for r in read_csv(OUT / "author-works.csv")
+                   if r["Status"] == "grounded"} if (OUT / "author-works.csv").exists() else {}
     research = {}
     if (OUT / "research-titles.csv").exists():
         research = {r["Title ID"]: r["Pandit ID"] for r in read_csv(OUT / "research-titles.csv")
@@ -291,6 +299,9 @@ def evaluate():
                "matcher, else hint": lambda t: matcher(t) or grounding[t]["Agent Hint"]}
     if research:
         sources["research, matcher, hint"] = lambda t: research.get(t) or matcher(t) or grounding[t]["Agent Hint"]
+    if authorworks:
+        sources["all, with authors' works"] = lambda t: (research.get(t) or matcher(t) or grounding[t]["Agent Hint"]
+                                                         or authorworks.get(t, ""))
     last = list(sources)[-1]
     print(f"GRETIL items with a SETI work ID: {len(truth)}")
     out = []
@@ -320,6 +331,105 @@ def evaluate():
     print(f"disagreements ({last}): {len(out)}, in {path.relative_to(ROOT)}")
 
 
+# ---------- through the authors' works ----------
+
+AUTHOR_COLUMNS = ["Title ID", "Name", "Status", "Pandit ID", "Pandit Name", "Confidence", "Basis",
+                  "Author Pandit IDs", "Works Compared", "Other Candidates"]
+
+
+def work_forms(pandit, wid):
+    """A Pandit work's names, normalised: its name, alternative names, the
+    head of an 'X on Y's Z' name, and that head joined to its base text's
+    name, as the registry would write the commentary (Nyāyabinduṭīkā)."""
+    work = pandit.works[wid]
+    names = [work["name"]] + work["aka"]
+    head = work["name"].split(" on ")[0].strip()
+    names.append(head)
+    for b in work["base_ids"]:
+        if b in pandit.works:
+            names.append(pandit.works[b]["name"].split(" on ")[0] + head)
+    return {norm(n) for n in names if n}
+
+
+def similarity(a_forms, b_forms):
+    best = 0.0
+    for a in a_forms:
+        for b in b_forms:
+            if not a or not b:
+                continue
+            if a == b:
+                return 1.0
+            # One name inside another is a lead, not a match: it is how a
+            # commentary's name contains its base text's.
+            if min(len(a), len(b)) >= 6 and (a in b or b in a):
+                best = max(best, 0.8)
+            best = max(best, SequenceMatcher(None, a, b, autojunk=False).ratio())
+    return best
+
+
+def by_authors(threshold):
+    """Titles the matcher did not ground but whose author is grounded: their
+    names against that author's works in Pandit only, and against Pandit's
+    commentaries on the base text they name. The author corroborates every
+    candidate, so the names may differ more than a matcher over all of
+    Pandit could allow."""
+    pandit = Pandit()
+    grounding = {r["ID"]: r for r in read_csv(OUT / "titles.csv")}
+    person_ground = {r["ID"]: r for r in read_csv(OUT / "persons.csv")}
+    research = {r["Title ID"] for r in read_csv(OUT / "research-titles.csv")} \
+        if (OUT / "research-titles.csv").exists() else set()
+    titles = {r["Title ID"]: r for r in read_csv(DATA / "titles.csv")}
+
+    def pandit_person(pid):
+        p = person_ground.get(pid, {})
+        return (p.get("Pandit ID") if p.get("Status") == "grounded" else "") or p.get("Agent Hint", "")
+
+    def pandit_work(tid):
+        g = grounding.get(tid, {})
+        return (g.get("Pandit ID") if g.get("Status") == "grounded" else "") or g.get("Agent Hint", "")
+
+    commentaries = collections.defaultdict(list)
+    for wid, w in pandit.works.items():
+        for b in w["base_ids"]:
+            commentaries[b].append(wid)
+    rows = []
+    for tid, t in titles.items():
+        g = grounding[tid]
+        if g["Status"] == "grounded" or g["Agent Hint"] or tid in research:
+            continue
+        authors = [a for a in (pandit_person(p) for p in cells(t["Author IDs"])) if a in pandit.persons]
+        if not authors:
+            continue
+        pool = {w: "a work of " + ", ".join(f"{pandit.name_of(a)} ({a})" for a in authors
+                                            if w in pandit.persons[a]["work_ids"])
+                for a in authors for w in pandit.persons[a]["work_ids"] if w in pandit.works}
+        base = pandit_work(t["Comments On"]) if t["Comments On"] in titles else ""
+        for w in commentaries.get(base, []):
+            if set(pandit.works[w]["author_ids"]) & set(authors):
+                pool[w] = f"a commentary on {pandit.name_of(base)} ({base}) by the title's author"
+        mine = forms(t)
+        scores = {}
+        for w, why in pool.items():
+            sim = similarity(mine, work_forms(pandit, w))
+            conf = 0.95 if sim >= 0.95 else 0.9 if sim >= 0.9 else 0.8 if sim >= 0.75 else 0
+            if conf:
+                scores[w] = (conf, f"names {round(sim * 100)}% alike; {why}")
+        status, best, conf, basis, others = decide(scores, threshold)
+        rows.append({"Title ID": tid, "Name": t["Name"], "Status": status, "Pandit ID": best,
+                     "Pandit Name": pandit.name_of(best), "Confidence": f"{conf:.2f}" if best else "",
+                     "Basis": basis, "Author Pandit IDs": ", ".join(authors), "Works Compared": len(pool),
+                     "Other Candidates": "; ".join(f"{pandit.name_of(i)} ({i}) {c:.2f}" for i, (c, _) in others)})
+    path = OUT / "author-works.csv"
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, AUTHOR_COLUMNS, lineterminator="\n")
+        w.writeheader()
+        w.writerows(rows)
+    status = collections.Counter(r["Status"] for r in rows)
+    print(f"authors' works: {len(rows)} titles with a grounded author; grounded {status['grounded']}, "
+          f"tie {status['tie']}, candidate only {status['candidate']}, nothing alike {status['none']}; "
+          f"written to {path.relative_to(ROOT)}")
+
+
 # ---------- the research pass ----------
 
 LINES = 5
@@ -327,11 +437,20 @@ RESEARCH_COLUMNS = ["Title ID", "Name", "Pandit ID", "Pandit Name", "Confidence"
                     "Agrees With Matcher", "Agent Hint", "Batch"]
 
 
-def prep(run, low, threshold, size):
+def prep(run, low, high, size, sample, authors=False):
+    """Cut titles the matcher scored from low up to high into batches, after
+    any batches already there, leaving out titles already in one. With
+    sample, a random draw of that many, the same draw each time. With
+    authors, the titles the authors'-works matcher left as a candidate or a
+    tie, with their author's works as the candidates."""
     base = run_dir(run, ALL)
-    if any(base.glob("p4-*")):
-        raise SystemExit(f"{base.relative_to(ROOT)} already has p4 batches. Apply them, or remove them to cut again.")
+    existing = sorted(base.glob("p4-*"))
+    done = {it["title"] for b in existing for it in read_json(b / "items.json")}
     grounding = read_csv(OUT / "titles.csv")
+    if authors:
+        grounding = [{**r, "ID": r["Title ID"], "Status": "candidate" if r["Status"] == "tie" else r["Status"]}
+                     for r in read_csv(OUT / "author-works.csv")]
+        low, high = 0.0, 1.01
     titles = {r["Title ID"]: r for r in read_csv(DATA / "titles.csv")}
     persons = {r["ID"]: r for r in read_csv(OUT / "persons.csv")}
     lines = collections.defaultdict(list)
@@ -345,7 +464,10 @@ def prep(run, low, threshold, size):
         """part_of and comments_on hold a title ID where the target is in the registry."""
         return titles[ref]["Name"] if ref in titles else ref
 
-    chosen = [g for g in grounding if g["Status"] == "candidate" and low <= float(g["Confidence"]) < threshold]
+    chosen = [g for g in grounding if g["Status"] == "candidate" and low <= float(g["Confidence"]) < high
+              and g["ID"] not in done]
+    if sample and sample < len(chosen):
+        chosen = random.Random(f"{low}-{high}").sample(chosen, sample)
     items = []
     for g in chosen:
         t = titles[g["ID"]]
@@ -367,12 +489,13 @@ def prep(run, low, threshold, size):
                 "context": t["Context"], "collections": t["Collections"], "items": int(t["Items"]),
                 "lines": lines[t["Title ID"]][:LINES], "candidates": candidates, "agent_hint": t["Pandit Hint"]}
         items.append({k: v for k, v in item.items() if v not in ("", [], None) or k in ("title", "name")})
+    first = len(existing) + 1
     for n in range(0, len(items), size):
-        batch = base / f"p4-{n // size + 1:03d}"
+        batch = base / f"p4-{first + n // size:03d}"
         batch.mkdir(parents=True)
         write_json(batch / "items.json", items[n:n + size])
-    print(f"ground: {len(items)} titles scored from {low} to below {threshold}, in "
-          f"{len(range(0, len(items), size))} batch(es) under {base.relative_to(ROOT)}")
+    print(f"ground: {len(items)} titles scored from {low} to below {high}, in "
+          f"{len(range(0, len(items), size))} batch(es), p4-{first:03d} on, under {base.relative_to(ROOT)}")
 
 
 def apply(run):
@@ -421,16 +544,24 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
     ap.add_argument("--eval", action="store_true", help="score the grounding against SETI on GRETIL")
+    ap.add_argument("--authors", action="store_true",
+                    help="match titles with a grounded author against that author's Pandit works")
     ap.add_argument("--prep", action="store_true", help="cut the near misses into batches for the research pass")
     ap.add_argument("--apply", action="store_true", help="gather the research pass's proposals")
     ap.add_argument("--run", help="the grouping run whose all/ directory holds the batches")
     ap.add_argument("--low", type=float, default=0.8, help="lowest matcher score to research (default 0.8)")
+    ap.add_argument("--high", type=float, help="score to research up to, not including (default the threshold)")
+    ap.add_argument("--sample", type=int, help="research only a random sample of this many")
+    ap.add_argument("--from-authors", action="store_true",
+                    help="with --prep: the authors'-works matcher's candidates and ties instead")
     ap.add_argument("--batch-size", type=int, default=10, help="titles per grounder (default 10)")
     args = ap.parse_args()
     if (args.prep or args.apply) and not args.run:
         ap.error("--prep and --apply need --run")
-    if args.prep:
-        prep(args.run, args.low, args.threshold, args.batch_size)
+    if args.authors:
+        by_authors(args.threshold)
+    elif args.prep:
+        prep(args.run, args.low, args.high or args.threshold, args.batch_size, args.sample, args.from_authors)
     elif args.apply:
         apply(args.run)
     elif args.eval:
