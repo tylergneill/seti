@@ -9,6 +9,8 @@ an author in the [Pandit Project](https://www.panditproject.org/).
 the master as an input, the same way it takes a Pandit export.
 
 This repo holds the master and the tools that improve its Pandit IDs.
+The code's version is in `VERSION`; the master is dated by the copies
+taken of it.
 
 ## The master
 
