@@ -1,0 +1,118 @@
+Type,ID,Field,Current,Problem,Fix,Found By,Found In,Status
+Person,96355,Name,Dummy 858,test record,delete,cleaning the export,2026-10-08,open
+Work,110179,Name,Dummy Kitab,test record,delete,cleaning the export,2026-10-08,open
+Person,110050,Name,Dummy person 02,test record,delete,cleaning the export,2026-10-08,open
+Person,99398,Name,Dummy person 134,test record,delete,cleaning the export,2026-10-08,open
+Person,44763,Name,"Dummy person attributed to ""Around Veṅkaṭanātha """,test record,delete,cleaning the export,2026-10-08,open
+Person,103390,Name,"Dummy person attributed to ""Premodern Kannada""",test record,delete,cleaning the export,2026-10-08,open
+Work,96350,Name,Dummy work 3 - Amir,test record,delete,cleaning the export,2026-10-08,open
+Work,99382,Name,Dummy work - Exodus,test record,delete,cleaning the export,2026-10-08,open
+Work,96738,Name,Dummy Work - Genesis,test record,delete,cleaning the export,2026-10-08,open
+Work,96729,Name,Dummy Work Omer,test record,delete,cleaning the export,2026-10-08,open
+Work,96352,Name,Dummy work - Outer,test record,delete,cleaning the export,2026-10-08,open
+Work,44714,Name,Dummy work - The Bible,test record,delete,cleaning the export,2026-10-08,open
+Person,110178,Name,Dummy Yusuf,test record,delete,cleaning the export,2026-10-08,open
+Work,110162,Name,Work Dummy placeholder - Mammaṭa project,test record,delete,cleaning the export,2026-10-08,open
+Work,94687,Name,1 Edited e441.1.20,bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,94401,Name,1.2 Edited Ajmer 2008,bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,89073,Name,"3 Edited and translated in Raffaele Torella, ""The Svabodhodayamañjarī, orhow to suppress the mind with no effort"", Haranandalahari 387-410",bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,91797,Name,"This is an Introduction by K.T.Pandurangi, excerpts from which comprise the summary provided at EIP 16, 2014, pp. 518-523",bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,89853,Name,5C Edited Bombay 1917-1918,bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,89819,Name,"2.l Edited by T.R.Chintamani. JOR 7, 1933: 11-24, 291-301",bibliographic note entered as a work,delete,cleaning the export,2026-10-08,open
+Work,92233,Name,73.2 Mānameyodaya,stray number,rename to: Mānameyodaya,cleaning the export,2026-10-08,open
+Work,95907,Name,"Vedaṇtacūḷāmaṇi1. Editedin Tamil and translated by M. Parthiban. TVOS 36, 2011, 226-251",bibliography run into title,rename to: Vedāntacūḷāmaṇi (move edition note elsewhere),cleaning the export,2026-10-08,open
+Work,91935,Name,"Bhavaprakasa translated in Shyam Das, Eighty-four Vaishnavas. Baroda 1985",bibliography run into title,rename to: Bhāvaprakāśa (move translation note elsewhere),cleaning the export,2026-10-08,open
+Work,93840,Name,"Vedāntatattvāmṛta  Mss. of works 3-16 above belonging to Kavita Subrahmanya Sastri, Narasaropetta, Guntur District, acc. to Anantakrishna Sastri.",manuscript note run into title,rename to: Vedāntatattvāmṛta (move Mss. note elsewhere),cleaning the export,2026-10-08,open
+Work,95824,Name,.Avadhutayoga-nāmādibuddhasādhana,leading punctuation,rename to: Avadhutayoga-nāmādibuddhasādhana,cleaning the export,2026-10-08,open
+Work,94642,Name,. Commentary on Abhinavagupta's Parsamārthasāra,leading punctuation,rename to: Commentary on Abhinavagupta's Paramārthasāra (also typo Parsamārthasāra),cleaning the export,2026-10-08,open
+Work,112343,Name,: Rāmacaritamānasa - Uttarakāṇḍa,leading punctuation,rename to: Rāmacaritamānasa - Uttarakāṇḍa,cleaning the export,2026-10-08,open
+Work,95883,Name,.Vṛtti on the Ratnagotravibhāga,leading punctuation,rename to: Vṛtti on the Ratnagotravibhāga,cleaning the export,2026-10-08,open
+Work,91897,Aka,>Sphoṭavāda,leading punctuation,alt. name to: Sphoṭavāda,cleaning the export,2026-10-08,open
+Work,95837,Name,-Dharmadhātugarbhavivaraṇa,leading hyphen,check: fragment of a longer name? else rename to Dharmadhātugarbhavivaraṇa,cleaning the export,2026-10-08,open
+Work,95487,Name,Padārthamañjūṣā,leading hyphen,check: name looks truncated (…-mañjarī),cleaning the export,2026-10-08,open
+Work,115329,Name,"""Daśabhūmīśvara-nāma-mahāyānasūtra-ratnarāja """,quotes and trailing space,rename to: Daśabhūmīśvara-nāma-mahāyānasūtra-ratnarāja,cleaning the export,2026-10-08,open
+Work,110588,Name,"""Karmakaumudī                             """,quotes and trailing spaces,rename to: Karmakaumudī,cleaning the export,2026-10-08,open
+Work,88179,Name,"""The Spitzer Manuscript""",a manuscript entered as a work?,check,cleaning the export,2026-10-08,open
+Work,90398,Name,Introduction to the Rgveda,modern study entered as a work?,check,cleaning the export,2026-10-08,open
+Person,86934,Name,D.C.Śāstrin,row appears twice in the export,check for a duplicate record,cleaning the export,2026-10-08,open
+Work,114428,Name,Aitareyabrāhmaṇa  Pañcikā,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,88914,Name,Āloka on the Aṣṭasāhasrikāprajñāpāramitāsūtra and  Abhisamayālaṃkāra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,85588,Aka,"Ānandajñāna, Janārdana, Ānandajñānagiri ,  Ānandaśaila",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,88187,Name,Arthaviniścayasūtra  and Nibandhana thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90328,Name,Bālāvabodha on  Candrasūri's Saṃgrahaṇīratna,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92817,Name,Bhaktirasabodhinī  on Nabhidasa's Bhāktimālā,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,106561,Name,Bhāskara  II,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89945,Name,Bhāṣya on Saṃkara's  Jīvanmuktānandalaharī,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91828,Name,Bhāvadīpa  on Jayatīrtha's  Tattvodyotaṭīkā,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93433,Name,Bhāvaprakāśa on Maheśa Ṭhakkura's  Tattvacintāmaṇyālokadarpaṇa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,114598,Aka,"Bhīṣmastavarājaprārambhaḥ  , Rājadharma anuśāsanaparva, Bhīṣmastuti",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,114752,Aka,"Kroḍatantra ,Caṇḍīśatāvṛttikrama-  Haragaurītantra,  Caṇḍīpāṭhakāmyaphala -Marīcatantra, Caṇḍīpāṭhaphalakrama",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93500,Aka,Mukundabhaṭṭīya on Annambhaṭṭa's  Tarkasaṃgraha,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,94854,Name,Cidadvaitakalpavallī  and Parimala thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93489,Name,Cidratnacaṣaka on Gopālendra Sarasvatī's Vedāntāmṛta and  Āmoda thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,94354,Name,Commentary on Bādarāyaṇa's Brahmasūtras and Śaṃkara's  Bhāṣya,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89118,Name,Commentary on  Nāgārjuna;s Triskandhasūtra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89251,Name,Commentary on  Nāgārjuna's Triskandhasūtra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92526,Name,Commentary on Prāmāṇya section of Raghunātha Śiromaṇi's  Tattvacintāmaṇidīdhiti,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93980,Name,Commentary on Vyāptipañcaka section of Gaṅgeśa's  Tattvacintāmaṇi,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,114825,Name,Dāmodara  Bhaṭṭa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91734,Aka,Prakāśa on Viśvanātha's  Siddhāntamuktāvalī,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92239,Name,Dīpikātarkaprakāśikā on Jānakīnātha Bhaṭṭācārya Cūḍamaṇi's  Nyāyasiddhāntamañjarī,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,114338,Name,Divākara  Bhaṭṭa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92486,Aka,"Aṣṭakaprakārana and  Tattvadīpikā, Arthadīpikā thereon, Jñānasāra",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92995,Name,Garuḍadīpikā  on Rucidatta's Tattvacintāmaṇiprakāśa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95410,Name,Khaṇḍanabhūṣaṇasamalanivāraka on Advaitānanda Tīrtha's  Brahmavidyābharaṇa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90267,Aka,Vidyāsāgarī on Śrīharṣa's  Khaṇḍanakhaṇḍakhādya,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92122,Name,Laghuvyākhyā on Sureśvara's  Bṛhadāraṇyakopaniṣadbhāṣyavārttika,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,114723,Name,Mahādevabhaṭṭa  Kelakara,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90888,Aka,Bhāvaprakāśikā on Jayatīrtha's  Māyāvādakhaṇḍanaṭīkā,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95202,Name,Maṇidarpaṇa on Raghunātha Śiromaṇi's  Tattvacintāmaṇidīdhiti,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90901,Name,Maṇimarīcinibandha  on Gaṅgeśa's  Tattvacintāmaṇi,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,111300,Name,Mātr̥kā Nyāsa - (Snāna  Vidhi),double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,94301,Name,Mitaksara on  Īśopaniṣad(bhāśya?),double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91232,Name,Mokṣavāda section of Siddhāntasāra on Jānakīnātha's  Nyāyasiddhāntamañjarī,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95402,Name,Nanakacanda  on the Bhagavatīsūtra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,96581,Aka,"Narasiṃha Ballāḷa,  Narasiṃha II",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89906,Name,"Nyāyālaṃkāra on Vātsyāyana's Nyāyabhāṣya, Uddyotakara's  Nyāyavārttika, Vācaspati Miśra's Tātparyaṭīkā and Udayana's Pariśuddhi",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95487,Aka,-mañjarī on Dharmarāja's  Vedāntaparibhāṣāa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89639,Name,Panjika on Dignaga's  Nyayapravesa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,94373,Name,Paramārthaprakāśikā vs. Vāsudeva Śāstri Abhyaṅkar's  Advaitāmoda,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,94510,Aka,Mayūkha on Viśvanātha Nyāyasiddhānta Pañcānana's  Bhāṣāpariccheda-Siddhāntamuktāvalī,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90883,Name,Prakāśikā  on Vardhamāna's Nyāyakusumāñjaliprakāśa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95127,Name,Prakṣepikā  on Kapila's Sāṃkhyasūtras,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93558,Name,Prameyaratnālaṃkāra on Māṇīkyanandin's Parīkṣāmukha and Anantavīrya's  Prameyaratnamālā thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95696,Name,Prameyavākyārthasaṃgraha on Madhva's  Aitareyopaniṣadbhāṣya,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,112337,Name,Rāmacaritamānasa -  Bālakāṇḍa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,116590,Name,Raṅganātha Marāṭhe  Dīkṣita,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90051,Name,Śāstraprakāśikā on Sureśvara's  Bṛhadāraṇyakopaniṣadbhāṣyavārttika,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,88780,Name,Ṣāstravārtāsamuccaya  and Dikpradā thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,85974,Aka,"Hayagrīva,  Śaṭhakopadāsa",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92888,Name,Siddhāntakalpāvalī  and Keśarāvallī thereon,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,111583,Name,Skanda Mahāpurāṇa-  Sandhyādi Khaṇḍa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91187,Aka,Gurutattvapradīpakadīpikā on Haribhadra's  Sodasakaprakarana,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90469,Name,Subodhinī on  Śamkāra’s Bhagavadgītābhāṣya,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91052,Name,Subuddhimanorāmā on Raghunātha Śiromaṇi's  Tattvacintāmaṇidīdhiti,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,88321,Name,Sūtra on the five  not returning again,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92484,Name,Syādvādamañjūṣā on Hemacandra's  Anyayogavyavacchedakadvātriṃśikā,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92180,Name,Tarkadipāvalī on Viśvanātha's  Bhāṣāpariccheda,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,95560,Name,Tattvacintāmaṇikhaṇḍana vs. Gopinātha's  Tattvacintāmaṇisāra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89747,Aka,Porāṇa on  Dhammapāla's Saccasaṅkhepa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89919,Name,Ṭīkā on Jineśvara's  Śrāvakadharmaprakaraṇa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89548,Name,Ṭīkā  on Nemicandra's Dravyasaṃgraha,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91236,Name,Ṭīkā on Raghunātha  Śiromaṇi's Tattvacintāmaṇidīdhiti,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89466,Name,Ṭīkā on  Śrāvakadharma,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91536,Name,Ullāsa on Viśvanātha Nyāyapañcānana's   Siddhāntamuktāvali,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,108194,Aka,"Dāmodara, Dāmodara  Upādhyāya, Upādhyāya Damora",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,114615,Name,Vāsudeva Bālakṛṣṇa  Vaze,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90938,Aka,"Prakāśa on Īśāvāsyopaniṣad,  Īśāvāsyopaniṣadbhāṣya ,  Īśopaniṣadbhāṣya.",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93840,Name,"Vedāntatattvāmṛta  Mss. of works 3-16 above belonging to Kavita Subrahmanya Sastri, Narasaropetta, Guntur District, acc. to Anantakrishna Sastri.",double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,92148,Aka,Tātparyanirṇaya on Jayatīrtha's  Viṣṇutattvanirṇaya,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,98358,Aka,Viśvanātha  Parāḍakara,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Person,41122,Name,Viśveśvara  śeṣa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,91159,Name,Viveka on Śabda section of Jayadeva Pakṣadhara Miśra's  Tattvacintāmaṇyāloka,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,90884,Name,Vivṛti  on Vardhamāna's  Nyāyalīlāvatīprakāśa,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,89322,Name,Vrtti on Dharmasvami's  Sivaprakasasutra,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,93482,Aka,Pūrṇānandendukaumudī on Vidyāraṇya's  Jīvanmuktiviveka,double or stray spaces,tidy spacing (low priority),cleaning the export,2026-10-08,open
+Work,88361,Commentary on,Abhidharmasamuccaya (88230),wrong base text for Nāgārjuna's Bhavasaṃkrāntiśāstra,"check: remove, or point to the Bhavasaṃkrāntisūtra once it has a record",checking the GRETIL Bhavasaṃkrānti rows (grouping into the master),2025-11-07,open
+Work,95212,Name,Commentary on Nāgārjuna's Bhavasaṃkrāntisūtra,calls Nāgārjuna's śāstra a sūtra; Maitreyanātha comments on the śāstra (88361),rename to: Bhavasaṃkrāntiṭīkā (or Commentary on Nāgārjuna's Bhavasaṃkrāntiśāstra),checking the GRETIL Bhavasaṃkrānti rows (grouping into the master),2025-11-07,open
+Work,(new),,,"Bhavasaṃkrāntisūtra (anonymous Mahāyāna sūtra, base of 88361) has no record; GRETIL bsu010",create,checking the GRETIL Bhavasaṃkrānti rows (grouping into the master),2025-11-07,open
