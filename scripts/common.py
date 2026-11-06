@@ -125,17 +125,27 @@ def norm(name):
 
 # ---------- the Pandit reference ----------
 
-def pandit_data_version():
-    """The date of the Pandit extract this repo works against, from VERSION."""
-    found = re.search(r'__pandit_data_version__\s*=\s*"([^"]+)"', VERSION.read_text(encoding="utf-8"))
+def read_version(name, path=VERSION):
+    """A __name__ = "value" line from a VERSION file (this repo's, or Pāṇḍitya's)."""
+    found = re.search(rf'^__{name}__\s*=\s*["\']([^"\']+)["\']', Path(path).read_text(encoding="utf-8"), re.M)
     if not found:
-        raise SystemExit(f"No __pandit_data_version__ in {VERSION}.")
+        raise SystemExit(f"No __{name}__ in {path}.")
     return found.group(1)
 
 
+def pandit_content_version():
+    """When the Pandit data of our copy was sourced: the export's date, which names the file."""
+    return read_version("pandit_content_version")
+
+
+def pandit_data_version():
+    """When Pāṇḍitya's pipeline last ran on that export, as of our copy."""
+    return read_version("pandit_data_version")
+
+
 def pandit_extract():
-    """This repo's copy of the cleaned Pandit extract, for the date in VERSION."""
-    path = PANDIT_DATA / f"{pandit_data_version()}-extracted-entities-cleaned.csv"
+    """This repo's copy of the cleaned Pandit extract, for the export date in VERSION."""
+    path = PANDIT_DATA / f"{pandit_content_version()}-extracted-entities-cleaned.csv"
     if not path.exists():
         raise SystemExit(f"No {path.name} in {PANDIT_DATA}; bring it in with make pandit-copy.")
     return path
