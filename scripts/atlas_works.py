@@ -42,7 +42,7 @@ Inputs (read-only):
   ../../sagara-sangama/sagara-sangama/docs/data/search.json  all five Atlases' items
   ../../sagara-sangama/atlases/gretil-atlas/docs/data/tree.json  GRETIL file paths
   data/seti-master.csv                                        SETI, with Pandit IDs
-  ../panditya/data/*-extracted-entities-cleaned.csv           the Pandit extract
+  data/pandit/<date>-extracted-entities-cleaned.csv           the Pandit extract
 
 Output: a printed report, plus reports/<date>-atlas-works-items.csv with
 every item's keys and match, for spot-checking.

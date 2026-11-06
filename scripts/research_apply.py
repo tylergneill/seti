@@ -25,7 +25,7 @@ RESEARCH = ROOT / "tmp" / "research"
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--run", required=True)
-    ap.add_argument("--pandit", help="cleaned Pandit extract (default: the newest in ../panditya/data)")
+    ap.add_argument("--pandit", help="cleaned Pandit extract (default: data/pandit/, for the date in VERSION)")
     ap.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
     ap.add_argument("--dry-run", action="store_true", help="report what would change; write nothing")
     args = ap.parse_args()

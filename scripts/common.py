@@ -17,7 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "data" / "seti-master.csv"
 REPORTS = ROOT / "reports"
-PANDIT_DATA = ROOT.parent / "panditya" / "data"
+VERSION = ROOT / "VERSION"
+PANDIT_DATA = ROOT / "data" / "pandit"   # a dated copy of Pāṇḍitya's cleaned extract
 
 OPEN = "..."       # no Pandit ID identified yet
 NO_AUTHOR = "—"    # nothing to identify: the text has no author
@@ -124,18 +125,37 @@ def norm(name):
 
 # ---------- the Pandit reference ----------
 
-def latest_pandit_extract():
-    found = sorted(PANDIT_DATA.glob("*-extracted-entities-cleaned.csv"))
+def read_version(name, path=VERSION):
+    """A __name__ = "value" line from a VERSION file (this repo's, or Pāṇḍitya's)."""
+    found = re.search(rf'^__{name}__\s*=\s*["\']([^"\']+)["\']', Path(path).read_text(encoding="utf-8"), re.M)
     if not found:
-        raise SystemExit(f"No *-extracted-entities-cleaned.csv in {PANDIT_DATA}; pass --pandit.")
-    return found[-1]
+        raise SystemExit(f"No __{name}__ in {path}.")
+    return found.group(1)
+
+
+def pandit_content_version():
+    """When the Pandit data of our copy was sourced: the export's date, which names the file."""
+    return read_version("pandit_content_version")
+
+
+def pandit_data_version():
+    """When Pāṇḍitya's pipeline last ran on that export, as of our copy."""
+    return read_version("pandit_data_version")
+
+
+def pandit_extract():
+    """This repo's copy of the cleaned Pandit extract, for the export date in VERSION."""
+    path = PANDIT_DATA / f"{pandit_content_version()}-extracted-entities-cleaned.csv"
+    if not path.exists():
+        raise SystemExit(f"No {path.name} in {PANDIT_DATA}; bring it in with make pandit-copy.")
+    return path
 
 
 class Pandit:
     """Works and persons from Pāṇḍitya's cleaned extract of a Pandit export."""
 
     def __init__(self, path=None):
-        self.path = Path(path) if path else latest_pandit_extract()
+        self.path = Path(path) if path else pandit_extract()
         self.works = {}
         self.persons = {}
         with open(self.path, encoding="utf-8", newline="") as f:
