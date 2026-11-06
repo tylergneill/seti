@@ -36,28 +36,36 @@ taken of it.
 The master's IDs are checked and matched against a dated copy of
 Pāṇḍitya's cleaned extract of a Pandit export, in `data/pandit/`, with its
 date in `__pandit_data_version__` in `VERSION`. Pāṇḍitya does the export
-and the cleaning; this repo never reads its files directly.
+and the cleaning; this repo never reads its files directly, except for
+`make pandit-copy`.
 
-After each Pandit export, in this order:
+## Keeping Pāṇḍitya and SETI in step
 
-1. In Pāṇḍitya, export and clean (its `data/manual_cleaning.md`).
-2. Here, `make pandit-copy DATE=<date>` copies that cleaned extract in,
-   removes the one it replaces, and sets the date in `VERSION`.
-3. `make check` confirms that every `Work ID` is a Pandit work and every
-   `Author ID` a Pandit person. An ID that fails was most likely deleted or
-   merged in Pandit; look it up with `scripts/lookup.py` and correct the
-   master.
-4. Then the matchers, if wanted, and a dated copy of the master into
-   Pāṇḍitya (its `data/manual_cleaning.md`, "Updating the SETI data"),
-   whose transform checks the Work IDs once more.
+Each repo keeps a dated copy of the other's data: Pāṇḍitya a copy of the
+SETI master, SETI a copy of Pāṇḍitya's cleaned Pandit extract. Each
+records the Pandit date it uses as `__pandit_data_version__` in `VERSION`,
+and the two should match.
 
-Step 2 needs only the cleaned extract on Pāṇḍitya's branch, not a merge
-there. That matters when Pandit has dropped a work the master points to:
-Pāṇḍitya's transform then refuses the new data until the master is
-corrected here and copied back. Keep both repos on the same Pandit date.
+**Every Pandit refresh: these three steps, in this order.**
 
-Changes to the master alone (matcher fills, new rows) need none of this:
-merge here, and Pāṇḍitya copies the master when it likes.
+1. **Pāṇḍitya:** on a new branch, bring in the new Pandit export and clean
+   it (`data/manual_cleaning.md`, "Updating the Pandit data", steps 1–5).
+   Stop before `make transform`. Don't merge yet.
+2. **SETI:** `make pandit-copy DATE=<date>`, then `make check`. Fix every
+   ID it reports (most likely deleted or merged in Pandit; look it up with
+   `python3 scripts/lookup.py id <id>`), rerun `make check` until it
+   passes, and merge.
+3. **Pāṇḍitya, same branch:** copy the SETI master over
+   (`data/manual_cleaning.md`, "Updating the SETI data"), then
+   `make transform` and `make analyze`, and merge.
+
+Step 2 is where Pandit's deletions and merges are caught and fixed. If
+`make transform` fails in step 3, step 2 was skipped or incomplete: go back
+to it.
+
+**Anything else** (SETI matcher work or new rows, Pāṇḍitya code) touches
+one side only: merge it there, and the other side picks it up at its next
+update.
 
 ## Two matchers, one way of working
 
