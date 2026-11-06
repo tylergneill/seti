@@ -1,7 +1,7 @@
 # SETI: matching the master against the Pandit Project.
 #
-#   make pandit-copy DATE=<date>    # bring in Pāṇḍitya's cleaned extract of that date
-#   make check                      # every ID in the master exists in it, of the right kind
+#   make pandit-copy                # bring in Pāṇḍitya's current cleaned extract
+#   make check                      # the copy is current, and every ID in the master is in it
 #   make match                     # mechanical matcher, open slots only
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
@@ -29,8 +29,7 @@ workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a
 .PHONY: pandit-copy check match research-prep research research-apply
 
 pandit-copy:
-	@test -n "$(DATE)" || (echo "DATE=<YYYY-MM-DD> is required, the date of Pāṇḍitya's extract" && exit 1)
-	$(PYTHON) scripts/pandit_copy.py $(DATE)
+	$(PYTHON) scripts/pandit_copy.py
 
 check:
 	$(PYTHON) scripts/check.py

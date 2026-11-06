@@ -1,34 +1,41 @@
-"""Bring in a new copy of Pāṇḍitya's cleaned Pandit extract.
+"""Bring in Pāṇḍitya's current cleaned Pandit extract.
 
-Pāṇḍitya exports Pandit and cleans it; this repo works against a dated copy
-of the result, so that every match and check is tied to a known snapshot.
-This copies ../panditya/data/<date>-extracted-entities-cleaned.csv into
-data/pandit/, removes the copy it replaces (git keeps it), and puts the date
-in VERSION.
+Pāṇḍitya exports Pandit and cleans it; this repo works against a copy of the
+result, so that every match and check is tied to a known snapshot. This
+reads ../panditya/VERSION for the export's date (__pandit_content_version__)
+and the day its pipeline last ran (__data_version__), copies
+../panditya/data/<export date>-extracted-entities-cleaned.csv into
+data/pandit/, removes the copy it replaces (git keeps it), and records both
+dates in VERSION.
 
-    python3 scripts/pandit_copy.py 2026-10-31
+    python3 scripts/pandit_copy.py
 
 Then run scripts/check.py.
 """
 
-import argparse
 import re
 import shutil
 
-from common import PANDIT_DATA, ROOT, VERSION
+from common import PANDIT_DATA, ROOT, VERSION, read_version
 
-SOURCE = ROOT.parent / "panditya" / "data"
+PANDITYA = ROOT.parent / "panditya"
+
+
+def set_version(text, name, value):
+    line = f'__{name}__ = "{value}"'
+    pattern = rf'^__{name}__\s*=\s*["\'][^"\']*["\']'
+    if re.search(pattern, text, re.M):
+        return re.sub(pattern, line, text, flags=re.M)
+    return text.rstrip("\n") + "\n" + line + "\n"
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("date", help="the date of the Pandit export, as in Pāṇḍitya's filenames (YYYY-MM-DD)")
-    args = ap.parse_args()
-
-    name = f"{args.date}-extracted-entities-cleaned.csv"
-    source = SOURCE / name
+    content = read_version("pandit_content_version", PANDITYA / "VERSION")
+    data = read_version("data_version", PANDITYA / "VERSION")
+    name = f"{content}-extracted-entities-cleaned.csv"
+    source = PANDITYA / "data" / name
     if not source.exists():
-        raise SystemExit(f"No {name} in {SOURCE}. Is Pāṇḍitya on the branch that has it?")
+        raise SystemExit(f"No {name} in {source.parent}; has Pāṇḍitya cleaned this export yet?")
 
     PANDIT_DATA.mkdir(parents=True, exist_ok=True)
     for old in PANDIT_DATA.glob("*-extracted-entities-cleaned.csv"):
@@ -39,11 +46,10 @@ def main():
     print(f"Copied {name} into {PANDIT_DATA.relative_to(ROOT)}/")
 
     text = VERSION.read_text(encoding="utf-8")
-    line = f'__pandit_data_version__ = "{args.date}"'
-    pattern = r'__pandit_data_version__\s*=\s*"[^"]*"'
-    text = re.sub(pattern, line, text) if re.search(pattern, text) else text.rstrip("\n") + "\n" + line + "\n"
+    text = set_version(text, "pandit_content_version", content)
+    text = set_version(text, "pandit_data_version", data)
     VERSION.write_text(text, encoding="utf-8")
-    print(f"Set {line} in VERSION. Now run make check.")
+    print(f"VERSION: Pandit export {content}, Pāṇḍitya's pipeline run {data}. Now run make check.")
 
 
 if __name__ == "__main__":
