@@ -31,6 +31,34 @@ taken of it.
 
 `data/archive/` keeps earlier dated masters.
 
+## The Pandit data
+
+The master's IDs are checked and matched against a dated copy of
+Pāṇḍitya's cleaned extract of a Pandit export, in `data/pandit/`, with its
+date in `__pandit_data_version__` in `VERSION`. Pāṇḍitya does the export
+and the cleaning; this repo never reads its files directly.
+
+After each Pandit export, in this order:
+
+1. In Pāṇḍitya, export and clean (its `data/manual_cleaning.md`).
+2. Here, `make pandit-copy DATE=<date>` copies that cleaned extract in,
+   removes the one it replaces, and sets the date in `VERSION`.
+3. `make check` confirms that every `Work ID` is a Pandit work and every
+   `Author ID` a Pandit person. An ID that fails was most likely deleted or
+   merged in Pandit; look it up with `scripts/lookup.py` and correct the
+   master.
+4. Then the matchers, if wanted, and a dated copy of the master into
+   Pāṇḍitya (its `data/manual_cleaning.md`, "Updating the SETI data"),
+   whose transform checks the Work IDs once more.
+
+Step 2 needs only the cleaned extract on Pāṇḍitya's branch, not a merge
+there. That matters when Pandit has dropped a work the master points to:
+Pāṇḍitya's transform then refuses the new data until the master is
+corrected here and copied back. Keep both repos on the same Pandit date.
+
+Changes to the master alone (matcher fills, new rows) need none of this:
+merge here, and Pāṇḍitya copies the master when it likes.
+
 ## Two matchers, one way of working
 
 Both matchers edit the master in place and say what they were less sure of
@@ -50,9 +78,8 @@ Where the current ID is plausible and another record matches as well or
 better, the master is left alone and the other record is noted as a
 possible duplicate in Pandit.
 
-Both read Pandit from Pāṇḍitya's newest
-`../panditya/data/*-extracted-entities-cleaned.csv`; `--pandit` names
-another.
+Both read Pandit from `data/pandit/` (see "The Pandit data"); `--pandit`
+names another extract.
 
 ### Mechanical
 

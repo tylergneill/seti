@@ -1,6 +1,8 @@
 # SETI: matching the master against the Pandit Project.
 #
-#   make match                      # mechanical matcher, open slots only
+#   make pandit-copy DATE=<date>    # bring in Pāṇḍitya's cleaned extract of that date
+#   make check                      # every ID in the master exists in it, of the right kind
+#   make match                     # mechanical matcher, open slots only
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
 #   make research RUN=<run>         # Claude sub-agents research the batches
@@ -24,7 +26,14 @@ run_flag = $(if $(RUN),--run $(RUN))
 dry_flag = $(if $(DRY),--dry-run)
 workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a time.)
 
-.PHONY: match research-prep research research-apply
+.PHONY: pandit-copy check match research-prep research research-apply
+
+pandit-copy:
+	@test -n "$(DATE)" || (echo "DATE=<YYYY-MM-DD> is required, the date of Pāṇḍitya's extract" && exit 1)
+	$(PYTHON) scripts/pandit_copy.py $(DATE)
+
+check:
+	$(PYTHON) scripts/check.py
 
 match:
 	$(PYTHON) scripts/match.py --scope $(SCOPE) --threshold $(THRESHOLD) $(collection_flag) $(dry_flag)

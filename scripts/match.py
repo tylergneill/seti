@@ -291,7 +291,7 @@ class Matcher:
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--master", default=MASTER)
-    ap.add_argument("--pandit", help="cleaned Pandit extract (default: the newest in ../panditya/data)")
+    ap.add_argument("--pandit", help="cleaned Pandit extract (default: data/pandit/, for the date in VERSION)")
     ap.add_argument("--scope", choices=["open", "all"], default="open",
                     help="open: only '...' slots. all: every row, replacing IDs that a confident match contradicts")
     ap.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)

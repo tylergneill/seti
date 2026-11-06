@@ -22,7 +22,7 @@ import os
 import sys
 from pathlib import Path
 
-from common import ROOT, latest_pandit_extract
+from common import ROOT, pandit_extract
 
 RESEARCH = ROOT / "tmp" / "research"
 OUT = ROOT / "tmp" / "workflows"
@@ -44,7 +44,7 @@ def build_prompt(pandit=None):
     text = PROMPT.read_text(encoding="utf-8")
     return (text.replace("{python}", sys.executable)
                 .replace("{lookup}", str(ROOT / "scripts" / "lookup.py"))
-                .replace("{pandit}", str(Path(pandit).resolve() if pandit else latest_pandit_extract())))
+                .replace("{pandit}", str(Path(pandit).resolve() if pandit else pandit_extract())))
 
 
 def pending_batches(run):
@@ -65,7 +65,7 @@ def pending_batches(run):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--run", help="the run to dispatch, as named by research_prep.py")
-    ap.add_argument("--pandit", help="cleaned Pandit extract (default: the newest in ../panditya/data)")
+    ap.add_argument("--pandit", help="cleaned Pandit extract (default: data/pandit/, for the date in VERSION)")
     ap.add_argument("--workers", type=int, default=25, help="sub-agents in flight across all workflows (default 25)")
     ap.add_argument("--list", action="store_true", help="list pending batches and stop")
     ap.add_argument("--prompt", action="store_true", help="print the sub-agent prompt and stop")

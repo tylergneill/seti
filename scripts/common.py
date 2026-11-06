@@ -17,7 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "data" / "seti-master.csv"
 REPORTS = ROOT / "reports"
-PANDIT_DATA = ROOT.parent / "panditya" / "data"
+VERSION = ROOT / "VERSION"
+PANDIT_DATA = ROOT / "data" / "pandit"   # a dated copy of Pāṇḍitya's cleaned extract
 
 OPEN = "..."       # no Pandit ID identified yet
 NO_AUTHOR = "—"    # nothing to identify: the text has no author
@@ -124,18 +125,27 @@ def norm(name):
 
 # ---------- the Pandit reference ----------
 
-def latest_pandit_extract():
-    found = sorted(PANDIT_DATA.glob("*-extracted-entities-cleaned.csv"))
+def pandit_data_version():
+    """The date of the Pandit extract this repo works against, from VERSION."""
+    found = re.search(r'__pandit_data_version__\s*=\s*"([^"]+)"', VERSION.read_text(encoding="utf-8"))
     if not found:
-        raise SystemExit(f"No *-extracted-entities-cleaned.csv in {PANDIT_DATA}; pass --pandit.")
-    return found[-1]
+        raise SystemExit(f"No __pandit_data_version__ in {VERSION}.")
+    return found.group(1)
+
+
+def pandit_extract():
+    """This repo's copy of the cleaned Pandit extract, for the date in VERSION."""
+    path = PANDIT_DATA / f"{pandit_data_version()}-extracted-entities-cleaned.csv"
+    if not path.exists():
+        raise SystemExit(f"No {path.name} in {PANDIT_DATA}; bring it in with make pandit-copy.")
+    return path
 
 
 class Pandit:
     """Works and persons from Pāṇḍitya's cleaned extract of a Pandit export."""
 
     def __init__(self, path=None):
-        self.path = Path(path) if path else latest_pandit_extract()
+        self.path = Path(path) if path else pandit_extract()
         self.works = {}
         self.persons = {}
         with open(self.path, encoding="utf-8", newline="") as f:
