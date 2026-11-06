@@ -28,12 +28,14 @@ import json
 import re
 
 from atlas_works import GRETIL_TREE
-from common import (AUTHOR_ID, DEFAULT_THRESHOLD, NO_AUTHOR, OPEN, PANDIT_DATA, WORK_ID, Master, Pandit,
+from common import (AUTHOR_ID, DEFAULT_THRESHOLD, NO_AUTHOR, OPEN, ROOT, WORK_ID, Master, Pandit,
                     apply_proposals, print_summary, proposal, split_cell)
 from grouping_common import DATA
 
 GROUNDING = DATA / "grounding"
-PANDIT_USED = PANDIT_DATA / "archive" / "2025-11-07-extracted-entities-cleaned.csv"
+# The extract the grounding was made against, kept in Pāṇḍitya's archive. Its
+# IDs may since have been deleted or merged in Pandit: run make check after.
+PANDIT_USED = ROOT.parent / "panditya" / "data" / "archive" / "2025-11-07-extracted-entities-cleaned.csv"
 HINT_CONFIDENCE = 0.0
 
 
