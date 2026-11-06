@@ -15,7 +15,7 @@ agent's reading of instructions.
 import argparse
 import sys
 
-from common import ROOT, latest_pandit_extract
+from common import ROOT, pandit_extract
 from grouping_common import AGENTS, ALL, COLLECTIONS, STEPS
 
 
@@ -25,7 +25,7 @@ def build_prompt(step, code):
                 .replace("{python}", sys.executable)
                 .replace("{lookup}", str(ROOT / "scripts" / "lookup.py"))
                 .replace("{validate}", str(ROOT / "scripts" / "grouping_validate.py"))
-                .replace("{pandit}", str(latest_pandit_extract())))
+                .replace("{pandit}", str(pandit_extract())))
     # Grounding works from the registry, not from catalogue lines, so the
     # collections' notes for readers are no help to it.
     codes = [] if step == "ground" else sorted(COLLECTIONS) if code == ALL else [code]

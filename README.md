@@ -31,6 +31,42 @@ taken of it.
 
 `data/archive/` keeps earlier dated masters.
 
+## The Pandit data
+
+The master's IDs are checked and matched against a dated copy of
+Pāṇḍitya's cleaned extract of a Pandit export, in `data/pandit/`, with its
+date in `__pandit_data_version__` in `VERSION`. Pāṇḍitya does the export
+and the cleaning; this repo never reads its files directly, except for
+`make pandit-copy`.
+
+## Keeping Pāṇḍitya and SETI in step
+
+Each repo keeps a dated copy of the other's data: Pāṇḍitya a copy of the
+SETI master, SETI a copy of Pāṇḍitya's cleaned Pandit extract. Each
+records the Pandit date it uses as `__pandit_data_version__` in `VERSION`,
+and the two should match.
+
+**Every Pandit refresh: these three steps, in this order.**
+
+1. **Pāṇḍitya:** on a new branch, bring in the new Pandit export and clean
+   it (`data/manual_cleaning.md`, "Updating the Pandit data", steps 1–5).
+   Stop before `make transform`. Don't merge yet.
+2. **SETI:** `make pandit-copy DATE=<date>`, then `make check`. Fix every
+   ID it reports (most likely deleted or merged in Pandit; look it up with
+   `python3 scripts/lookup.py id <id>`), rerun `make check` until it
+   passes, and merge.
+3. **Pāṇḍitya, same branch:** copy the SETI master over
+   (`data/manual_cleaning.md`, "Updating the SETI data"), then
+   `make transform` and `make analyze`, and merge.
+
+Step 2 is where Pandit's deletions and merges are caught and fixed. If
+`make transform` fails in step 3, step 2 was skipped or incomplete: go back
+to it.
+
+**Anything else** (SETI matcher work or new rows, Pāṇḍitya code) touches
+one side only: merge it there, and the other side picks it up at its next
+update.
+
 ## Two matchers, one way of working
 
 Both matchers edit the master in place and say what they were less sure of
@@ -50,9 +86,8 @@ Where the current ID is plausible and another record matches as well or
 better, the master is left alone and the other record is noted as a
 possible duplicate in Pandit.
 
-Both read Pandit from Pāṇḍitya's newest
-`../panditya/data/*-extracted-entities-cleaned.csv`; `--pandit` names
-another.
+Both read Pandit from `data/pandit/` (see "The Pandit data"); `--pandit`
+names another extract.
 
 ### Mechanical
 

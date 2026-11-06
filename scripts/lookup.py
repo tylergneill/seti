@@ -98,7 +98,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("kind", choices=["work", "person", "id"])
     ap.add_argument("query", nargs="+")
-    ap.add_argument("--pandit", help="cleaned Pandit extract (default: the newest in ../panditya/data)")
+    ap.add_argument("--pandit", help="cleaned Pandit extract (default: data/pandit/, for the date in VERSION)")
     args = ap.parse_args()
     pandit = Pandit(args.pandit)
 
