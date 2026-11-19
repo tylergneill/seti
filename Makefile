@@ -7,6 +7,7 @@
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
 #   make research RUN=<run>         # Claude sub-agents research the batches
 #   make research-apply RUN=<run>   # write their findings into the master
+#   make master-date                # date the master in VERSION from its last commit (CI checks this)
 #
 # Both matchers edit data/seti-master.csv in place and write what they were
 # less sure of to reports/. Review the master as a diff.
@@ -26,7 +27,10 @@ run_flag = $(if $(RUN),--run $(RUN))
 dry_flag = $(if $(DRY),--dry-run)
 workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a time.)
 
-.PHONY: pandit-copy check match research-prep research research-apply
+.PHONY: pandit-copy check match research-prep research research-apply master-date
+
+master-date:
+	$(PYTHON) scripts/master_date.py
 
 pandit-copy:
 	$(PYTHON) scripts/pandit_copy.py

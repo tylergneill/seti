@@ -16,8 +16,11 @@ used to be, with this file copied from it; that is now reversed, and the
 sheet will in time be filled from this file. Make changes here, not in
 the sheet.
 
-The code's version is in `VERSION`; the master is dated by the copies
-taken of it.
+`VERSION` holds the code's version (`__seti_code_version__`) and the
+master's date (`__seti_data_version__`), which Pāṇḍitya takes when it copies the
+master in. It is the day of the last commit that changed the master:
+`make master-date` sets it from git, and a check on every PR into main
+fails if it is out of date.
 
 ## The master
 
@@ -35,8 +38,8 @@ taken of it.
 
 The master's IDs are checked and matched against a dated copy of
 Pāṇḍitya's cleaned extract of a Pandit export, in `data/pandit/`, with its
-dates in `VERSION`: `__pandit_content_version__`, the export's date, which
-names the file, and `__pandit_data_version__`, the day Pāṇḍitya's pipeline
+dates in `VERSION`: `__pandit_source_version__`, the export's date, which
+names the file, and `__panditya_data_version__`, the day Pāṇḍitya's pipeline
 last ran on it. Pāṇḍitya does the export and the cleaning; this repo never
 reads its files directly, except for `make pandit-copy` and `make check`.
 
@@ -45,7 +48,7 @@ reads its files directly, except for `make pandit-copy` and `make check`.
 Each repo keeps a dated copy of the other's data: Pāṇḍitya a copy of the
 SETI master, SETI a copy of Pāṇḍitya's cleaned Pandit extract. Pāṇḍitya's
 `VERSION` records when the Pandit data was sourced
-(`__pandit_content_version__`, the export's date) and when its pipeline
+(`__pandit_source_version__`, the export's date) and when its pipeline
 last ran (`__data_version__`). SETI's `VERSION` records the same two dates
 for the copy it holds, and `make check` says if that copy is behind.
 

@@ -2,7 +2,7 @@
 
 Pāṇḍitya exports Pandit and cleans it; this repo works against a copy of the
 result, so that every match and check is tied to a known snapshot. This
-reads ../panditya/VERSION for the export's date (__pandit_content_version__)
+reads ../panditya/VERSION for the export's date (__pandit_source_version__)
 and the day its pipeline last ran (__data_version__), copies
 ../panditya/data/<export date>-extracted-entities-cleaned.csv into
 data/pandit/, removes the copy it replaces (git keeps it), and records both
@@ -30,7 +30,7 @@ def set_version(text, name, value):
 
 
 def main():
-    content = read_version("pandit_content_version", PANDITYA / "VERSION")
+    content = read_version("pandit_source_version", PANDITYA / "VERSION")
     data = read_version("data_version", PANDITYA / "VERSION")
     name = f"{content}-extracted-entities-cleaned.csv"
     source = PANDITYA / "data" / name
@@ -46,8 +46,8 @@ def main():
     print(f"Copied {name} into {PANDIT_DATA.relative_to(ROOT)}/")
 
     text = VERSION.read_text(encoding="utf-8")
-    text = set_version(text, "pandit_content_version", content)
-    text = set_version(text, "pandit_data_version", data)
+    text = set_version(text, "pandit_source_version", content)
+    text = set_version(text, "panditya_data_version", data)
     VERSION.write_text(text, encoding="utf-8")
     print(f"VERSION: Pandit export {content}, Pāṇḍitya's pipeline run {data}. Now run make check.")
 

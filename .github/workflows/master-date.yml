@@ -1,0 +1,19 @@
+# A PR into main must leave VERSION's __seti_data_version__ at the day the
+# master last changed. If this fails, run `make master-date` and commit VERSION.
+name: master date
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  master-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # the whole history, to find the master's last commit; and the PR's
+          # own head, not the merge GitHub builds to test it
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+      - run: python3 scripts/master_date.py --check

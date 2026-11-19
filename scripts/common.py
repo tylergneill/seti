@@ -133,19 +133,19 @@ def read_version(name, path=VERSION):
     return found.group(1)
 
 
-def pandit_content_version():
+def pandit_source_version():
     """When the Pandit data of our copy was sourced: the export's date, which names the file."""
-    return read_version("pandit_content_version")
+    return read_version("pandit_source_version")
 
 
-def pandit_data_version():
+def panditya_data_version():
     """When Pāṇḍitya's pipeline last ran on that export, as of our copy."""
-    return read_version("pandit_data_version")
+    return read_version("panditya_data_version")
 
 
 def pandit_extract():
     """This repo's copy of the cleaned Pandit extract, for the export date in VERSION."""
-    path = PANDIT_DATA / f"{pandit_content_version()}-extracted-entities-cleaned.csv"
+    path = PANDIT_DATA / f"{pandit_source_version()}-extracted-entities-cleaned.csv"
     if not path.exists():
         raise SystemExit(f"No {path.name} in {PANDIT_DATA}; bring it in with make pandit-copy.")
     return path
