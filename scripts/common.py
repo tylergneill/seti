@@ -221,7 +221,7 @@ def proposal(row, field, position, suggested, confidence, basis, suggested_name=
 
 REPORT_COLUMNS = ["Row", "Line", "Collection", "Text Name", "Author Name", "Field", "Slot", "Current",
                   "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis",
-                  "Suggested Link", "Current Link", "Related Links"]
+                  "Suggested Link", "Current Name", "Current Link", "Related Links"]
 
 
 def pandit_link(entity_id):
@@ -357,7 +357,7 @@ def print_change(row, dry_run=False):
     print(f"  {verb}: row {row['Row']} (line {row['Line']}) {row['Collection']} "
           f"'{row['Text Name']}' {row['Field']} slot {row['Slot']} ({row['Confidence']})")
     if row["Current Link"]:
-        print(f"      was     {row['Current']}  {row['Current Link']}")
+        print(f"      was     {row['Current']} {row['Current Name']}  {row['Current Link']}")
     print(f"      now     {row['Suggested ID']} {row['Suggested Name']}  {row['Suggested Link']}")
     for line in row["Related Links"].splitlines():
         print(f"      {line}")
@@ -381,6 +381,9 @@ def _report_row(master, p, current, status, pandit=None):
         "Status": status,
         "Basis": p["basis"],
         "Suggested Link": pandit_link(p["suggested"]),
+        # The record being replaced or contradicted, by name, so it can be
+        # judged without opening its page (blank if pandit was not given).
+        "Current Name": pandit.name_of(current) if pandit is not None and pandit_link(current) else "",
         "Current Link": pandit_link(current),
         # One record per line: '<role> <ID> <name>  <link>'.
         "Related Links": "\n".join(f"{role:<7} {i} {name}  {pandit_link(i)}" for role, i, name in related),
