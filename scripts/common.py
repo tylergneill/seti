@@ -221,7 +221,10 @@ def proposal(row, field, position, suggested, confidence, basis, suggested_name=
 
 REPORT_COLUMNS = ["Row", "Line", "Collection", "Text Name", "Author Name", "Field", "Slot", "Current",
                   "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis",
-                  "Suggested Link", "Current Name", "Current Link", "Related Links"]
+                  "Text Links", "Suggested Link", "Current Name", "Current Link", "Related Links"]
+
+# The row's own links to the e-text, for reading what the text really is.
+TEXT_LINKS = (("main", "Link 1 (main)"), ("underlying", "Link 2 (underlying)"), ("extract", "Link 3 (extract)"))
 
 
 def pandit_link(entity_id):
@@ -351,11 +354,14 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
 
 
 def print_change(row, dry_run=False):
-    """One applied change, with each Pandit page on a line of its own so that
-    a terminal makes it clickable."""
+    """One applied change, with the e-text's links and each Pandit page on a
+    line of its own, so that a terminal makes them clickable: read the text,
+    compare the records, then keep or revert the change."""
     verb = f"would be {row['Status']}" if dry_run else row["Status"]
     print(f"  {verb}: row {row['Row']} (line {row['Line']}) {row['Collection']} "
           f"'{row['Text Name']}' {row['Field']} slot {row['Slot']} ({row['Confidence']})")
+    for line in row["Text Links"].splitlines():
+        print(f"      text    {line}")
     if row["Current Link"]:
         print(f"      was     {row['Current']} {row['Current Name']}  {row['Current Link']}")
     print(f"      now     {row['Suggested ID']} {row['Suggested Name']}  {row['Suggested Link']}")
@@ -366,6 +372,8 @@ def print_change(row, dry_run=False):
 def _report_row(master, p, current, status, pandit=None):
     r = p["row"]
     related = related_records(master, pandit, p)
+    text_links = [(label, master.get(r, col).strip()) for label, col in TEXT_LINKS
+                  if col in master.col and master.get(r, col).strip()]
     return {
         "Row": master.sheet_row(r),
         "Line": master.line(r),
@@ -380,6 +388,8 @@ def _report_row(master, p, current, status, pandit=None):
         "Confidence": f"{p['confidence']:.2f}" if p["suggested"] else "",
         "Status": status,
         "Basis": p["basis"],
+        # One link per line: '<which> <link>'.
+        "Text Links": "\n".join(f"{label:<10} {url}" for label, url in text_links),
         "Suggested Link": pandit_link(p["suggested"]),
         # The record being replaced or contradicted, by name, so it can be
         # judged without opening its page (blank if pandit was not given).
