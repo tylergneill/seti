@@ -27,6 +27,10 @@ WORK_ID = "Work ID"
 AUTHOR_ID = "Author ID"
 
 DEFAULT_THRESHOLD = 0.9
+# Pandit's own address for a record. /entity/<id>/work and the like are only
+# aliases, which records created in bulk (e.g. the 114000s-116000s) lack;
+# /node/<id> works for every record.
+PANDIT_NODE = "https://panditproject.org/node/{}"
 AMBIGUITY_MARGIN = 0.03  # two confident candidates closer than this are a tie
 KEEP_FLOOR = 0.6         # an ID already in the master stands if it scores at least this
 
@@ -216,11 +220,38 @@ def proposal(row, field, position, suggested, confidence, basis, suggested_name=
 
 
 REPORT_COLUMNS = ["Row", "Line", "Collection", "Text Name", "Author Name", "Field", "Slot", "Current",
-                  "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis"]
+                  "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis",
+                  "Suggested Link", "Current Link", "Related Links"]
+
+
+def pandit_link(entity_id):
+    """The Pandit page of a record, or '' for anything that is not an ID ('...', '—', '')."""
+    entity_id = (entity_id or "").strip()
+    return PANDIT_NODE.format(entity_id) if entity_id.isdigit() else ""
+
+
+def related_records(master, pandit, p):
+    """The other Pandit records worth opening when judging a proposal, as [(role, ID, name)].
+
+    For a work: the authors Pandit gives the suggested work, so that the
+    reviewer can see whether they are the row's author. For an author: the
+    works already in the row's Work ID cell, which is usually what
+    corroborated the author.
+    """
+    if pandit is None or not p["suggested"]:
+        return []
+    if p["field"] == WORK_ID:
+        work = pandit.works.get(p["suggested"])
+        ids = work["author_ids"] if work else []
+        role = "author"
+    else:
+        ids = [i.strip() for i in split_cell(master.get(p["row"], WORK_ID))[0] if i.strip().isdigit()]
+        role = "work"
+    return [(role, i, pandit.name_of(i)) for i in ids]
 
 
 def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwrite=False,
-                    dry_run=False, extra_notes=()):
+                    dry_run=False, extra_notes=(), pandit=None):
     """Write confident proposals into the master; report the rest.
 
     A slot that is open ('...') is filled when the best proposal for it
@@ -228,7 +259,15 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
     with overwrite=True, and only by a different ID that reaches the
     threshold. Everything else that disagrees with the master goes to the
     notes file, at most three candidates per slot.
+
+    Every change is printed with the Pandit pages to check it against: the
+    suggested record, the record it replaces, and the related records (see
+    related_records()), which need `pandit`. The reports carry the same
+    links as columns.
     """
+    def report(p, current, status):
+        return _report_row(master, p, current, status, pandit)
+
     by_slot = {}
     for p in proposals:
         by_slot.setdefault((p["row"], p["field"], p["position"]), []).append(p)
@@ -262,13 +301,13 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
             counts["confirmed"] += 1
             for p in confident:
                 if p["suggested"] != current:
-                    notes.append(_report_row(master, p, current, "confident alternative to a plausible current ID (Pandit duplicate?)"))
+                    notes.append(report(p, current, "confident alternative to a plausible current ID (Pandit duplicate?)"))
             continue
 
         # Several confident candidates and nothing to choose between them.
         if len(confident) > 1 and confident[0]["confidence"] - confident[1]["confidence"] < AMBIGUITY_MARGIN:
             for p in confident[:3]:
-                notes.append(_report_row(master, p, current, "ambiguous: several confident candidates"))
+                notes.append(report(p, current, "ambiguous: several confident candidates"))
             counts["noted"] += 1
             continue
 
@@ -277,7 +316,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
             master.set(r, field, join_cell(parts, seps))
             status = "filled" if is_open else "replaced"
             counts[status] += 1
-            applied.append(_report_row(master, best, current, status))
+            applied.append(report(best, current, status))
             continue
 
         for p in ranked[:3]:
@@ -289,7 +328,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
                 status = "differs from current (not overwriting)"
             else:
                 status = "differs from current"
-            notes.append(_report_row(master, p, current, status))
+            notes.append(report(p, current, status))
         counts["noted"] += 1
 
     notes += list(extra_notes)
@@ -306,15 +345,27 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
                 writer = csv.DictWriter(f, fieldnames=REPORT_COLUMNS, lineterminator="\n")
                 writer.writeheader()
                 writer.writerows(rows)
-    if dry_run:
-        for row in applied:
-            print(f"  would be {row['Status']}: row {row['Row']} {row['Field']} {row['Current']} -> "
-                  f"{row['Suggested ID']} '{row['Suggested Name']}' ({row['Confidence']})  [{row['Text Name']}]")
+    for row in applied:
+        print_change(row, dry_run)
     return counts, paths
 
 
-def _report_row(master, p, current, status):
+def print_change(row, dry_run=False):
+    """One applied change, with each Pandit page on a line of its own so that
+    a terminal makes it clickable."""
+    verb = f"would be {row['Status']}" if dry_run else row["Status"]
+    print(f"  {verb}: row {row['Row']} (line {row['Line']}) {row['Collection']} "
+          f"'{row['Text Name']}' {row['Field']} slot {row['Slot']} ({row['Confidence']})")
+    if row["Current Link"]:
+        print(f"      was     {row['Current']}  {row['Current Link']}")
+    print(f"      now     {row['Suggested ID']} {row['Suggested Name']}  {row['Suggested Link']}")
+    for line in row["Related Links"].splitlines():
+        print(f"      {line}")
+
+
+def _report_row(master, p, current, status, pandit=None):
     r = p["row"]
+    related = related_records(master, pandit, p)
     return {
         "Row": master.sheet_row(r),
         "Line": master.line(r),
@@ -329,6 +380,10 @@ def _report_row(master, p, current, status):
         "Confidence": f"{p['confidence']:.2f}" if p["suggested"] else "",
         "Status": status,
         "Basis": p["basis"],
+        "Suggested Link": pandit_link(p["suggested"]),
+        "Current Link": pandit_link(current),
+        # One record per line: '<role> <ID> <name>  <link>'.
+        "Related Links": "\n".join(f"{role:<7} {i} {name}  {pandit_link(i)}" for role, i, name in related),
     }
 
 

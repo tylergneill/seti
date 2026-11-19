@@ -81,7 +81,7 @@ def main():
 
     print(f"run {args.run} ({meta['scope']}): {done} batches read" + (f", {missing} still pending" if missing else ""))
     counts, paths = apply_proposals(master, proposals, "research", args.threshold,
-                                    overwrite=meta["scope"] == "all", dry_run=args.dry_run, extra_notes=extra)
+                                    overwrite=meta["scope"] == "all", dry_run=args.dry_run, extra_notes=extra, pandit=pandit)
     print_summary(counts, paths, args.threshold)
     not_found = sum(1 for e in extra if e["Status"] == "not found in Pandit")
     print(f"{not_found} slots reported as not in Pandit; {len(extra) - not_found} invalid IDs set aside")
