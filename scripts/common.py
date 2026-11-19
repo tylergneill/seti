@@ -12,6 +12,7 @@ import datetime
 import io
 import re
 import unicodedata
+from urllib.parse import quote
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -353,6 +354,17 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
     return counts, paths
 
 
+def clickable(url):
+    """A URL with its non-ASCII characters percent-encoded (ś -> %C5%9B).
+
+    Terminals such as PyCharm's end a link at the first diacritic, so a
+    link to 'Amaraughaśāsana' would open 'Amaraugha'. The encoded form is
+    the same address, and browsers show it decoded again. Characters that
+    already carry meaning in a URL, and existing %-escapes, are left alone.
+    """
+    return quote(url, safe=":/?#[]@!$&'()*+,;=%~")
+
+
 def print_change(row, dry_run=False):
     """One applied change, with the e-text's links and each Pandit page on a
     line of its own, so that a terminal makes them clickable: read the text,
@@ -361,7 +373,8 @@ def print_change(row, dry_run=False):
     print(f"  {verb}: row {row['Row']} (line {row['Line']}) {row['Collection']} "
           f"'{row['Text Name']}' {row['Field']} slot {row['Slot']} ({row['Confidence']})")
     for line in row["Text Links"].splitlines():
-        print(f"      text    {line}")
+        label, url = line.split(None, 1)
+        print(f"      text    {label:<10} {clickable(url)}")
     if row["Current Link"]:
         print(f"      was     {row['Current']} {row['Current Name']}  {row['Current Link']}")
     print(f"      now     {row['Suggested ID']} {row['Suggested Name']}  {row['Suggested Link']}")
