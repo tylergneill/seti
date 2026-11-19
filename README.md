@@ -105,8 +105,10 @@ slots are not attempted.
 ### Research
 
     make research-prep LIMIT=50           # prints the run's name
-    make research RUN=<run>               # a Claude session with sub-agents
-    make research-apply RUN=<run>
+    make research RUN=<run>               # a Claude session with sub-agents; applies the run at the end
+    make research RUN=<run> NO_APPLY=1    # the same, but stops before applying
+    make research-apply RUN=<run> DRY=1   # what applying would change
+    make research-apply RUN=<run>         # apply it yourself (after NO_APPLY=1)
 
 Claude sub-agents, one per batch of ten rows, each search the Pandit
 extract with `scripts/lookup.py`, may read the top of the e-text itself,

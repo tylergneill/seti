@@ -6,6 +6,7 @@
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
 #   make research RUN=<run>         # Claude sub-agents research the batches
+#   make research RUN=<run> NO_APPLY=1   # ... and stop before applying them
 #   make research-apply RUN=<run>   # write their findings into the master
 #   make master-date                # date the master in VERSION from its last commit (CI checks this)
 #
@@ -26,6 +27,11 @@ limit_flag = $(if $(LIMIT),--limit $(LIMIT))
 run_flag = $(if $(RUN),--run $(RUN))
 dry_flag = $(if $(DRY),--dry-run)
 workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a time.)
+# By default the research session applies its run when done; NO_APPLY=1 leaves
+# that to you (make research-apply RUN=<run> DRY=1, then without DRY).
+apply_on = When the run is done, even with failed batches, run make research-apply RUN=$(RUN).
+apply_off = Do not apply the run: skip step 5's research_apply.py. When the run is done, tell the user which batches finished or failed, and that they will run make research-apply RUN=$(RUN) themselves.
+apply_words = $(if $(NO_APPLY), $(apply_off), $(apply_on))
 
 .PHONY: pandit-copy check match research-prep research research-apply master-date
 
@@ -46,7 +52,7 @@ research-prep:
 
 research:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required; research-prep prints the name" && exit 1)
-	claude "Research the pending batches using subagents, following agents/dispatcher.md, for the run $(RUN). Use a workflow.$(workers_words) When the run is done, even with failed batches, run make research-apply RUN=$(RUN)."
+	claude "Research the pending batches using subagents, following agents/dispatcher.md, for the run $(RUN). Use a workflow.$(workers_words)$(apply_words)"
 
 research-apply:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required" && exit 1)
