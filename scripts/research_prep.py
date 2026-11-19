@@ -17,6 +17,8 @@ is an independent reading that can then be compared with the master.
 import argparse
 import datetime
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 from common import AUTHOR_ID, MASTER, NO_AUTHOR, OPEN, ROOT, WORK_ID, Master, split_cell
@@ -59,6 +61,20 @@ def item_for(master, r, scope):
     }
 
 
+def slug(text):
+    """A file-name-safe form of a collection name: 'Vātāyana and Pramāṇa NLP'
+    becomes 'vatayana-and-pramana-nlp'."""
+    ascii_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-")
+
+
+def default_run_name(collection, scope):
+    """<date>-<HHMM>-<collection or 'all-collections'>-<scope>, so that runs on
+    the same day, or on different collections, do not collide."""
+    stamp = datetime.datetime.now().strftime("%Y-%m-%d-%H%M")
+    return f"{stamp}-{slug(collection) if collection else 'all-collections'}-{scope}"
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--master", default=MASTER)
@@ -66,7 +82,7 @@ def main():
     ap.add_argument("--collection", help="only rows of this collection")
     ap.add_argument("--limit", type=int, help="at most this many rows")
     ap.add_argument("--batch-size", type=int, default=10, help="rows per sub-agent (default 10)")
-    ap.add_argument("--run", help="name for this run (default: <date>-<scope>)")
+    ap.add_argument("--run", help="name for this run (default: <date>-<HHMM>-<collection>-<scope>)")
     args = ap.parse_args()
 
     master = Master(args.master)
@@ -80,7 +96,7 @@ def main():
         if args.limit and len(items) >= args.limit:
             break
 
-    run = args.run or f"{datetime.date.today().isoformat()}-{args.scope}"
+    run = args.run or default_run_name(args.collection, args.scope)
     run_dir = RESEARCH / run
     if run_dir.exists():
         raise SystemExit(f"{run_dir.relative_to(ROOT)} already exists. Finish it with research_apply.py, "
