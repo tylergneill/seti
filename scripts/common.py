@@ -277,7 +277,9 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
         by_slot.setdefault((p["row"], p["field"], p["position"]), []).append(p)
 
     applied, notes = [], []
-    counts = {"filled": 0, "replaced": 0, "confirmed": 0, "noted": 0}
+    counts = {"filled": 0, "replaced": 0, "confirmed": 0, "noted": 0,
+              # How sure the matcher was of each ID it confirmed; see print_summary().
+              "confirmed_confidences": [], "threshold": threshold}
 
     for (r, field, position), candidates in sorted(by_slot.items()):
         ranked, seen = [], set()
@@ -303,6 +305,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
         current_score = max((p["confidence"] for p in ranked if p["suggested"] == current), default=0)
         if best["suggested"] == current or current_score >= KEEP_FLOOR:
             counts["confirmed"] += 1
+            counts["confirmed_confidences"].append(current_score)
             for p in confident:
                 if p["suggested"] != current:
                     notes.append(report(p, current, "confident alternative to a plausible current ID (Pandit duplicate?)"))
@@ -418,9 +421,22 @@ def note_row(master, r, field, position, status, basis, current=""):
     return _report_row(master, proposal(r, field, position, "", 0, basis), current, status)
 
 
+def agreement_bands(confidences, threshold):
+    """'(78 at 0.90+, 5 at 0.60-0.90, 1 below 0.60)': how sure the matcher was
+    of the IDs it agreed with. Agreement ignores the threshold, so a match
+    named at 0.4 counts too; this says how many are like that. Empty bands
+    are left out."""
+    bands = [(f"at {threshold:.2f}+", sum(c >= threshold for c in confidences)),
+             (f"at {KEEP_FLOOR:.2f}-{threshold:.2f}", sum(KEEP_FLOOR <= c < threshold for c in confidences)),
+             (f"below {KEEP_FLOOR:.2f}", sum(c < KEEP_FLOOR for c in confidences))]
+    shown = [f"{n} {label}" for label, n in bands if n]
+    return f" ({', '.join(shown)})" if shown else ""
+
+
 def print_summary(counts, paths, threshold):
+    bands = agreement_bands(counts.get("confirmed_confidences", []), threshold)
     print(f"threshold {threshold:.2f}: "
           f"{counts['filled']} filled, {counts['replaced']} replaced, "
-          f"{counts['confirmed']} already agree, {counts['noted']} slots left in notes")
+          f"{counts['confirmed']} already agree{bands}, {counts['noted']} slots left in notes")
     for name, path in paths.items():
         print(f"  {name}: {path.relative_to(ROOT)}")
