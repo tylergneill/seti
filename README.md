@@ -41,7 +41,7 @@ Pāṇḍitya's cleaned extract of a Pandit export, in `data/pandit/`, with its
 dates in `VERSION`: `__pandit_source_version__`, the export's date, which
 names the file, and `__panditya_data_version__`, the day Pāṇḍitya's pipeline
 last ran on it. Pāṇḍitya does the export and the cleaning; this repo never
-reads its files directly, except for `make pandit-copy` and `make check`.
+reads its files directly, except for `make pandit-copy` and `make check-ids-exist`.
 
 ## Keeping Pāṇḍitya and SETI in step
 
@@ -62,7 +62,7 @@ progress.
    then `make pipeline`. Its transform checks SETI's work IDs against the
    new data: if any are missing, it lists them and writes nothing. Don't
    merge yet.
-2. **SETI:** `make pandit-copy`, then `make check`, which lists every ID
+2. **SETI:** `make pandit-copy`, then `make check-ids-exist`, which lists every ID
    in the master that the new data lacks (most likely deleted or merged
    in Pandit; look one up with `python3 scripts/lookup.py id <id>`). Fix
    them, commit, run `make master-date`, commit `VERSION`, and merge.

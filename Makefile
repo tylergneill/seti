@@ -1,7 +1,7 @@
 # SETI: matching the master against the Pandit Project.
 #
 #   make pandit-copy                # bring in Pāṇḍitya's current cleaned extract
-#   make check                      # the copy is current, and every ID in the master is in it
+#   make check-ids-exist            # the copy is current, and every master ID exists in it as the right kind
 #   make match                     # mechanical matcher, open slots only
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
@@ -35,7 +35,7 @@ apply_on = When the run is done, even with failed batches, run make research-app
 apply_off = Do not apply the run: skip step 5's research_apply.py. When the run is done, tell the user which batches finished or failed, and that they will run make research-apply RUN=$(RUN) themselves.
 apply_words = $(if $(NO_APPLY), $(apply_off), $(apply_on))
 
-.PHONY: pandit-copy check match research-prep research research-apply master-date
+.PHONY: pandit-copy check-ids-exist match research-prep research research-apply master-date
 
 master-date:
 	$(PYTHON) scripts/master_date.py
@@ -43,8 +43,8 @@ master-date:
 pandit-copy:
 	$(PYTHON) scripts/pandit_copy.py
 
-check:
-	$(PYTHON) scripts/check.py
+check-ids-exist:
+	$(PYTHON) scripts/check_ids_exist.py
 
 match:
 	$(PYTHON) scripts/match.py --scope $(SCOPE) --threshold $(THRESHOLD) $(collection_flag) $(dry_flag)

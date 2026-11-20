@@ -10,7 +10,7 @@ dates in VERSION.
 
     python3 scripts/pandit_copy.py
 
-Then run scripts/check.py.
+Then run scripts/check_ids_exist.py.
 """
 
 import re
@@ -49,7 +49,7 @@ def main():
     text = set_version(text, "pandit_source_version", content)
     text = set_version(text, "panditya_data_version", data)
     VERSION.write_text(text, encoding="utf-8")
-    print(f"VERSION: Pandit export {content}, Pāṇḍitya's pipeline run {data}. Now run make check.")
+    print(f"VERSION: Pandit export {content}, Pāṇḍitya's pipeline run {data}. Now run make check-ids-exist.")
 
 
 if __name__ == "__main__":

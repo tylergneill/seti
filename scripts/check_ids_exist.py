@@ -1,6 +1,8 @@
-"""Check every Pandit ID in the master against this repo's Pandit extract.
+"""Check that every Pandit ID in the master exists in this repo's Pandit extract.
 
 Each Work ID must be a work in the extract, and each Author ID a person.
+That is all it checks: that an ID still exists and is the right kind of
+record. Whether it is the right ID for its text is the matchers' job.
 An ID that is neither was most likely deleted or merged in Pandit since it
 was written; one of the wrong kind was mistyped or put in the wrong column.
 Look such IDs up with scripts/lookup.py and correct the master by hand.
@@ -13,7 +15,7 @@ export, or a file that differs all mean the copy is behind, and
 Run this after every `make pandit-copy`, before the matchers: they assume
 the IDs already in the master are real.
 
-    python3 scripts/check.py
+    python3 scripts/check_ids_exist.py
 
 Exits 1 if the copy is behind or any ID fails, listing each ID with its
 row in the master.
@@ -75,7 +77,7 @@ def main():
     for p in stale:
         print(f"  {p}")
     if stale:
-        print("Our copy is behind; run make pandit-copy, then make check again.")
+        print("Our copy is behind; run make pandit-copy, then make check-ids-exist again.")
         sys.exit(1)
 
     master, pandit = Master(), Pandit()
