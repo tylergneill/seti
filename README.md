@@ -105,6 +105,7 @@ slots are not attempted.
 ### Research
 
     make research-prep LIMIT=50           # prints the run's name
+    make research-prep OFFSET=100 LIMIT=100   # rows 101-200 of the selection, as a run of its own
     make research RUN=<run>               # a Claude session with sub-agents; applies the run at the end
     make research RUN=<run> NO_APPLY=1    # the same, but stops before applying
     make research-apply RUN=<run> DRY=1   # what applying would change
@@ -118,6 +119,12 @@ their reasoning. `agents/researcher.md` is their prompt and
 already in a row are withheld from the sub-agent, so that its reading is
 independent of the master. A run can be interrupted and resumed; batches
 live under `tmp/research/<run>/`.
+
+A big collection is best done in chunks, one run per sitting: `OFFSET`
+skips that many of the selected rows (counted within `COLLECTION` and
+`SCOPE`, not the whole master), and the run's name ends with the range,
+e.g. `...-gretil-all-0101-0200`. Prep prints the `OFFSET` of the next
+chunk.
 
 `scripts/lookup.py` is also useful by hand:
 

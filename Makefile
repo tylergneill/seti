@@ -5,6 +5,7 @@
 #   make match                     # mechanical matcher, open slots only
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
+#   make research-prep OFFSET=100 LIMIT=100   # rows 101-200 only: one reviewable chunk
 #   make research RUN=<run>         # Claude sub-agents research the batches
 #   make research RUN=<run> NO_APPLY=1   # ... and stop before applying them
 #   make research-apply RUN=<run>   # write their findings into the master
@@ -24,6 +25,7 @@ BATCH ?= 10
 
 collection_flag = $(if $(COLLECTION),--collection "$(COLLECTION)")
 limit_flag = $(if $(LIMIT),--limit $(LIMIT))
+offset_flag = $(if $(OFFSET),--offset $(OFFSET))
 run_flag = $(if $(RUN),--run $(RUN))
 dry_flag = $(if $(DRY),--dry-run)
 workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a time.)
@@ -48,7 +50,7 @@ match:
 	$(PYTHON) scripts/match.py --scope $(SCOPE) --threshold $(THRESHOLD) $(collection_flag) $(dry_flag)
 
 research-prep:
-	$(PYTHON) scripts/research_prep.py --scope $(SCOPE) --batch-size $(BATCH) $(collection_flag) $(limit_flag) $(run_flag)
+	$(PYTHON) scripts/research_prep.py --scope $(SCOPE) --batch-size $(BATCH) $(collection_flag) $(offset_flag) $(limit_flag) $(run_flag)
 
 research:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required; research-prep prints the name" && exit 1)
