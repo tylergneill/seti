@@ -1,12 +1,15 @@
 # SETI: matching the master against the Pandit Project.
 #
 #   make pandit-copy                # bring in Pāṇḍitya's current cleaned extract
-#   make check                      # the copy is current, and every ID in the master is in it
+#   make check-ids-exist            # the copy is current, and every master ID exists in it as the right kind
 #   make match                     # mechanical matcher, open slots only
 #   make match SCOPE=all            # mechanical matcher, every row
 #   make research-prep LIMIT=50     # cut rows into batches for the LLM pass
+#   make research-prep OFFSET=100 LIMIT=100   # rows 101-200 only: one reviewable chunk
 #   make research RUN=<run>         # Claude sub-agents research the batches
+#   make research RUN=<run> NO_APPLY=1   # ... and stop before applying them
 #   make research-apply RUN=<run>   # write their findings into the master
+#   make master-date                # date the master in VERSION from its last commit (CI checks this)
 #
 # Both matchers edit data/seti-master.csv in place and write what they were
 # less sure of to reports/. Review the master as a diff.
@@ -22,27 +25,36 @@ BATCH ?= 10
 
 collection_flag = $(if $(COLLECTION),--collection "$(COLLECTION)")
 limit_flag = $(if $(LIMIT),--limit $(LIMIT))
+offset_flag = $(if $(OFFSET),--offset $(OFFSET))
 run_flag = $(if $(RUN),--run $(RUN))
 dry_flag = $(if $(DRY),--dry-run)
 workers_words = $(if $(WORKERS), Keep up to $(WORKERS) sub-agents in flight at a time.)
+# By default the research session applies its run when done; NO_APPLY=1 leaves
+# that to you (make research-apply RUN=<run> DRY=1, then without DRY).
+apply_on = When the run is done, even with failed batches, run make research-apply RUN=$(RUN).
+apply_off = Do not apply the run: skip step 5's research_apply.py. When the run is done, tell the user which batches finished or failed, and that they will run make research-apply RUN=$(RUN) themselves.
+apply_words = $(if $(NO_APPLY), $(apply_off), $(apply_on))
 
-.PHONY: pandit-copy check match research-prep research research-apply
+.PHONY: pandit-copy check-ids-exist match research-prep research research-apply master-date
+
+master-date:
+	$(PYTHON) scripts/master_date.py
 
 pandit-copy:
 	$(PYTHON) scripts/pandit_copy.py
 
-check:
-	$(PYTHON) scripts/check.py
+check-ids-exist:
+	$(PYTHON) scripts/check_ids_exist.py
 
 match:
 	$(PYTHON) scripts/match.py --scope $(SCOPE) --threshold $(THRESHOLD) $(collection_flag) $(dry_flag)
 
 research-prep:
-	$(PYTHON) scripts/research_prep.py --scope $(SCOPE) --batch-size $(BATCH) $(collection_flag) $(limit_flag) $(run_flag)
+	$(PYTHON) scripts/research_prep.py --scope $(SCOPE) --batch-size $(BATCH) $(collection_flag) $(offset_flag) $(limit_flag) $(run_flag)
 
 research:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required; research-prep prints the name" && exit 1)
-	claude "Research the pending batches using subagents, following agents/dispatcher.md, for the run $(RUN). Use a workflow.$(workers_words) When the run is done, even with failed batches, run make research-apply RUN=$(RUN)."
+	claude "Research the pending batches using subagents, following agents/dispatcher.md, for the run $(RUN). Use a workflow.$(workers_words)$(apply_words)"
 
 research-apply:
 	@test -n "$(RUN)" || (echo "RUN=<run> is required" && exit 1)

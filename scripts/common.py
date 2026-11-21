@@ -12,6 +12,7 @@ import datetime
 import io
 import re
 import unicodedata
+from urllib.parse import quote
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,6 +28,10 @@ WORK_ID = "Work ID"
 AUTHOR_ID = "Author ID"
 
 DEFAULT_THRESHOLD = 0.9
+# Pandit's own address for a record. /entity/<id>/work and the like are only
+# aliases, which records created in bulk (e.g. the 114000s-116000s) lack;
+# /node/<id> works for every record.
+PANDIT_NODE = "https://panditproject.org/node/{}"
 AMBIGUITY_MARGIN = 0.03  # two confident candidates closer than this are a tie
 KEEP_FLOOR = 0.6         # an ID already in the master stands if it scores at least this
 
@@ -133,19 +138,19 @@ def read_version(name, path=VERSION):
     return found.group(1)
 
 
-def pandit_content_version():
+def pandit_source_version():
     """When the Pandit data of our copy was sourced: the export's date, which names the file."""
-    return read_version("pandit_content_version")
+    return read_version("pandit_source_version")
 
 
-def pandit_data_version():
+def panditya_data_version():
     """When Pāṇḍitya's pipeline last ran on that export, as of our copy."""
-    return read_version("pandit_data_version")
+    return read_version("panditya_data_version")
 
 
 def pandit_extract():
     """This repo's copy of the cleaned Pandit extract, for the export date in VERSION."""
-    path = PANDIT_DATA / f"{pandit_content_version()}-extracted-entities-cleaned.csv"
+    path = PANDIT_DATA / f"{pandit_source_version()}-extracted-entities-cleaned.csv"
     if not path.exists():
         raise SystemExit(f"No {path.name} in {PANDIT_DATA}; bring it in with make pandit-copy.")
     return path
@@ -216,11 +221,41 @@ def proposal(row, field, position, suggested, confidence, basis, suggested_name=
 
 
 REPORT_COLUMNS = ["Row", "Line", "Collection", "Text Name", "Author Name", "Field", "Slot", "Current",
-                  "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis"]
+                  "Suggested ID", "Suggested Name", "Confidence", "Status", "Basis",
+                  "Text Links", "Suggested Link", "Current Name", "Current Link", "Related Links"]
+
+# The row's own links to the e-text, for reading what the text really is.
+TEXT_LINKS = (("main", "Link 1 (main)"), ("underlying", "Link 2 (underlying)"), ("extract", "Link 3 (extract)"))
+
+
+def pandit_link(entity_id):
+    """The Pandit page of a record, or '' for anything that is not an ID ('...', '—', '')."""
+    entity_id = (entity_id or "").strip()
+    return PANDIT_NODE.format(entity_id) if entity_id.isdigit() else ""
+
+
+def related_records(master, pandit, p):
+    """The other Pandit records worth opening when judging a proposal, as [(role, ID, name)].
+
+    For a work: the authors Pandit gives the suggested work, so that the
+    reviewer can see whether they are the row's author. For an author: the
+    works already in the row's Work ID cell, which is usually what
+    corroborated the author.
+    """
+    if pandit is None or not p["suggested"]:
+        return []
+    if p["field"] == WORK_ID:
+        work = pandit.works.get(p["suggested"])
+        ids = work["author_ids"] if work else []
+        role = "author"
+    else:
+        ids = [i.strip() for i in split_cell(master.get(p["row"], WORK_ID))[0] if i.strip().isdigit()]
+        role = "work"
+    return [(role, i, pandit.name_of(i)) for i in ids]
 
 
 def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwrite=False,
-                    dry_run=False, extra_notes=()):
+                    dry_run=False, extra_notes=(), pandit=None):
     """Write confident proposals into the master; report the rest.
 
     A slot that is open ('...') is filled when the best proposal for it
@@ -228,13 +263,23 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
     with overwrite=True, and only by a different ID that reaches the
     threshold. Everything else that disagrees with the master goes to the
     notes file, at most three candidates per slot.
+
+    Every change is printed with the Pandit pages to check it against: the
+    suggested record, the record it replaces, and the related records (see
+    related_records()), which need `pandit`. The reports carry the same
+    links as columns.
     """
+    def report(p, current, status):
+        return _report_row(master, p, current, status, pandit)
+
     by_slot = {}
     for p in proposals:
         by_slot.setdefault((p["row"], p["field"], p["position"]), []).append(p)
 
     applied, notes = [], []
-    counts = {"filled": 0, "replaced": 0, "confirmed": 0, "noted": 0}
+    counts = {"filled": 0, "replaced": 0, "confirmed": 0, "noted": 0,
+              # How sure the matcher was of each ID it confirmed; see print_summary().
+              "confirmed_confidences": [], "threshold": threshold}
 
     for (r, field, position), candidates in sorted(by_slot.items()):
         ranked, seen = [], set()
@@ -260,15 +305,16 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
         current_score = max((p["confidence"] for p in ranked if p["suggested"] == current), default=0)
         if best["suggested"] == current or current_score >= KEEP_FLOOR:
             counts["confirmed"] += 1
+            counts["confirmed_confidences"].append(current_score)
             for p in confident:
                 if p["suggested"] != current:
-                    notes.append(_report_row(master, p, current, "confident alternative to a plausible current ID (Pandit duplicate?)"))
+                    notes.append(report(p, current, "confident alternative to a plausible current ID (Pandit duplicate?)"))
             continue
 
         # Several confident candidates and nothing to choose between them.
         if len(confident) > 1 and confident[0]["confidence"] - confident[1]["confidence"] < AMBIGUITY_MARGIN:
             for p in confident[:3]:
-                notes.append(_report_row(master, p, current, "ambiguous: several confident candidates"))
+                notes.append(report(p, current, "ambiguous: several confident candidates"))
             counts["noted"] += 1
             continue
 
@@ -277,7 +323,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
             master.set(r, field, join_cell(parts, seps))
             status = "filled" if is_open else "replaced"
             counts[status] += 1
-            applied.append(_report_row(master, best, current, status))
+            applied.append(report(best, current, status))
             continue
 
         for p in ranked[:3]:
@@ -289,7 +335,7 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
                 status = "differs from current (not overwriting)"
             else:
                 status = "differs from current"
-            notes.append(_report_row(master, p, current, status))
+            notes.append(report(p, current, status))
         counts["noted"] += 1
 
     notes += list(extra_notes)
@@ -306,15 +352,44 @@ def apply_proposals(master, proposals, tool, threshold=DEFAULT_THRESHOLD, overwr
                 writer = csv.DictWriter(f, fieldnames=REPORT_COLUMNS, lineterminator="\n")
                 writer.writeheader()
                 writer.writerows(rows)
-    if dry_run:
-        for row in applied:
-            print(f"  would be {row['Status']}: row {row['Row']} {row['Field']} {row['Current']} -> "
-                  f"{row['Suggested ID']} '{row['Suggested Name']}' ({row['Confidence']})  [{row['Text Name']}]")
+    for row in applied:
+        print_change(row, dry_run)
     return counts, paths
 
 
-def _report_row(master, p, current, status):
+def clickable(url):
+    """A URL with its non-ASCII characters percent-encoded (ś -> %C5%9B).
+
+    Terminals such as PyCharm's end a link at the first diacritic, so a
+    link to 'Amaraughaśāsana' would open 'Amaraugha'. The encoded form is
+    the same address, and browsers show it decoded again. Characters that
+    already carry meaning in a URL, and existing %-escapes, are left alone.
+    """
+    return quote(url, safe=":/?#[]@!$&'()*+,;=%~")
+
+
+def print_change(row, dry_run=False):
+    """One applied change, with the e-text's links and each Pandit page on a
+    line of its own, so that a terminal makes them clickable: read the text,
+    compare the records, then keep or revert the change."""
+    verb = f"would be {row['Status']}" if dry_run else row["Status"]
+    print(f"  {verb}: row {row['Row']} (line {row['Line']}) {row['Collection']} "
+          f"'{row['Text Name']}' {row['Field']} slot {row['Slot']} ({row['Confidence']})")
+    for line in row["Text Links"].splitlines():
+        label, url = line.split(None, 1)
+        print(f"      text    {label:<10} {clickable(url)}")
+    if row["Current Link"]:
+        print(f"      was     {row['Current']} {row['Current Name']}  {row['Current Link']}")
+    print(f"      now     {row['Suggested ID']} {row['Suggested Name']}  {row['Suggested Link']}")
+    for line in row["Related Links"].splitlines():
+        print(f"      {line}")
+
+
+def _report_row(master, p, current, status, pandit=None):
     r = p["row"]
+    related = related_records(master, pandit, p)
+    text_links = [(label, master.get(r, col).strip()) for label, col in TEXT_LINKS
+                  if col in master.col and master.get(r, col).strip()]
     return {
         "Row": master.sheet_row(r),
         "Line": master.line(r),
@@ -329,6 +404,15 @@ def _report_row(master, p, current, status):
         "Confidence": f"{p['confidence']:.2f}" if p["suggested"] else "",
         "Status": status,
         "Basis": p["basis"],
+        # One link per line: '<which> <link>'.
+        "Text Links": "\n".join(f"{label:<10} {url}" for label, url in text_links),
+        "Suggested Link": pandit_link(p["suggested"]),
+        # The record being replaced or contradicted, by name, so it can be
+        # judged without opening its page (blank if pandit was not given).
+        "Current Name": pandit.name_of(current) if pandit is not None and pandit_link(current) else "",
+        "Current Link": pandit_link(current),
+        # One record per line: '<role> <ID> <name>  <link>'.
+        "Related Links": "\n".join(f"{role:<7} {i} {name}  {pandit_link(i)}" for role, i, name in related),
     }
 
 
@@ -337,9 +421,22 @@ def note_row(master, r, field, position, status, basis, current=""):
     return _report_row(master, proposal(r, field, position, "", 0, basis), current, status)
 
 
+def agreement_bands(confidences, threshold):
+    """'(78 at 0.90+, 5 at 0.60-0.90, 1 below 0.60)': how sure the matcher was
+    of the IDs it agreed with. Agreement ignores the threshold, so a match
+    named at 0.4 counts too; this says how many are like that. Empty bands
+    are left out."""
+    bands = [(f"at {threshold:.2f}+", sum(c >= threshold for c in confidences)),
+             (f"at {KEEP_FLOOR:.2f}-{threshold:.2f}", sum(KEEP_FLOOR <= c < threshold for c in confidences)),
+             (f"below {KEEP_FLOOR:.2f}", sum(c < KEEP_FLOOR for c in confidences))]
+    shown = [f"{n} {label}" for label, n in bands if n]
+    return f" ({', '.join(shown)})" if shown else ""
+
+
 def print_summary(counts, paths, threshold):
+    bands = agreement_bands(counts.get("confirmed_confidences", []), threshold)
     print(f"threshold {threshold:.2f}: "
           f"{counts['filled']} filled, {counts['replaced']} replaced, "
-          f"{counts['confirmed']} already agree, {counts['noted']} slots left in notes")
+          f"{counts['confirmed']} already agree{bands}, {counts['noted']} slots left in notes")
     for name, path in paths.items():
         print(f"  {name}: {path.relative_to(ROOT)}")

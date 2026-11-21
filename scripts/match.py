@@ -312,7 +312,7 @@ def main():
         proposals += matcher.match_row(r)
 
     counts, paths = apply_proposals(master, proposals, "mechanical", args.threshold,
-                                    overwrite=args.scope == "all", dry_run=args.dry_run)
+                                    overwrite=args.scope == "all", dry_run=args.dry_run, pandit=pandit)
     print_summary(counts, paths, args.threshold)
     if matcher.skipped_multi:
         print(f"{matcher.skipped_multi} rows with several Work ID slots not attempted")

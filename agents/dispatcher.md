@@ -26,7 +26,9 @@ writes `proposals.json` into its batch directory.
    workflow script does this for you.
 4. When the workflows return, list the pending batches again, and run step 2
    again for what is left. Repeat until nothing is pending.
-5. Finish the run yourself, in this session:
+5. Unless you were told not to apply the run (then stop after step 4 and
+   report which batches finished or failed), finish it yourself, in this
+   session:
    `python3 scripts/research_apply.py --run <run>`. It writes confident
    identifications into `data/seti-master.csv` and the rest into
    `reports/`. Finish even if some batches failed, so what did finish is
